@@ -139,6 +139,7 @@ body {
 	font-size: 27px;
 	line-height: 36px;
 	color: #FFFFFF;
+	margin-bottom: 110px;
 }
 
 .promo-info__text {
@@ -148,7 +149,6 @@ body {
 	font-size: 14px;
 	line-height: 20px;
 	color: #FFFFFF;
-	margin-bottom: 110px;
 }
 
 .promo-image {
