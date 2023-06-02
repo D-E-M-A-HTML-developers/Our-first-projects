@@ -77,28 +77,32 @@
 					</p>
 				</div>
 				<div class="promo-form">
-					<p class="promo-form__txt">Сумма кредита</p>
+					<form action="#">
+						<p class="promo-form__txt">Сумма кредита</p>
+						<input  class="sum-credit" type="range" min="1000" max="100000" step="10" name="credit" value="65000">
 					<p class="promo-form__txt">Срок кредита</p>
+					<input  class="term-credit" type="range" min="3" max="30" step="1" name="term" value="8">
 					<button type="submit" class="btn">Оформить заявку</button>
+					<div class="promo-image"></div>
+					</form>
 					<ul class="promo-form__info__list">
 						<li class="promo-form__info__item">
 							<p>Вы берете</p>
 							<span>20 000 &#8381;</span>
 						</li>
 						<li class="promo-form__info__item">
-							<p>Дата возврата</p>
-							<span>08 января 2022</span>
-						</li>
-						<li class="promo-form__info__item">
 							<p>К возврату</p>
 							<span>25650 &#8381;</span>
+						</li>
+						<li class="promo-form__info__item">
+							<p>Дата возврата</p>
+							<span>08 января 2022</span>
 						</li>
 						<li class="promo-form__info__item">
 							<p>Ежемесячный платеж</p>
 							<span>5 650 &#8381;</span>
 						</li>
 					</ul>
-					<div class="promo-image"></div>
 				</div>
 			</section>
 		</div>
