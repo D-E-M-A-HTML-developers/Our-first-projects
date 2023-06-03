@@ -79,11 +79,86 @@
 				<div class="promo-form">
 					<form action="#">
 						<p class="promo-form__txt">Сумма кредита</p>
-						<input  class="sum-credit" type="range" min="1000" max="100000" step="10" name="credit" value="65000">
-					<p class="promo-form__txt">Срок кредита</p>
-					<input  class="term-credit" type="range" min="3" max="30" step="1" name="term" value="8">
-					<button type="submit" class="btn">Оформить заявку</button>
-					<div class="promo-image"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						<label class="sum-credit__label" for="range1">65 000 ₽</label>
+
+						<div class="sum-credit__wrapper">
+							<input class="sum-credit" type="range" id="range1" min="1" max="100" step="1" name="credit" value="65">
+							<div class="sum-credit__progress"></div>
+						</div>
+
+						<div class="sum-credit__limit">
+							<span class="sum-credit__limit-txt">1 000 ₽</span><span class="sum-credit__limit-txt">100 000 ₽</span>
+						</div>
+						<p class="promo-form__txt">Срок кредита</p>
+
+						<label class="term-credit__label" for="range2">8 дней</label>
+
+						<div class="sum-credit__wrapper">
+							<input class="term-credit" type="range" id="range2" min="3" max="30" step="1" name="term" value="8">
+							<div class="term-credit__progress"></div>
+						</div>
+
+
+
+						
+						<div class="term-credit__limit">
+							<span class="term-credit__limit-txt">3</span><span class="term-credit__limit-txt">30</span>
+						</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						<button type="submit" class="btn">Оформить заявку</button>
+						<div class="promo-image"></div>
 					</form>
 					<ul class="promo-form__info__list">
 						<li class="promo-form__info__item">
@@ -535,5 +610,6 @@
 		</section>
 	</footer>
 </body>
+<script src="script/script.js"></script>
 
 </html>
