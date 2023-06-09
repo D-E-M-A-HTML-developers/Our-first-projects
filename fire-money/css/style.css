@@ -480,9 +480,10 @@ body {
 }
 
 /* ++++++++money-request++++++++++ */
+
 .money-request {
   background-color: #f6f9fc;
-  padding-top: 44px;
+  padding: 44px 0 45px;
 }
 .money-request__title {
   text-align: center;
@@ -490,12 +491,13 @@ body {
   font-size: 38px;
   line-height: 45px;
   color: #45515f;
-  margin-bottom: 72px;
+  margin-bottom: 49px;
 }
 
 .money-request__list {
   display: flex;
   position: relative;
+  margin: 0 0 44px 0;
 }
 
 .money-request__list::before {
@@ -504,9 +506,9 @@ body {
   max-width: 1280px;
   width: 100%;
   height: 7px;
-  background-color: red;
+  background-color: #fff;
   border-radius: 8px;
-  top: 128px;
+  top: 126px;
 }
 
 .money-request__item {
@@ -517,9 +519,18 @@ body {
   max-width: 320px;
   width: 100%;
 }
+
 .money-request__wrp-images {
+  display: flex;
   margin: 0 0 34px 0;
+  max-width: 68px;
+  height: 77px;
+  align-items: flex-end;
 }
+.money-request__wrp-images img {
+  width: 100%;
+}
+
 .money-request__wrp-step-number {
   border-radius: 50%;
   width: 34px;
@@ -559,7 +570,9 @@ body {
 .txt-step4 {
   max-width: 248px;
 }
-.btn {
+.wrp-btn {
+  display: flex;
+  justify-content: center;
 }
 /* =======ENDsection-offers======= */
 
