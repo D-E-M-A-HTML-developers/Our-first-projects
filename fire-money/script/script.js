@@ -8,82 +8,152 @@ const termProgress = document.querySelector(".term-credit__progress");
 const sumCreditTake = document.querySelector(".sum-credit-take");
 const date = document.querySelector(".date-return");
 
-// Вычисление начальной размера заливки слайдера от начала до положения ползунка
-sumProgress.style.width = `${(sumSlider.value * (381 - 21)) / 100}px`;
-// Вычисление начальной позиции ползунка для задания положения labelSum (сумма)
-labelSum.style.left =
-  sumProgress.offsetWidth - 173 - labelSum.offsetWidth * 0.2 + "px";
+// Ширина ползунка - 21px
+const thumbWidth = 21;
 
-// Вычисление начальной размера заливки слайдера от начала до положения ползунка
-termProgress.style.width = `${((termSlider.value - 3) * (381 - 21)) / 27}px`;
-// Вычисление начальной позиции ползунка для задания положения labelTerm (срок)
-labelTerm.style.left =
-  termProgress.offsetWidth - 173 - labelTerm.offsetWidth * 0.2 + "px";
+// Вычисление ширины заливки слайдеров при загрузке страницы
+sumProgress.style.width = widthProgress(sumSlider) + "px";
+termProgress.style.width = widthProgress(termSlider) + "px";
 
-// событие при перемещении ползунка
+// Вывод на экран выбранных значений лейблов при загрузке страницы
+labelSum.textContent = sumSlider.value + " 000 ₽";
+sumCreditTake.textContent = labelSum.textContent;
+date.textContent = getReturnDate(termSlider.value);
+
+// Вычисление положения лейблов при загрузке страницы
+labelSum.style.left = positionLabel(labelSum, sumSlider, sumProgress) + "px";
+labelTerm.style.left = positionLabel(labelTerm, termSlider, termProgress) + "px";
+
+// Вызываемое событие при перемещении ползунка
 sumSlider.oninput = function () {
-  // Вычисление размера заливки слайдера от начала до нового положения ползунка (пределы от 1 до 100)
-  // <значение_слайдера> * (<ширина_слайдера> - <max_значение(100)>) / 100%
-  sumProgress.style.width = `${(this.value * (381 - 21)) / 100}px`;
-  // Задание положения плавающей суммы
-  // <ширина_заливки> - <ширина_labelSum>, а дальше значения необходимые,
-  // чтобы сумма находилась по центру ползунка (подбирал экспериментальным путем)
-  labelSum.style.left =
-    sumProgress.offsetWidth - labelSum.offsetWidth * 0.05 - 173 + "px";
-  // Вычисление разницы в положении от левой границы страницы sumSlider и labelSum
-  const delta =
-    sumSlider.getBoundingClientRect().left -
-    labelSum.getBoundingClientRect().left;
-  // если больше 0px
-  if (delta > 0) {
-    // прилипаем к левому краю слайдера
-    labelSum.style.left = "-150px";
-  } else if (delta < -300)
-    // если меньше -300px
-    // прилипаем к правому краю слайдера
-    labelSum.style.left = "140px";
-  // Вывод на экран выбранной суммы
-  labelSum.textContent = this.value + " 000 ₽";
-  sumCreditTake.textContent = this.value + " 000 ₽";
+	// Вывод на экран выбранной суммы
+	labelSum.textContent = this.value + " 000 ₽";
+	sumCreditTake.textContent = labelSum.textContent;
+
+	// Вычисление ширины заливки слайдера sumProgress
+	sumProgress.style.width = widthProgress(sumSlider) + "px";
+
+	// Вычисление положения labelSum (сумма)
+	labelSum.style.left = positionLabel(labelSum, sumSlider, sumProgress) + "px";
+
+	// Вычисление разницы в положении от левой границы страницы для sumSlider и labelSum
+	// Метод Element.getBoundingClientRect() возвращает размер элемента и его позицию
+	// относительно viewport(часть страницы, показанная на экране, и которую мы видим).
+	const delta =
+		sumSlider.getBoundingClientRect().left -
+		labelSum.getBoundingClientRect().left;
+	
+	// Если больше 0px
+	if (delta > 0) {
+		// прилипаем к левому краю слайдера
+		labelSum.style.left = "-150px";
+	} else if (delta < -300)
+		// если меньше -300px, прилипаем к правому краю слайдера
+		labelSum.style.left = "140px";
 };
 
-// событие при перемещении ползунка
+// Вызываемое событие при перемещении ползунка
 termSlider.oninput = function () {
-  // Вычисление размера заливки слайдера от начала до нового положения ползунка (пределы от 3 до 30)
-  // (<значение_слайдера(от 3 до 30)> - <min_значение(3)>) *
-  // (<ширина_слайдера> - <ширина_ползунка>) / (<max_значение(30)> - <min_значение(3)>)
-  termProgress.style.width = `${((this.value - 3) * (381 - 21)) / (30 - 3)}px`;
-  // Задание положения плавающей суммы
-  // <ширина_заливки> - <ширина_labelTerm>, а дальше значения необходимые,
-  // чтобы дни находились по центру ползунка (подбирал экспериментальным путем)
-  labelTerm.style.left =
-    termProgress.offsetWidth - labelTerm.offsetWidth * 0.2 - 173 + "px";
-  // Вычисление разницы в положении от левой границы страницы sumSlider и labelSum
-  const delta =
-    termSlider.getBoundingClientRect().left -
-    labelTerm.getBoundingClientRect().left;
-  // если больше 0px
-  if (delta > 0) {
-    // прилипаем к левому краю слайдера
-    labelTerm.style.left = "-160px";
-  } else if (delta < -300)
-    // если меньше -300px
-    // прилипаем к ПРАвому краю слайдера
-    labelTerm.style.left = "145px";
-  // Вывод на экран выбранной суммы
+	// Получение значения выбранного срока
+	let textTerm = this.value;
 
-  labelTerm.textContent = this.value; // Вывод на экран выбранного срока
-  date.textContent = this.value;
+	// Вывод на экран даты окончания срока кредитования
+	date.textContent = getReturnDate(textTerm);
 
-  // Проверка на соответствие 'день/дня/дней'
-  if (this.value == 1 || this.value == 21) {
-    labelTerm.textContent += " день";
-  } else if (
-    (this.value >= 2 && this.value <= 4) ||
-    (this.value >= 22 && this.value <= 24)
-  ) {
-    labelTerm.textContent += " дня";
-  } else {
-    labelTerm.textContent += " дней";
-  }
+	// Проверка на соответствие 'день/дня/дней'
+	if (textTerm == 1 || textTerm == 21) {
+		textTerm += " день";
+	} else if (
+		(this.value >= 2 && this.value <= 4) ||
+		(this.value >= 22 && this.value <= 24)
+	) {
+		textTerm += " дня";
+	} else {
+		textTerm += " дней";
+	}
+
+	// Вывод на экран выбранного срока
+	labelTerm.textContent = textTerm;
+
+	// Вычисление ширины заливки слайдера termProgress
+	termProgress.style.width = widthProgress(termSlider) + "px";
+
+	// Вычисление положения labelTerm (срок)
+	labelTerm.style.left = positionLabel(labelTerm, termSlider, termProgress) + "px";
+
+	// Вычисление разницы в положении от левой границы страницы termSlider и labelTerm
+	// Метод Element.getBoundingClientRect() возвращает размер элемента и его позицию
+	// относительно viewport(часть страницы, показанная на экране, и которую мы видим).
+	const delta =
+		termSlider.getBoundingClientRect().left -
+		labelTerm.getBoundingClientRect().left;
+	// если больше 0px
+	if (delta > 0) {
+		// прилипаем к левому краю слайдера
+		labelTerm.style.left = "-160px";
+	} else if (delta < -300)
+		// если меньше -300px
+		// прилипаем к Правому краю слайдера
+		labelTerm.style.left = "145px";
 };
+
+// Вычисление ширины заливки
+function widthProgress(slider) {
+	// Вычисление ширины заливки слайдера от начала до положения ползунка
+	// ((<значение_слайдера> - <min_значение>) / (<max_значение> - <min_значение>)) *
+	// (<ширина_слайдера> - <ширина_ползунка>)
+	const width = ((slider.value - slider.min) /
+		(slider.max - slider.min)) *
+		(slider.offsetWidth - thumbWidth);
+	return width;
+}
+
+// Вычисление позиции лейбла
+function positionLabel(label, slider, progress) {
+	// Масштабный коэффициент для центрирования лейбла относительно ползунка
+	const scale = 6;
+
+	// Так как 'label' имеет свойство 'position: relative', то для него
+	// нулевая точка (точка отсчета = 0px) находится в середине родительского
+	// блока - 'form'. Вычисление нулевой точки для 'label', которая является
+	// половиной ширины слайдера:
+	// <ширина_слайдера> / 2
+	const zeroPoint = slider.offsetWidth / 2;
+
+	// Задание положения 'label' в блоке 'form'
+	// <ширина_заливки> - zeroPoint + (<ширина_лейбла> / <масштабный_коэффициент>)
+	const position = progress.offsetWidth - zeroPoint + (label.offsetWidth / scale)
+	return position;
+}
+
+// Вычисление даты возврата на основе текущей
+function getReturnDate(numDay) {
+	// Получение текущей даты
+	const today = new Date();
+
+	// Вычисление нового числа для возврата кредита
+	// <текущее_число> + <срок_кредита>, 
+	const day = today.getDate() + Number.parseInt(numDay);
+
+	// Установка даты возврата, если 'day' превышает кол-во дней в месяце,
+	// то JS автоматически откорректирует результат. 
+	today.setDate(day);
+
+	// Получение месяца в текстовом виде
+	let month = today.toLocaleDateString('default', { month: 'long' })
+
+	// Изменение окончания для месяца (январь -> 0, февраль -> 1, и т. д.)
+	if (today.getMonth() === 2 || // март
+		today.getMonth() === 7)   // август
+	{ // Если март или август, просто добавляем в конец "а"
+		month += "а";
+	}
+	else { // Для остальных месяцев заменяем последнюю букву на "я"
+		month = month.slice(0, -1); // удаляем последнюю букву
+		month += "я"								// добавляем в конец "я"
+	}
+
+	// Сборка строки даты возврата для вывода (например: 10 июля 2023)
+	const dateString = today.getDate() + " " + month + " " + today.getFullYear();
+	return dateString;
+}
