@@ -514,7 +514,7 @@ body {
 .money-request__item {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   max-width: 320px;
   width: 100%;
