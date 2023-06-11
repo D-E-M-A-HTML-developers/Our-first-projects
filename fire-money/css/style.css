@@ -599,3 +599,32 @@ body {
 /* =======ENDsection-offers======= */
 
 /* ====ENDmain==== */
+/* ====cardrequst==== */
+.card-request {
+  padding: 55px 0 46px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(6px);
+}
+.card-request__title {
+  text-align: center;
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 45px;
+  color: #45515f;
+  margin-bottom: 14px;
+}
+.card-request__txt {
+  max-width: 252px;
+  width: 100%;
+  min-height: 19px;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 145.5%;
+  color: #45515f;
+  text-align: center;
+  margin: 0 auto 44px;
+}
+/* .card-request__item-img-wrp {
+  display: flex;
+  flex-direction: column;
+} */
