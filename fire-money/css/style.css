@@ -198,9 +198,9 @@ body {
 
 .promo-form__info__list {
   display: grid;
-  column-gap: 52px;
+  column-gap: 18px;
   row-gap: 21px;
-  grid-template-columns: repeat(2, minmax(144px, 144px));
+  grid-template-columns: repeat(2, minmax(144px, 160px));
   justify-content: flex-end;
 }
 
@@ -287,8 +287,13 @@ body {
   -webkit-appearance: none;
   width: 21px;
   height: 21px;
-  border-radius: 100%;
   background-image: url("../img/top/slider.svg");
+	
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
 }
 
 .sum-credit__progress,
