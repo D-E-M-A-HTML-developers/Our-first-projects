@@ -288,7 +288,7 @@ body {
   width: 21px;
   height: 21px;
   background-image: url("../img/top/slider.svg");
-	
+
   border-radius: 100%;
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
@@ -508,12 +508,23 @@ body {
 .money-request__list::before {
   content: "";
   position: absolute;
-  max-width: 1280px;
+  max-width: 163px;
+  width: 100%;
+  height: 7px;
+  background: linear-gradient(81.55deg, #ffc83e 33.93%, #ff9f47 73.78%);
+  border-radius: 8px;
+  top: 126px;
+}
+.money-request__list::after {
+  content: "";
+  position: absolute;
+  max-width: 1117px;
   width: 100%;
   height: 7px;
   background-color: #fff;
   border-radius: 8px;
   top: 126px;
+  left: 163px;
 }
 
 .money-request__item {
@@ -540,13 +551,19 @@ body {
   border-radius: 50%;
   width: 34px;
   height: 34px;
-  background-color: #fff;
+  background: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #d6d3d3;
   margin: 0 0 21px 0;
   z-index: 3;
+  pointer-events: none;
+}
+
+.orange-light-white {
+  background: #ffa147;
+  color: #fff;
 }
 
 .money-request__form-images {
