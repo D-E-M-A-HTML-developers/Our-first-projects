@@ -624,7 +624,20 @@ body {
   text-align: center;
   margin: 0 auto 44px;
 }
-/* .card-request__item-img-wrp {
+.card-request__item-img-wrp {
+  width: 140px;
+  height: 133px;
+  border-radius: 22px;
+  background-color: #f6f9fc;
   display: flex;
   flex-direction: column;
-} */
+  align-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.card-request__list {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  margin: 0 0 31px 0;
+}
