@@ -676,6 +676,7 @@ body {
 
 .reviews__item-img {
 	margin: 0 0 26px 0;
+	height: 96px;
 }
 
 .reviews__item-title {
@@ -720,6 +721,11 @@ body {
 	line-height: 19px;
 	text-transform: uppercase;
 	color: #45515F;
+	background: transparent;
+}
+
+.reviews__item-rating {
+	height: 12px;
 }
 
 /* ====ENDreviews==== */
