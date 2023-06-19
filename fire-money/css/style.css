@@ -20,6 +20,17 @@ body {
 	font-size: 16px;
 	line-height: 19px;
 }
+.offers__title,
+.money-request__title,
+.card-request__title,
+.reviews__title, .clients__title, .about-service__title {
+	font-weight: 600;
+	font-size: 38px;
+	line-height: 45px;
+	color: #45515f;
+	text-align: center;
+	margin: 0 0 36px 0;
+}
 
 /* -----------top-wrp------------------- */
 
@@ -348,18 +359,6 @@ body {
 .offers-border {
 	padding-bottom: 51px;
 	border-bottom: 1px solid rgba(69, 81, 95, 0.05);
-}
-
-.offers__title,
-.money-request__title,
-.card-request__title,
-.reviews__title {
-	font-weight: 600;
-	font-size: 38px;
-	line-height: 45px;
-	color: #45515f;
-	text-align: center;
-	margin: 0 0 36px 0;
 }
 
 .offers__list {
@@ -741,11 +740,7 @@ body {
 	padding: 55px 0 59px;
 }
 .clients__title {
-	font-weight: 600;
-	font-size: 38px;
-	line-height: 45px;
 	color: #FFFFFF;
-	text-align: center;
 	margin-bottom: 37px;
 }
 .clients__list {
@@ -795,3 +790,52 @@ body {
 	margin: 0;
 }
 /* ====ENDclients==== */
+
+/* ===About-service===== */
+
+.about-service {
+	padding: 56px 0 72px;
+}
+.about-service__title {
+	margin: 0 0 43px 0;
+}
+.about-service__subtitle {
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 28px;
+	color: #45515F;
+	margin: 0 0 31px 0;
+	min-height: 56px;
+	display: flex;
+    align-items: center;
+}
+.about-service__item:first-child .about-service__subtitle {
+	max-width: 399px;
+	width: 100%;
+	min-height: 56px;
+}
+.about-service-wrp {
+	display: flex;
+    gap: 23px;
+    justify-content: center;
+}
+.about-service__item {
+	max-width: 625px;
+	width: 100%;
+	min-height: 612px;
+	background: rgba(255, 255, 255, 0.95);
+	border: 1px solid #F8EBEB;
+	box-shadow: 0px 4px 44px rgba(84, 104, 123, 0.05);
+	backdrop-filter: blur(6px);
+	border-radius: 22px;
+	padding: 44px 45px;
+}
+.about-service__txt {
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 19px;
+	color: #536473;
+}
+.about-service__txt:not(:last-child) {
+	margin: 0 0 15px 0;
+}
