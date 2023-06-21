@@ -20,10 +20,15 @@ body {
 	font-size: 16px;
 	line-height: 19px;
 }
+
 .offers__title,
 .money-request__title,
 .card-request__title,
-.reviews__title, .clients__title, .about-service__title {
+.reviews__title,
+.clients__title,
+.about-service__title,
+.faq__title,
+.recieve-money__title {
 	font-weight: 600;
 	font-size: 38px;
 	line-height: 45px;
@@ -728,7 +733,6 @@ body {
 }
 
 /* ====ENDreviews==== */
-/* ====ENDmain==== */
 
 /* ====clients==== */
 
@@ -739,15 +743,18 @@ body {
 	background-size: cover;
 	padding: 55px 0 59px;
 }
+
 .clients__title {
 	color: #FFFFFF;
 	margin-bottom: 37px;
 }
+
 .clients__list {
 	display: flex;
 	justify-content: space-between;
-    align-items: center;
+	align-items: center;
 }
+
 .clients__item {
 	max-width: 408px;
 	width: 100%;
@@ -757,11 +764,12 @@ body {
 	backdrop-filter: blur(6px);
 	border-radius: 22px;
 	display: flex;
-    align-items: center;
-    gap: 24px;
+	align-items: center;
+	gap: 24px;
 	padding: 26px 31px 25px;
 	box-sizing: border-box;
 }
+
 .clients__item h4 {
 	font-weight: 500;
 	font-size: 16px;
@@ -769,26 +777,31 @@ body {
 	color: #45515F;
 	margin-bottom: 6px;
 }
+
 .clients__svg-wrp {
 	width: 30px;
 	height: 30px;
 	display: flex;
-    align-items: center;
-    justify-content: center;
+	align-items: center;
+	justify-content: center;
 }
+
 .clients__svg-wrp svg {
 	width: 100%;
 }
-.clients__info-wrp > p {
+
+.clients__info-wrp>p {
 	font-weight: 300;
 	font-size: 16px;
 	line-height: 19px;
 	color: #536473;
 	margin-bottom: 8px;
 }
+
 .clients__info-wrp .client-geolocation-wrp {
 	margin: 0;
 }
+
 /* ====ENDclients==== */
 
 /* ===About-service===== */
@@ -796,9 +809,11 @@ body {
 .about-service {
 	padding: 56px 0 72px;
 }
+
 .about-service__title {
 	margin: 0 0 43px 0;
 }
+
 .about-service__subtitle {
 	font-weight: 600;
 	font-size: 24px;
@@ -807,18 +822,21 @@ body {
 	margin: 0 0 31px 0;
 	min-height: 56px;
 	display: flex;
-    align-items: center;
+	align-items: center;
 }
+
 .about-service__item:first-child .about-service__subtitle {
 	max-width: 399px;
 	width: 100%;
 	min-height: 56px;
 }
+
 .about-service-wrp {
 	display: flex;
-    gap: 23px;
-    justify-content: center;
+	gap: 23px;
+	justify-content: center;
 }
+
 .about-service__item {
 	max-width: 625px;
 	width: 100%;
@@ -830,12 +848,60 @@ body {
 	border-radius: 22px;
 	padding: 44px 45px;
 }
+
 .about-service__txt {
 	font-weight: 300;
 	font-size: 16px;
 	line-height: 19px;
 	color: #536473;
 }
+
 .about-service__txt:not(:last-child) {
 	margin: 0 0 15px 0;
 }
+
+/* ===ENDAbout-service===== */
+
+/* ====faq==== */
+.faq {
+	padding: 59px 0 69px;
+	background: #F6F9FC;
+}
+
+.faq__title {
+	margin: 0 0 37px 0;
+}
+
+.accordion-button:not {
+	margin: 0 0 4px 0;
+	border: none;
+
+}
+
+.accordion-button:not(.collapsed) {
+	background: linear-gradient(268.87deg, #FFC83E -5.09%, #FF7347 51.96%);
+	outline: 0;
+	box-shadow: none;
+
+}
+
+.accordion-button:focus {
+	box-shadow: none;
+}
+
+
+.button:focus:not(:focus-visible) {}
+
+/* .accordion-button {
+	background: linear-gradient(268.87deg, #FFC83E -5.09%, #FF7347 51.96%);
+} */
+
+.accordion-item {
+	background: linear-gradient(268.87deg, #FFC83E -5.09%, #FF7347 51.96%);
+	border-radius: 12px;
+}
+
+#accordionExample>div:nth-child(1)>h2 {}
+
+/* ====ENDfaq==== */
+/* ====ENDmain==== */
