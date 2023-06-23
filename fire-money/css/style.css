@@ -67,7 +67,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 64px;
+  margin: 0 0 64px 0;
 }
 
 .header-logo__link {
@@ -126,7 +126,7 @@ body {
   border-radius: 12px;
   padding: 15px 23px 15px 75px;
   background-color: rgba(255, 255, 255, 0.95);
-  margin-bottom: 20px;
+  margin: 0 0 20px 0;
 }
 
 .promo-info__link-txt {
@@ -162,7 +162,7 @@ body {
   font-size: 27px;
   line-height: 36px;
   color: #ffffff;
-  margin-bottom: 110px;
+  margin: 0 0 110px 0;
 }
 
 .promo-info__text {
@@ -208,7 +208,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-bottom: 34px;
+  margin: 0 0 34px 0;
   align-items: center;
 }
 
@@ -233,7 +233,7 @@ body {
   font-size: 14px;
   line-height: 17px;
   color: #45515f;
-  margin-bottom: 2px;
+  margin: 0 0 2px 0;
 }
 
 .promo-form__info__item span {
@@ -352,7 +352,7 @@ body {
 }
 
 .term-credit__label {
-  margin-top: 12px;
+  margin: 12px 0 0 0;
 }
 
 /* ====ENDpromoSliders==== */
@@ -379,7 +379,7 @@ body {
   gap: 28px;
   justify-content: center;
   align-items: center;
-  margin-bottom: 33px;
+  margin: 0 0 33px 0;
 }
 
 .offers__item {
@@ -403,7 +403,7 @@ body {
   font-size: 28px;
   line-height: 33px;
   color: #45515f;
-  margin-bottom: 14px;
+  margin: 0 0 14px 0;
 }
 
 .offers__txt-wrp {
@@ -431,7 +431,7 @@ body {
   line-height: 182%;
   color: #45515f;
   position: relative;
-  margin-left: 22px;
+  margin: 0 0 0 22px;
 }
 
 .offers__txt-description span {
@@ -753,7 +753,7 @@ body {
 
 .clients__title {
   color: #ffffff;
-  margin-bottom: 37px;
+  margin: 0 0 37px 0;
 }
 
 .clients__list {
@@ -782,7 +782,7 @@ body {
   font-size: 16px;
   line-height: 19px;
   color: #45515f;
-  margin-bottom: 6px;
+  margin: 0 0 6px 0;
 }
 
 .clients__svg-wrp {
@@ -802,7 +802,7 @@ body {
   font-size: 16px;
   line-height: 19px;
   color: #536473;
-  margin-bottom: 8px;
+  margin: 0 0 8px 0;
 }
 
 .clients__info-wrp .client-geolocation-wrp {
@@ -908,7 +908,7 @@ body {
 }
 
 .accordion-button::after {
-  margin-top: 4px;
+  margin: 4px 0 0 auto;
   width: 15px;
   height: 9px;
   background-image: url(../img/faq/Vector-close.svg);
@@ -996,7 +996,7 @@ body {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 .footer-logo {
-  margin-right: 99px;
+  margin: 0 99px 0 0;
 }
 .footer__logo-link {
   font-family: "Rubik", sans-serif;
