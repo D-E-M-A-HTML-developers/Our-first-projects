@@ -1,4 +1,12 @@
-* {
+*,
+ul,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -10,10 +18,6 @@ ul {
 
 a {
   text-decoration: none;
-}
-
-p {
-  margin: 0;
 }
 
 body {
@@ -515,7 +519,7 @@ body {
 .money-request__list::before {
   content: "";
   position: absolute;
-  max-width: 163px;
+  max-width: 13%;
   width: 100%;
   height: 7px;
   background: linear-gradient(81.55deg, #ffc83e 33.93%, #ff9f47 73.78%);
@@ -526,13 +530,13 @@ body {
 .money-request__list::after {
   content: "";
   position: absolute;
-  max-width: 1117px;
+  max-width: 87%;
   width: 100%;
   height: 7px;
   background-color: #fff;
   border-radius: 8px;
   top: 126px;
-  left: 163px;
+  left: 13%;
 }
 
 .money-request__item {
@@ -941,4 +945,35 @@ body {
   font-weight: 300;
 }
 /* ====ENDfaq==== */
+
+.recieve-money {
+  background-color: #fefefe;
+  padding: 61px 0 62px;
+}
+
+.recieve-money .center {
+  position: relative;
+}
+
+.recieve-money__title {
+  text-align: left;
+  margin: 0 0 26px 0;
+}
+.recieve-money__txt {
+  font-weight: 400;
+  color: #536473;
+  font-size: 27px;
+  line-height: 133.5%;
+}
+
+.recieve-money__txt2 {
+  margin: 0 0 26px 0;
+}
+
+.recieve-money__image {
+  position: absolute;
+  bottom: -62px;
+  right: 0;
+}
+
 /* ====ENDmain==== */
