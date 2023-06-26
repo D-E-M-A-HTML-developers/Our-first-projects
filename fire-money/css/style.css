@@ -18,16 +18,22 @@ ul {
 
 a {
 	text-decoration: none;
+	color: #fff;
+	font-family: "Rubik", sans-serif;
+	transition: .5s ease;
+}
+
+a:hover {
+	text-shadow: 3px 3px 2px #45511f;
 }
 
 body {
 	font-family: "Rubik", sans-serif;
 	font-weight: 300;
 	font-style: normal;
-	/*   color: #fff; */
+	color: #fff;
 	font-size: 16px;
 	line-height: 19px;
-	box-sizing: border-box;
 }
 
 .offers__title,
@@ -49,6 +55,7 @@ body {
 /* -----------top-wrp------------------- */
 
 .top-wrp {
+	background-color: #ffb548;
 	background-image: url(../img/top/background-top.png);
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -96,7 +103,6 @@ body {
 	font-weight: 500;
 	font-size: 18px;
 	line-height: 21px;
-	color: #ffffff;
 }
 
 .header-button {
@@ -108,6 +114,10 @@ body {
 	padding: 18px 25px 17px 33px;
 	background-color: #ff7b00;
 	border-radius: 8px;
+}
+
+.header-button:hover {
+	box-shadow: 1px 1px 10px #45511f;
 }
 
 /* ====ENDheader==== */
@@ -130,6 +140,10 @@ body {
 	margin: 0 0 20px 0;
 }
 
+.promo-info__link:hover {
+	text-shadow: 3px 3px 2px #c6d097;
+}
+
 .promo-info__link-txt {
 	font-weight: 500;
 	font-size: 22px;
@@ -139,10 +153,18 @@ body {
 	position: relative;
 }
 
-.promo-info__link-txt svg {
+.promo-info__link-txt::before {
+	content: "";
+	background-image: url("../img/top/fire-1.svg");
+	width: 56px;
+	height: 56px;
 	position: absolute;
 	left: -67px;
 	top: -25px;
+	animation-name: a;
+	animation-duration: 1.5s;
+	animation-timing-function: ease;
+	animation-iteration-count: infinite;
 }
 
 .promo-info__title {
@@ -153,7 +175,6 @@ body {
 	font-size: 48px;
 	line-height: 54px;
 	text-transform: uppercase;
-	color: #ffffff;
 }
 
 .promo-info__txt {
@@ -162,17 +183,14 @@ body {
 	font-weight: 400;
 	font-size: 27px;
 	line-height: 36px;
-	color: #ffffff;
 	margin: 0 0 110px 0;
 }
 
 .promo-info__text {
 	max-width: 300px;
 	width: 100%;
-	font-weight: 300;
 	font-size: 14px;
 	line-height: 20px;
-	color: #ffffff;
 }
 
 .promo-image {
@@ -230,7 +248,6 @@ body {
 }
 
 .promo-form__info__item p {
-	font-weight: 300;
 	font-size: 14px;
 	line-height: 17px;
 	color: #45515f;
@@ -399,7 +416,6 @@ body {
 }
 
 .offers__txt {
-	font-style: normal;
 	font-weight: 700;
 	font-size: 28px;
 	line-height: 33px;
@@ -427,9 +443,8 @@ body {
 }
 
 .offers__txt-description {
-	font-weight: 300;
 	font-size: 15px;
-	line-height: 182%;
+	line-height: 27px;
 	color: #45515f;
 	position: relative;
 	margin: 0 0 0 22px;
@@ -462,9 +477,8 @@ body {
 }
 
 .offers__bottom-txt {
-	font-weight: 300;
 	font-size: 13px;
-	line-height: 145.5%;
+	line-height: 19px;
 	color: #45515f;
 	text-align: center;
 }
@@ -473,7 +487,6 @@ body {
 	position: absolute;
 	width: 94px;
 	height: 23px;
-
 	box-shadow: 0px 4px 44px rgba(84, 104, 123, 0.05);
 	backdrop-filter: blur(6px);
 	transform: rotate(-45deg);
@@ -484,7 +497,6 @@ body {
 	font-size: 14px;
 	line-height: 25px;
 	text-transform: uppercase;
-	color: #ffffff;
 	text-align: center;
 }
 
@@ -577,7 +589,6 @@ body {
 
 .orange-light-white {
 	background: #ffa147;
-	color: #fff;
 }
 
 .money-request__form-images {
@@ -587,7 +598,6 @@ body {
 }
 
 .money-request__txt-description p {
-	font-weight: 300;
 	font-size: 18px;
 	line-height: 24px;
 	text-align: center;
@@ -651,9 +661,7 @@ body {
 	max-width: 252px;
 	width: 100%;
 	min-height: 19px;
-	font-weight: 300;
 	font-size: 13px;
-	line-height: 19px;
 	color: #45515f;
 	text-align: center;
 	margin: 0 auto 44px;
@@ -741,9 +749,7 @@ body {
 }
 
 /* ====ENDreviews==== */
-
 /* ====clients==== */
-
 .clients {
 	background: url(../img/clients/background.png);
 	background-repeat: no-repeat;
@@ -775,13 +781,10 @@ body {
 	align-items: center;
 	gap: 24px;
 	padding: 26px 31px 25px;
-	box-sizing: border-box;
 }
 
 .clients__item h4 {
 	font-weight: 500;
-	font-size: 16px;
-	line-height: 19px;
 	color: #45515f;
 	margin: 0 0 6px 0;
 }
@@ -799,9 +802,6 @@ body {
 }
 
 .clients__info-wrp>p {
-	font-weight: 300;
-	font-size: 16px;
-	line-height: 19px;
 	color: #536473;
 	margin: 0 0 8px 0;
 }
@@ -811,9 +811,7 @@ body {
 }
 
 /* ====ENDclients==== */
-
 /* ===About-service===== */
-
 .about-service {
 	padding: 56px 0 72px;
 }
@@ -858,9 +856,6 @@ body {
 }
 
 .about-service__txt {
-	font-weight: 300;
-	font-size: 16px;
-	line-height: 19px;
 	color: #536473;
 }
 
@@ -942,8 +937,6 @@ body {
 .accordion-body {
 	padding: 0 127px 28px 33px;
 	color: #fff;
-	font-size: 16px;
-	font-weight: 300;
 }
 
 /* ====ENDfaq==== */
@@ -966,7 +959,7 @@ body {
 	font-weight: 400;
 	color: #536473;
 	font-size: 27px;
-	line-height: 133.5%;
+	line-height: 36px;
 }
 
 .recieve-money__txt2 {
@@ -980,19 +973,15 @@ body {
 }
 
 /* ======Creditors======ENDmain==== */
-
 /* ====Footer==== */
-
 .footer {
 	background-color: #ffb548;
 	background-image: url("../img/footer/background.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
-	color: #fff;
 }
 
 /* ====footer-top==== */
-
 .footer-top {
 	padding: 50px 0 38px;
 	display: flex;
@@ -1012,7 +1001,6 @@ body {
 	line-height: 26px;
 	letter-spacing: 0em;
 	text-align: left;
-	color: #fff;
 }
 
 .footer__wrp-contacts {
@@ -1024,12 +1012,10 @@ body {
 
 .footer__mail-link {
 	position: relative;
-	font-family: Rubik;
 	font-size: 13px;
 	font-weight: 400;
 	line-height: 15px;
 	letter-spacing: 0em;
-	color: white;
 	margin: 0 83px 0 0;
 }
 
@@ -1045,11 +1031,9 @@ body {
 
 .footer__tel-link {
 	position: relative;
-	font-family: Rubik;
 	font-size: 22px;
 	font-weight: 700;
 	line-height: 26px;
-	color: white;
 }
 
 .footer__tel-link span::before {
@@ -1069,25 +1053,19 @@ body {
 .footer__list {
 	display: flex;
 	justify-content: space-between;
-	/*   max-width: 471px; */
 	width: 100%;
-	color: #fff;
 	font-size: 18px;
-	font-family: Rubik;
 	font-weight: 500;
 	margin: 0 104px 0 0;
 }
 
 .footer__item-link {
-	color: #fff;
 	font-size: 18px;
-	font-family: Rubik;
 	font-weight: 500;
 }
 
 /* ====ENDfooter-top==== */
 /* ====Creditors==== */
-.creditors {}
 
 .creditors__title {
 	font-size: 18px;
@@ -1102,7 +1080,6 @@ body {
 
 .creditors__item {
 	font-size: 13px;
-	font-weight: 300;
 	line-height: 15.41px;
 }
 
@@ -1144,20 +1121,16 @@ body {
 	border: 1px solid #fff;
 	text-align: center;
 	padding: 32px 0;
-	box-sizing: border-box;
 }
 
 .footer__personal {
 	font-size: 18px;
-	font-weight: 300;
 	line-height: 21px;
 }
 
 .footer__personal-link {
 	font-size: 18px;
 	font-weight: 300;
-	font-family: Rubik;
-	color: #fff;
 	text-decoration: underline;
 	line-height: 21.33px;
 }
@@ -1187,7 +1160,6 @@ body {
 
 .agreements__txt {
 	font-size: 13px;
-	font-weight: 300;
 	line-height: 15.41px;
 }
 
@@ -1274,5 +1246,42 @@ body {
 }
 
 /* ====ENDfooter-bottom==== */
-
 /* ====ENDFooter==== */
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes a {
+	0% {
+		top: -25px;
+		transform: scale(.7)
+	}
+
+	25% {
+		top: -25px;
+		transform: scale(.8)
+	}
+
+	50% {
+		top: -25px;
+		transform: scale(.9) rotate(8deg)
+	}
+
+	75% {
+		top: -25px;
+		transform: scale(1)
+	}
+
+	to {
+		top: -25px;
+		transform: scale(.8)
+	}
+}
