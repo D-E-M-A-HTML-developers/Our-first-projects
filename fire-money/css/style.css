@@ -88,7 +88,7 @@ body {
 }
 
 .center {
-  max-width: 1280px;
+	max-width: calc(100% - 32px);
   width: 100%;
   margin: 0 auto;
 }
