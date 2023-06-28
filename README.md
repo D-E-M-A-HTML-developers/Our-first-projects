@@ -6,6 +6,6 @@ _Если есть предложения как лучше оформить REA
 
 ---
 
-Текущий проект [FireMoney]([https://github.com/Artiom30/fire-money.git](https://github.com/Artiom30/team-projects/tree/main/fire-money)https://github.com/Artiom30/team-projects/tree/main/fire-money)
+Текущий проект [FireMoney](https://github.com/Artiom30/team-projects/tree/main/fire-money)
 
 ![Сайт FireMoney](/fire-money/img/website/FireMoney.jpg)
