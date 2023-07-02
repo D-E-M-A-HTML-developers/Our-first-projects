@@ -752,11 +752,13 @@ body {
 .reviews__buttons-wrp {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 10px;
 }
 
 .btn2 {
   padding: 21px 31px;
+  height: 62px;
   text-align: center;
   border: 1px solid #c9d2dd;
   border-radius: 8px;
@@ -1461,6 +1463,37 @@ body {
     height: 8px;
   }
   /* ===End card-request=== */
+  /* ====reviws==== */
+  .reviews {
+    padding: 66px 0 54px;
+  }
+  .reviews__title {
+    margin: 0 0 39px 0;
+  }
+  .reviews__list {
+    margin: 0 0 39px 0;
+  }
+
+  .reviews__item {
+    width: 377px;
+    height: 486px;
+  }
+  .reviews__item:last-child {
+    display: none;
+  }
+
+  /* ====ENDreviews==== */
+  /* ====clients==== */
+  .clients__item {
+    max-width: 377px;
+  }
+
+  .clients__item:last-child {
+    display: none;
+  }
+
+  /* ====ENDclients==== */
+
   /* ====ENDmain==== */
 }
 
