@@ -1408,6 +1408,21 @@ body {
 	}
 
 	/* ===Endoffers=== */
+  /* ===money-request=== */
+
+  .money-request {
+      padding: 0 0 70px;
+}
+  .money-request__title {
+    margin: 0 0 33px 0;
+}
+  .txt-step3 {
+    max-width: 183px;
+}
+.money-request__list {
+    margin: 0 0 42px 0;
+}
+
 	/* ====ENDmain==== */
 }
 
