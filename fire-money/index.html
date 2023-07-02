@@ -1,882 +1,1170 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&ampdisplay=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
 
-<head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="preconnect" href="https://fonts.googleapis.com" />
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&ampdisplay=swap"
-		rel="stylesheet" />
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-		integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
-	<link rel="stylesheet" href="css/normalize.css" />
-	<link rel="stylesheet" href="css/style.css" />
+    <title>FireMoney</title>
+  </head>
 
-	<title>FireMoney</title>
-</head>
+  <body>
+    <div class="top-wrp">
+      <div class="center">
+        <header class="header">
+          <div class="header-logo">
+            <a class="header-logo__link" href="#">Fire<span>Money</span></a>
+          </div>
+          <nav class="header-nav">
+            <ul class="header-nav__list">
+              <li class="header-nav__item">
+                <a class="header-nav__link" href="#001">Почему&nbsp;мы?</a>
+              </li>
+              <li class="header-nav__item">
+                <a class="header-nav__link" href="#002">О&nbsp;сервисе</a>
+              </li>
+              <li class="header-nav__item">
+                <a class="header-nav__link" href="#003">Вопросы-ответы</a>
+              </li>
+            </ul>
+          </nav>
+          <a class="header-button" href="#"
+            >вход в&nbsp;<span>личный</span> кабинет</a
+          >
+        </header>
+        <section class="promo">
+          <div class="promo-info">
+            <a class="promo-info__link" href="#004">
+              <p class="promo-info__link-txt">Горячие предложения</p>
+            </a>
+            <h1 class="promo-info__title">
+              быстрых займов по&nbsp;всей России!
+            </h1>
+            <p class="promo-info__txt">
+              Без проверки кредитной истории. От&nbsp;1&nbsp;000&nbsp;₽
+              за&nbsp;15&nbsp;минут.
+            </p>
+            <p class="promo-info__text">
+              Внимание! Услуга обработки заявки платная и&nbsp;составляет
+              от&nbsp;98&nbsp;₽ до&nbsp;398&nbsp;₽ раз в&nbsp;неделю
+            </p>
+          </div>
+          <div class="promo-form">
+            <form class="promo-form-calc" action="#">
+              <p class="promo-form__txt">Сумма кредита</p>
 
-<body>
-	<div class="top-wrp">
-		<div class="center">
-			<header class="header">
-				<div class="header-logo">
-					<a class="header-logo__link" href="#">Fire<span>Money</span></a>
-				</div>
-				<nav class="header-nav">
-					<ul class="header-nav__list">
-						<li class="header-nav__item">
-							<a class="header-nav__link" href="#001">Почему&nbsp;мы?</a>
-						</li>
-						<li class="header-nav__item">
-							<a class="header-nav__link" href="#002">О&nbsp;сервисе</a>
-						</li>
-						<li class="header-nav__item">
-							<a class="header-nav__link" href="#003">Вопросы-ответы</a>
-						</li>
-					</ul>
-				</nav>
-				<a class="header-button" href="#">вход в&nbsp;<span>личный</span> кабинет</a>
-			</header>
-			<section class="promo">
-				<div class="promo-info">
-					<a class="promo-info__link" href="#004">
-						<p class="promo-info__link-txt">Горячие предложения</p>
-					</a>
-					<h1 class="promo-info__title">
-						быстрых займов по&nbsp;всей России!
-					</h1>
-					<p class="promo-info__txt">
-						Без проверки кредитной истории. От&nbsp;1&nbsp;000&nbsp;₽
-						за&nbsp;15&nbsp;минут.
-					</p>
-					<p class="promo-info__text">
-						Внимание! Услуга обработки заявки платная и&nbsp;составляет
-						от&nbsp;98&nbsp;₽ до&nbsp;398&nbsp;₽ раз в&nbsp;неделю
-					</p>
-				</div>
-				<div class="promo-form">
-					<form class="promo-form-calc" action="#">
-						<p class="promo-form__txt">Сумма кредита</p>
+              <label class="sum-credit__label" for="range1">65 000 ₽</label>
 
-						<label class="sum-credit__label" for="range1">65 000 ₽</label>
+              <div class="sum-credit__wrapper">
+                <input
+                  class="sum-credit"
+                  type="range"
+                  id="range1"
+                  min="1"
+                  max="100"
+                  step="1"
+                  name="credit"
+                  value="65"
+                />
+                <div class="sum-credit__progress"></div>
+              </div>
 
-						<div class="sum-credit__wrapper">
-							<input class="sum-credit" type="range" id="range1" min="1" max="100" step="1" name="credit" value="65" />
-							<div class="sum-credit__progress"></div>
-						</div>
+              <div class="sum-credit__limit">
+                <span class="sum-credit__limit-txt">1 000 ₽</span
+                ><span class="sum-credit__limit-txt">100 000 ₽</span>
+              </div>
+              <p class="promo-form__txt promo-form__txt2">Срок кредита</p>
 
-						<div class="sum-credit__limit">
-							<span class="sum-credit__limit-txt">1 000 ₽</span><span class="sum-credit__limit-txt">100 000 ₽</span>
-						</div>
-						<p class="promo-form__txt promo-form__txt2">Срок кредита</p>
+              <label class="term-credit__label" for="range2">8 дней</label>
 
-						<label class="term-credit__label" for="range2">8 дней</label>
+              <div class="sum-credit__wrapper">
+                <input
+                  class="term-credit"
+                  type="range"
+                  id="range2"
+                  min="3"
+                  max="30"
+                  step="1"
+                  name="term"
+                  value="8"
+                />
+                <div class="term-credit__progress"></div>
+              </div>
 
-						<div class="sum-credit__wrapper">
-							<input class="term-credit" type="range" id="range2" min="3" max="30" step="1" name="term" value="8" />
-							<div class="term-credit__progress"></div>
-						</div>
+              <div class="term-credit__limit">
+                <span class="term-credit__limit-txt">3</span
+                ><span class="term-credit__limit-txt">30</span>
+              </div>
 
-						<div class="term-credit__limit">
-							<span class="term-credit__limit-txt">3</span><span class="term-credit__limit-txt">30</span>
-						</div>
+              <button type="submit" class="btn">Оформить заявку</button>
+              <div class="promo-image"></div>
+            </form>
+            <ul class="promo-form__info__list">
+              <li class="promo-form__info__item">
+                <p>Вы берете</p>
+                <span class="sum-credit-take">65 000 &#8381;</span>
+              </li>
+              <li class="promo-form__info__item">
+                <p>К возврату</p>
+                <span>25 650 &#8381;</span>
+              </li>
+              <li class="promo-form__info__item">
+                <p>Дата возврата</p>
+                <!-- <span><span class="date-return">08</span> января 2022</span> -->
+                <span class="date-return"></span>
+              </li>
+              <li class="promo-form__info__item">
+                <p>Ежемесячный платеж</p>
+                <span>5 650 &#8381;</span>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </div>
+    <main class="main">
+      <section class="offers" id="004">
+        <div class="center">
+          <div class="offers-border">
+            <h2 class="offers__title">Лучшие предложения</h2>
+            <ul class="offers__list">
+              <li class="offers__item">
+                <div class="offers__txt-wrp">
+                  <h5 class="offers__txt offers__txt_color-yellow">
+                    <span>15&nbsp;000&nbsp;&#8381;</span>
+                    на&nbsp;<span>7</span>&nbsp;дней
+                  </h5>
+                  <p class="offers__txt-description calendar">
+                    Дата возврата: <span>12&nbsp;января 2022</span>
+                  </p>
+                  <p class="offers__txt-description rub">
+                    К&nbsp;возврату: <span>45&nbsp;500&nbsp;₽</span>
+                  </p>
+                </div>
+                <div class="offers__discount-flag yellow">lite</div>
+              </li>
+              <li class="offers__item">
+                <div class="offers__txt-wrp">
+                  <h5 class="offers__txt offers__txt_color-orange">
+                    <span>25&nbsp;000&nbsp;&#8381;</span>
+                    на&nbsp;<span>1</span>&nbsp;месяц
+                  </h5>
+                  <p class="offers__txt-description calendar">
+                    Дата возврата: <span>12&nbsp;января 2022</span>
+                  </p>
+                  <p class="offers__txt-description rub">
+                    К&nbsp;возврату: <span>45&nbsp;500&nbsp;₽</span>
+                  </p>
+                </div>
+                <div class="offers__discount-flag orange">basic</div>
+              </li>
+              <li class="offers__item">
+                <div class="offers__txt-wrp">
+                  <h5 class="offers__txt offers__txt_color-dark-orange">
+                    <span>45&nbsp;000&nbsp;&#8381;</span>
+                    на&nbsp;<span>1</span>&nbsp;год
+                  </h5>
+                  <p class="offers__txt-description calendar">
+                    Дата возврата: <span>12&nbsp;января 2022</span>
+                  </p>
+                  <p class="offers__txt-description rub">
+                    К&nbsp;возврату: <span>45&nbsp;500&nbsp;₽</span>
+                  </p>
+                </div>
+                <div class="offers__discount-flag dark-orange">pro</div>
+              </li>
+            </ul>
+            <p class="offers__bottom-txt">
+              * Расчёт не&nbsp;является публичное офертой и&nbsp;может
+              отличаться от&nbsp;реальной ставки кредитора
+            </p>
+          </div>
+        </div>
+      </section>
 
-						<button type="submit" class="btn">Оформить заявку</button>
-						<div class="promo-image"></div>
-					</form>
-					<ul class="promo-form__info__list">
-						<li class="promo-form__info__item">
-							<p>Вы берете</p>
-							<span class="sum-credit-take">65 000 &#8381;</span>
-						</li>
-						<li class="promo-form__info__item">
-							<p>К возврату</p>
-							<span>25 650 &#8381;</span>
-						</li>
-						<li class="promo-form__info__item">
-							<p>Дата возврата</p>
-							<!-- <span><span class="date-return">08</span> января 2022</span> -->
-							<span class="date-return"></span>
-						</li>
-						<li class="promo-form__info__item">
-							<p>Ежемесячный платеж</p>
-							<span>5 650 &#8381;</span>
-						</li>
-					</ul>
-				</div>
-			</section>
-		</div>
-	</div>
-	<main class="main">
-		<section class="offers" id="004">
-			<div class="center">
-				<div class="offers-border">
-					<h2 class="offers__title">Лучшие предложения</h2>
-					<ul class="offers__list">
-						<li class="offers__item">
-							<div class="offers__txt-wrp">
-								<h5 class="offers__txt offers__txt_color-yellow">
-									<span>15&nbsp;000&nbsp;&#8381;</span>
-									на&nbsp;<span>7</span>&nbsp;дней
-								</h5>
-								<p class="offers__txt-description calendar">
-									Дата возврата: <span>12&nbsp;января 2022</span>
-								</p>
-								<p class="offers__txt-description rub">
-									К&nbsp;возврату: <span>45&nbsp;500&nbsp;₽</span>
-								</p>
-							</div>
-							<div class="offers__discount-flag yellow">lite</div>
-						</li>
-						<li class="offers__item">
-							<div class="offers__txt-wrp">
-								<h5 class="offers__txt offers__txt_color-orange">
-									<span>25&nbsp;000&nbsp;&#8381;</span>
-									на&nbsp;<span>1</span>&nbsp;месяц
-								</h5>
-								<p class="offers__txt-description calendar">
-									Дата возврата: <span>12&nbsp;января 2022</span>
-								</p>
-								<p class="offers__txt-description rub">
-									К&nbsp;возврату: <span>45&nbsp;500&nbsp;₽</span>
-								</p>
-							</div>
-							<div class="offers__discount-flag orange">basic</div>
-						</li>
-						<li class="offers__item">
-							<div class="offers__txt-wrp">
-								<h5 class="offers__txt offers__txt_color-dark-orange">
-									<span>45&nbsp;000&nbsp;&#8381;</span>
-									на&nbsp;<span>1</span>&nbsp;год
-								</h5>
-								<p class="offers__txt-description calendar">
-									Дата возврата: <span>12&nbsp;января 2022</span>
-								</p>
-								<p class="offers__txt-description rub">
-									К&nbsp;возврату: <span>45&nbsp;500&nbsp;₽</span>
-								</p>
-							</div>
-							<div class="offers__discount-flag dark-orange">pro</div>
-						</li>
-					</ul>
-					<p class="offers__bottom-txt">
-						* Расчёт не&nbsp;является публичное офертой и&nbsp;может
-						отличаться от&nbsp;реальной ставки кредитора
-					</p>
-				</div>
-			</div>
-		</section>
+      <section class="money-request">
+        <div class="center">
+          <h2 class="money-request__title">Как получить деньги</h2>
+          <ul class="money-request__list">
+            <li class="money-request__item">
+              <div class="money-request__wrp-images">
+                <img src="img/money-request/1.svg" alt="step-1" />
+              </div>
+              <div class="money-request__wrp-step-number orange-light-white">
+                1
+              </div>
+              <div class="money-request__txt-description">
+                <p class="txt-step1">Выберите сумму займа</p>
+              </div>
+            </li>
+            <li class="money-request__item">
+              <div class="money-request__wrp-images">
+                <img src="img/money-request/2.svg" alt="step-2" />
+              </div>
+              <div class="money-request__wrp-step-number">2</div>
+              <div class="money-request__txt-description">
+                <p class="txt-step2">Заполните анкету</p>
+              </div>
+            </li>
+            <li class="money-request__item">
+              <div class="money-request__wrp-images">
+                <img src="img/money-request/3.svg" alt="step-3" />
+              </div>
+              <div class="money-request__wrp-step-number">3</div>
+              <div class="money-request__txt-description">
+                <p class="txt-step3">Дождитесь рассмотрения заявки</p>
+              </div>
+            </li>
+            <li class="money-request__item">
+              <div class="money-request__wrp-images">
+                <img src="img/money-request/4.svg" alt="step-4" />
+              </div>
+              <div class="money-request__wrp-step-number">4</div>
+              <div class="money-request__txt-description">
+                <p class="txt-step4">Получите деньги любым удобным способом</p>
+              </div>
+            </li>
+          </ul>
+          <div class="wrp-btn">
+            <button class="btn">Оформить заявку</button>
+          </div>
+        </div>
+      </section>
 
-		<section class="money-request">
-			<div class="center">
-				<h2 class="money-request__title">Как получить деньги</h2>
-				<ul class="money-request__list">
-					<li class="money-request__item">
-						<div class="money-request__wrp-images">
-							<img src="img/money-request/1.svg" alt="step-1" />
-						</div>
-						<div class="money-request__wrp-step-number orange-light-white">
-							1
-						</div>
-						<div class="money-request__txt-description">
-							<p class="txt-step1">Выберите сумму займа</p>
-						</div>
-					</li>
-					<li class="money-request__item">
-						<div class="money-request__wrp-images">
-							<img src="img/money-request/2.svg" alt="step-2" />
-						</div>
-						<div class="money-request__wrp-step-number">2</div>
-						<div class="money-request__txt-description">
-							<p class="txt-step2">Заполните анкету</p>
-						</div>
-					</li>
-					<li class="money-request__item">
-						<div class="money-request__wrp-images">
-							<img src="img/money-request/3.svg" alt="step-3" />
-						</div>
-						<div class="money-request__wrp-step-number">3</div>
-						<div class="money-request__txt-description">
-							<p class="txt-step3">Дождитесь рассмотрения заявки</p>
-						</div>
-					</li>
-					<li class="money-request__item">
-						<div class="money-request__wrp-images">
-							<img src="img/money-request/4.svg" alt="step-4" />
-						</div>
-						<div class="money-request__wrp-step-number">4</div>
-						<div class="money-request__txt-description">
-							<p class="txt-step4">Получите деньги любым удобным способом</p>
-						</div>
-					</li>
-				</ul>
-				<div class="wrp-btn">
-					<button class="btn">Оформить заявку</button>
-				</div>
-			</div>
-		</section>
+      <section class="card-request">
+        <div class="center">
+          <h2 class="card-request__title">Способы получения</h2>
+          <p class="card-request__txt">
+            На&nbsp;карту QIWI Yandex Деньги Наличные
+          </p>
+          <ul class="card-request__list">
+            <li class="card-request__item">
+              <a
+                class="card-request__item-link"
+                href="#"
+                title="Яндекс кошелек"
+              >
+                <div class="card-request__item-img-wrap">
+                  <img
+                    class="img-img image-yandex"
+                    src="img/card-request/image-1.png"
+                    alt="яндекс кошелёк"
+                    width="100"
+                    height="54"
+                  />
+                  <svg
+                    width="18"
+                    height="10"
+                    viewBox="0 0 18 10"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0.81483 5.82806L14.4847 5.82806L11.9237 8.56275C11.1881 9.34825 12.2915 10.5264 13.0271 9.74095L16.9165 5.58136C17.2183 5.25722 17.2183 4.73372 16.9165 4.40958L13.0271 0.251617C12.8792 0.0892485 12.6755 -0.00185569 12.4633 2.86615e-05C11.7627 0.000122879 11.419 0.911213 11.9237 1.42991L14.4908 4.16461L0.774553 4.16461C-0.304313 4.22177 -0.223759 5.88541 0.81483 5.82806Z"
+                      fill="#AFAFAF"
+                    />
+                  </svg>
+                </div>
+              </a>
+            </li>
+            <li class="card-request__item">
+              <a class="card-request__item-link" href="#" title="Киви кошелек">
+                <div class="card-request__item-img-wrap">
+                  <img
+                    class="img-img image-qiwi"
+                    src="img/card-request/image-2.png"
+                    alt="Киви оплата"
+                    width="100"
+                    height="54"
+                  />
+                  <svg
+                    width="18"
+                    height="10"
+                    viewBox="0 0 18 10"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0.81483 5.82806L14.4847 5.82806L11.9237 8.56275C11.1881 9.34825 12.2915 10.5264 13.0271 9.74095L16.9165 5.58136C17.2183 5.25722 17.2183 4.73372 16.9165 4.40958L13.0271 0.251617C12.8792 0.0892485 12.6755 -0.00185569 12.4633 2.86615e-05C11.7627 0.000122879 11.419 0.911213 11.9237 1.42991L14.4908 4.16461L0.774553 4.16461C-0.304313 4.22177 -0.223759 5.88541 0.81483 5.82806Z"
+                      fill="#AFAFAF"
+                    />
+                  </svg>
+                </div>
+              </a>
+            </li>
+            <li class="card-request__item">
+              <a class="card-request__item-link" href="#" title="Виза">
+                <div class="card-request__item-img-wrap">
+                  <img
+                    class="image-visa"
+                    src="img/card-request/image-3.png"
+                    alt="Оплата картой Виза"
+                    width="100"
+                    height="54"
+                  />
+                  <svg
+                    width="18"
+                    height="10"
+                    viewBox="0 0 18 10"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0.81483 5.82806L14.4847 5.82806L11.9237 8.56275C11.1881 9.34825 12.2915 10.5264 13.0271 9.74095L16.9165 5.58136C17.2183 5.25722 17.2183 4.73372 16.9165 4.40958L13.0271 0.251617C12.8792 0.0892485 12.6755 -0.00185569 12.4633 2.86615e-05C11.7627 0.000122879 11.419 0.911213 11.9237 1.42991L14.4908 4.16461L0.774553 4.16461C-0.304313 4.22177 -0.223759 5.88541 0.81483 5.82806Z"
+                      fill="#AFAFAF"
+                    />
+                  </svg>
+                </div>
+              </a>
+            </li>
+            <li class="card-request__item">
+              <a class="card-request__item-link" href="#" title="Мастеркарт">
+                <div class="card-request__item-img-wrap">
+                  <img
+                    class="image-master"
+                    src="img/card-request/image-4.png"
+                    alt="Оплата картой Мастер-карт"
+                    width="100"
+                    height="54"
+                  />
+                  <svg
+                    width="18"
+                    height="10"
+                    viewBox="0 0 18 10"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0.81483 5.82806L14.4847 5.82806L11.9237 8.56275C11.1881 9.34825 12.2915 10.5264 13.0271 9.74095L16.9165 5.58136C17.2183 5.25722 17.2183 4.73372 16.9165 4.40958L13.0271 0.251617C12.8792 0.0892485 12.6755 -0.00185569 12.4633 2.86615e-05C11.7627 0.000122879 11.419 0.911213 11.9237 1.42991L14.4908 4.16461L0.774553 4.16461C-0.304313 4.22177 -0.223759 5.88541 0.81483 5.82806Z"
+                      fill="#AFAFAF"
+                    />
+                  </svg>
+                </div>
+              </a>
+            </li>
+            <li class="card-request__item">
+              <a class="card-request__item-link" href="#" title="Наличные">
+                <div class="card-request__item-img-wrap">
+                  <img
+                    class="image-cash"
+                    src="img/card-request/image-5.png"
+                    alt="Оплата наличными"
+                    width="55"
+                    height="39"
+                  />
+                  <svg
+                    width="18"
+                    height="10"
+                    viewBox="0 0 18 10"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0.81483 5.82806L14.4847 5.82806L11.9237 8.56275C11.1881 9.34825 12.2915 10.5264 13.0271 9.74095L16.9165 5.58136C17.2183 5.25722 17.2183 4.73372 16.9165 4.40958L13.0271 0.251617C12.8792 0.0892485 12.6755 -0.00185569 12.4633 2.86615e-05C11.7627 0.000122879 11.419 0.911213 11.9237 1.42991L14.4908 4.16461L0.774553 4.16461C-0.304313 4.22177 -0.223759 5.88541 0.81483 5.82806Z"
+                      fill="#AFAFAF"
+                    />
+                  </svg>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <div class="wrp-btn">
+            <button class="btn">Оформить заявку</button>
+          </div>
+        </div>
+      </section>
 
-		<section class="card-request">
-			<div class="center">
-				<h2 class="card-request__title">Способы получения</h2>
-				<p class="card-request__txt">
-					На&nbsp;карту QIWI Yandex Деньги Наличные
-				</p>
-				<ul class="card-request__list">
-					<li class="card-request__item">
-						<a class="card-request__item-link" href="#" title="Яндекс кошелек">
-							<div class="card-request__item-img-wrap">
-								<img src="img/card-request/image-1.png" alt="яндекс кошелёк" width="100" height="54" />
-								<svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path
-										d="M0.81483 5.82806L14.4847 5.82806L11.9237 8.56275C11.1881 9.34825 12.2915 10.5264 13.0271 9.74095L16.9165 5.58136C17.2183 5.25722 17.2183 4.73372 16.9165 4.40958L13.0271 0.251617C12.8792 0.0892485 12.6755 -0.00185569 12.4633 2.86615e-05C11.7627 0.000122879 11.419 0.911213 11.9237 1.42991L14.4908 4.16461L0.774553 4.16461C-0.304313 4.22177 -0.223759 5.88541 0.81483 5.82806Z"
-										fill="#AFAFAF" />
-								</svg>
-							</div>
-						</a>
-					</li>
-					<li class="card-request__item">
-						<a class="card-request__item-link" href="#" title="Киви кошелек">
-							<div class="card-request__item-img-wrap">
-								<img src="img/card-request/image-2.png" alt="Киви оплата" width="100" height="54" />
-								<svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path
-										d="M0.81483 5.82806L14.4847 5.82806L11.9237 8.56275C11.1881 9.34825 12.2915 10.5264 13.0271 9.74095L16.9165 5.58136C17.2183 5.25722 17.2183 4.73372 16.9165 4.40958L13.0271 0.251617C12.8792 0.0892485 12.6755 -0.00185569 12.4633 2.86615e-05C11.7627 0.000122879 11.419 0.911213 11.9237 1.42991L14.4908 4.16461L0.774553 4.16461C-0.304313 4.22177 -0.223759 5.88541 0.81483 5.82806Z"
-										fill="#AFAFAF" />
-								</svg>
-							</div>
-						</a>
-					</li>
-					<li class="card-request__item">
-						<a class="card-request__item-link" href="#" title="Виза">
-							<div class="card-request__item-img-wrap">
-								<img src="img/card-request/image-3.png" alt="Оплата картой Виза" width="100" height="54" />
-								<svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path
-										d="M0.81483 5.82806L14.4847 5.82806L11.9237 8.56275C11.1881 9.34825 12.2915 10.5264 13.0271 9.74095L16.9165 5.58136C17.2183 5.25722 17.2183 4.73372 16.9165 4.40958L13.0271 0.251617C12.8792 0.0892485 12.6755 -0.00185569 12.4633 2.86615e-05C11.7627 0.000122879 11.419 0.911213 11.9237 1.42991L14.4908 4.16461L0.774553 4.16461C-0.304313 4.22177 -0.223759 5.88541 0.81483 5.82806Z"
-										fill="#AFAFAF" />
-								</svg>
-							</div>
-						</a>
-					</li>
-					<li class="card-request__item">
-						<a class="card-request__item-link" href="#" title="Мастеркарт">
-							<div class="card-request__item-img-wrap">
-								<img src="img/card-request/image-4.png" alt="Оплата картой Мастер-карт" width="100" height="54" />
-								<svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path
-										d="M0.81483 5.82806L14.4847 5.82806L11.9237 8.56275C11.1881 9.34825 12.2915 10.5264 13.0271 9.74095L16.9165 5.58136C17.2183 5.25722 17.2183 4.73372 16.9165 4.40958L13.0271 0.251617C12.8792 0.0892485 12.6755 -0.00185569 12.4633 2.86615e-05C11.7627 0.000122879 11.419 0.911213 11.9237 1.42991L14.4908 4.16461L0.774553 4.16461C-0.304313 4.22177 -0.223759 5.88541 0.81483 5.82806Z"
-										fill="#AFAFAF" />
-								</svg>
-							</div>
-						</a>
-					</li>
-					<li class="card-request__item">
-						<a class="card-request__item-link" href="#" title="Наличные">
-							<div class="card-request__item-img-wrap">
-								<img src="img/card-request/image-5.png" alt="Оплата наличными" width="55" height="39" />
-								<svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path
-										d="M0.81483 5.82806L14.4847 5.82806L11.9237 8.56275C11.1881 9.34825 12.2915 10.5264 13.0271 9.74095L16.9165 5.58136C17.2183 5.25722 17.2183 4.73372 16.9165 4.40958L13.0271 0.251617C12.8792 0.0892485 12.6755 -0.00185569 12.4633 2.86615e-05C11.7627 0.000122879 11.419 0.911213 11.9237 1.42991L14.4908 4.16461L0.774553 4.16461C-0.304313 4.22177 -0.223759 5.88541 0.81483 5.82806Z"
-										fill="#AFAFAF" />
-								</svg>
-							</div>
-						</a>
-					</li>
-				</ul>
-				<div class="wrp-btn">
-					<button class="btn">Оформить заявку</button>
-				</div>
-			</div>
-		</section>
+      <section class="reviews" id="001">
+        <div class="center">
+          <h2 class="reviews__title">Почему выбирают нас</h2>
+          <ul class="reviews__list">
+            <li class="reviews__item">
+              <div class="reviews__item-img">
+                <img
+                  src="img/reviews/reviews-image-1.png"
+                  alt="Клиент сервиса"
+                  class="reviews__client-img"
+                />
+              </div>
+              <h4 class="reviews__item-title">
+                Екатерина Романова, 26&nbsp;лет
+              </h4>
+              <div class="client-geolocation-wrp">
+                <svg
+                  class="client-svg-location"
+                  width="12"
+                  height="16"
+                  viewBox="0 0 12 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6 0C2.69169 0 0 2.73375 0 6.09375C0 7.42344 0.413538 8.68688 1.19692 9.74688L5.63015 15.811C5.64123 15.8257 5.65815 15.8313 5.67046 15.8444C5.892 16.0853 6.21169 16.0247 6.36954 15.811C7.64615 14.081 9.98615 10.85 10.8858 9.63125L10.8865 9.62969L10.892 9.62219C11.6169 8.58781 12 7.36781 12 6.09375C12 2.73375 9.30831 0 6 0ZM6 9.38125C4.21877 9.38125 2.76308 7.90281 2.76308 6.09375C2.76308 4.28469 4.21877 2.80625 6 2.80625C7.78123 2.80625 9.23692 4.28469 9.23692 6.09375C9.23692 7.90281 7.78123 9.38125 6 9.38125Z"
+                    fill="#FFA048"
+                  />
+                </svg>
+                <p class="item-txt">г. Москва</p>
+              </div>
 
-		<section class="reviews" id="001">
-			<div class="center">
-				<h2 class="reviews__title">Почему выбирают нас</h2>
-				<ul class="reviews__list">
-					<li class="reviews__item">
-						<div class="reviews__item-img">
-							<img src="img/reviews/reviews-image-1.png" alt="Клиент сервиса" class="reviews__client-img" />
-						</div>
-						<h4 class="reviews__item-title">
-							Екатерина Романова, 26&nbsp;лет
-						</h4>
-						<div class="client-geolocation-wrp">
-							<svg class="client-svg-location" width="12" height="16" viewBox="0 0 12 16" fill="none"
-								xmlns="http://www.w3.org/2000/svg">
-								<path
-									d="M6 0C2.69169 0 0 2.73375 0 6.09375C0 7.42344 0.413538 8.68688 1.19692 9.74688L5.63015 15.811C5.64123 15.8257 5.65815 15.8313 5.67046 15.8444C5.892 16.0853 6.21169 16.0247 6.36954 15.811C7.64615 14.081 9.98615 10.85 10.8858 9.63125L10.8865 9.62969L10.892 9.62219C11.6169 8.58781 12 7.36781 12 6.09375C12 2.73375 9.30831 0 6 0ZM6 9.38125C4.21877 9.38125 2.76308 7.90281 2.76308 6.09375C2.76308 4.28469 4.21877 2.80625 6 2.80625C7.78123 2.80625 9.23692 4.28469 9.23692 6.09375C9.23692 7.90281 7.78123 9.38125 6 9.38125Z"
-									fill="#FFA048" />
-							</svg>
-							<p class="item-txt">г. Москва</p>
-						</div>
+              <p class="reviews__item-txt2">
+                Для того, чтобы воспользоваться услугой, вам необходимо лишь
+                заполнить анкету на&nbsp;сайте, все остальное сервис сделает
+                за&nbsp;вас, сэкономив вам большое количество времени
+                и&nbsp;сил. Наш сервис работает со&nbsp;всеми клиентами, нам
+                не&nbsp;важно, какая у&nbsp;вас кредитная история
+                и&nbsp;имеются&nbsp;ли текущие просрочки.
+              </p>
+              <div class="reviews__item-rating">
+                <img
+                  src="img/reviews/rating-all-stars.svg"
+                  alt="Рейтинг пользователя"
+                />
+              </div>
+            </li>
+            <li class="reviews__item">
+              <div class="reviews__item-img">
+                <img
+                  src="img/reviews/reviews-image-2.png"
+                  alt="Клиент сервиса"
+                  class="reviews__client-img"
+                />
+              </div>
+              <h4 class="reviews__item-title">
+                Екатерина Романова, 33&nbsp;года
+              </h4>
+              <div class="client-geolocation-wrp">
+                <svg
+                  class="client-svg-location"
+                  width="12"
+                  height="16"
+                  viewBox="0 0 12 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6 0C2.69169 0 0 2.73375 0 6.09375C0 7.42344 0.413538 8.68688 1.19692 9.74688L5.63015 15.811C5.64123 15.8257 5.65815 15.8313 5.67046 15.8444C5.892 16.0853 6.21169 16.0247 6.36954 15.811C7.64615 14.081 9.98615 10.85 10.8858 9.63125L10.8865 9.62969L10.892 9.62219C11.6169 8.58781 12 7.36781 12 6.09375C12 2.73375 9.30831 0 6 0ZM6 9.38125C4.21877 9.38125 2.76308 7.90281 2.76308 6.09375C2.76308 4.28469 4.21877 2.80625 6 2.80625C7.78123 2.80625 9.23692 4.28469 9.23692 6.09375C9.23692 7.90281 7.78123 9.38125 6 9.38125Z"
+                    fill="#FFA048"
+                  />
+                </svg>
+                <p class="item-txt">г. Москва</p>
+              </div>
+              <p class="reviews__item-txt2">
+                Для того, чтобы воспользоваться услугой, вам необходимо лишь
+                заполнить анкету на&nbsp;сайте, все остальное сервис сделает
+                за&nbsp;вас, сэкономив вам большое количество времени
+                и&nbsp;сил. Наш сервис работает со&nbsp;всеми клиентами, нам
+                не&nbsp;важно, какая у&nbsp;вас кредитная история
+                и&nbsp;имеются&nbsp;ли текущие просрочки.
+              </p>
+              <div class="reviews__item-rating">
+                <img
+                  src="img/reviews/rating-all-stars.svg"
+                  alt="Рейтинг пользователя"
+                />
+              </div>
+            </li>
+            <li class="reviews__item">
+              <div class="reviews__item-img">
+                <img
+                  src="img/reviews/reviews-image-3.png"
+                  alt="Клиент сервиса"
+                  class="reviews__client-img"
+                />
+              </div>
+              <h4 class="reviews__item-title">
+                Екатерина Романова, 33&nbsp;года
+              </h4>
+              <div class="client-geolocation-wrp">
+                <svg
+                  class="client-svg-location"
+                  width="12"
+                  height="16"
+                  viewBox="0 0 12 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6 0C2.69169 0 0 2.73375 0 6.09375C0 7.42344 0.413538 8.68688 1.19692 9.74688L5.63015 15.811C5.64123 15.8257 5.65815 15.8313 5.67046 15.8444C5.892 16.0853 6.21169 16.0247 6.36954 15.811C7.64615 14.081 9.98615 10.85 10.8858 9.63125L10.8865 9.62969L10.892 9.62219C11.6169 8.58781 12 7.36781 12 6.09375C12 2.73375 9.30831 0 6 0ZM6 9.38125C4.21877 9.38125 2.76308 7.90281 2.76308 6.09375C2.76308 4.28469 4.21877 2.80625 6 2.80625C7.78123 2.80625 9.23692 4.28469 9.23692 6.09375C9.23692 7.90281 7.78123 9.38125 6 9.38125Z"
+                    fill="#FFA048"
+                  />
+                </svg>
+                <p class="item-txt">г. Москва</p>
+              </div>
+              <p class="reviews__item-txt2">
+                Для того, чтобы воспользоваться услугой, вам необходимо лишь
+                заполнить анкету на&nbsp;сайте, все остальное сервис сделает
+                за&nbsp;вас, сэкономив вам большое количество времени
+                и&nbsp;сил. Наш сервис работает со&nbsp;всеми клиентами, нам
+                не&nbsp;важно, какая у&nbsp;вас кредитная история
+                и&nbsp;имеются&nbsp;ли текущие просрочки.
+              </p>
+              <div class="reviews__item-rating">
+                <img
+                  src="img/reviews/rating-all-stars.svg"
+                  alt="Рейтинг пользователя"
+                />
+              </div>
+            </li>
+          </ul>
+          <div class="reviews__buttons-wrp">
+            <button class="btn">Оформить заявку</button>
+            <button class="btn2">Все отзывы</button>
+          </div>
+        </div>
+      </section>
 
-						<p class="reviews__item-txt2">
-							Для того, чтобы воспользоваться услугой, вам необходимо лишь
-							заполнить анкету на&nbsp;сайте, все остальное сервис сделает
-							за&nbsp;вас, сэкономив вам большое количество времени
-							и&nbsp;сил. Наш сервис работает со&nbsp;всеми клиентами, нам
-							не&nbsp;важно, какая у&nbsp;вас кредитная история
-							и&nbsp;имеются&nbsp;ли текущие просрочки.
-						</p>
-						<div class="reviews__item-rating">
-							<img src="img/reviews/rating-all-stars.svg" alt="Рейтинг пользователя" />
-						</div>
-					</li>
-					<li class="reviews__item">
-						<div class="reviews__item-img">
-							<img src="img/reviews/reviews-image-2.png" alt="Клиент сервиса" class="reviews__client-img" />
-						</div>
-						<h4 class="reviews__item-title">
-							Екатерина Романова, 33&nbsp;года
-						</h4>
-						<div class="client-geolocation-wrp">
-							<svg class="client-svg-location" width="12" height="16" viewBox="0 0 12 16" fill="none"
-								xmlns="http://www.w3.org/2000/svg">
-								<path
-									d="M6 0C2.69169 0 0 2.73375 0 6.09375C0 7.42344 0.413538 8.68688 1.19692 9.74688L5.63015 15.811C5.64123 15.8257 5.65815 15.8313 5.67046 15.8444C5.892 16.0853 6.21169 16.0247 6.36954 15.811C7.64615 14.081 9.98615 10.85 10.8858 9.63125L10.8865 9.62969L10.892 9.62219C11.6169 8.58781 12 7.36781 12 6.09375C12 2.73375 9.30831 0 6 0ZM6 9.38125C4.21877 9.38125 2.76308 7.90281 2.76308 6.09375C2.76308 4.28469 4.21877 2.80625 6 2.80625C7.78123 2.80625 9.23692 4.28469 9.23692 6.09375C9.23692 7.90281 7.78123 9.38125 6 9.38125Z"
-									fill="#FFA048" />
-							</svg>
-							<p class="item-txt">г. Москва</p>
-						</div>
-						<p class="reviews__item-txt2">
-							Для того, чтобы воспользоваться услугой, вам необходимо лишь
-							заполнить анкету на&nbsp;сайте, все остальное сервис сделает
-							за&nbsp;вас, сэкономив вам большое количество времени
-							и&nbsp;сил. Наш сервис работает со&nbsp;всеми клиентами, нам
-							не&nbsp;важно, какая у&nbsp;вас кредитная история
-							и&nbsp;имеются&nbsp;ли текущие просрочки.
-						</p>
-						<div class="reviews__item-rating">
-							<img src="img/reviews/rating-all-stars.svg" alt="Рейтинг пользователя" />
-						</div>
-					</li>
-					<li class="reviews__item">
-						<div class="reviews__item-img">
-							<img src="img/reviews/reviews-image-3.png" alt="Клиент сервиса" class="reviews__client-img" />
-						</div>
-						<h4 class="reviews__item-title">
-							Екатерина Романова, 33&nbsp;года
-						</h4>
-						<div class="client-geolocation-wrp">
-							<svg class="client-svg-location" width="12" height="16" viewBox="0 0 12 16" fill="none"
-								xmlns="http://www.w3.org/2000/svg">
-								<path
-									d="M6 0C2.69169 0 0 2.73375 0 6.09375C0 7.42344 0.413538 8.68688 1.19692 9.74688L5.63015 15.811C5.64123 15.8257 5.65815 15.8313 5.67046 15.8444C5.892 16.0853 6.21169 16.0247 6.36954 15.811C7.64615 14.081 9.98615 10.85 10.8858 9.63125L10.8865 9.62969L10.892 9.62219C11.6169 8.58781 12 7.36781 12 6.09375C12 2.73375 9.30831 0 6 0ZM6 9.38125C4.21877 9.38125 2.76308 7.90281 2.76308 6.09375C2.76308 4.28469 4.21877 2.80625 6 2.80625C7.78123 2.80625 9.23692 4.28469 9.23692 6.09375C9.23692 7.90281 7.78123 9.38125 6 9.38125Z"
-									fill="#FFA048" />
-							</svg>
-							<p class="item-txt">г. Москва</p>
-						</div>
-						<p class="reviews__item-txt2">
-							Для того, чтобы воспользоваться услугой, вам необходимо лишь
-							заполнить анкету на&nbsp;сайте, все остальное сервис сделает
-							за&nbsp;вас, сэкономив вам большое количество времени
-							и&nbsp;сил. Наш сервис работает со&nbsp;всеми клиентами, нам
-							не&nbsp;важно, какая у&nbsp;вас кредитная история
-							и&nbsp;имеются&nbsp;ли текущие просрочки.
-						</p>
-						<div class="reviews__item-rating">
-							<img src="img/reviews/rating-all-stars.svg" alt="Рейтинг пользователя" />
-						</div>
-					</li>
-				</ul>
-				<div class="reviews__buttons-wrp">
-					<button class="btn">Оформить заявку</button>
-					<button class="btn2">Все отзывы</button>
-				</div>
-			</div>
-		</section>
+      <section class="clients">
+        <div class="center">
+          <h2 class="clients__title">Наши клиенты</h2>
+          <ul class="clients__list">
+            <li class="clients__item">
+              <div class="clients__svg-wrp">
+                <svg
+                  width="21"
+                  height="21"
+                  viewBox="0 0 21 21"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.4239 10.5002L20.6009 2.32276C21.133 1.79085 21.133 0.930835 20.6009 0.398929C20.069 -0.132976 19.209 -0.132976 18.6771 0.398929L10.4999 8.57633L2.3229 0.398929C1.79075 -0.132976 0.931003 -0.132976 0.399108 0.398929C-0.133036 0.930835 -0.133036 1.79085 0.399108 2.32276L8.57609 10.5002L0.399108 18.6776C-0.133036 19.2095 -0.133036 20.0695 0.399108 20.6014C0.664183 20.8667 1.01272 21 1.361 21C1.70929 21 2.05757 20.8667 2.3229 20.6014L10.4999 12.424L18.6771 20.6014C18.9424 20.8667 19.2907 21 19.639 21C19.9873 21 20.3356 20.8667 20.6009 20.6014C21.133 20.0695 21.133 19.2095 20.6009 18.6776L12.4239 10.5002Z"
+                    fill="#92A0AB"
+                  />
+                </svg>
+              </div>
+              <div class="clients__info-wrp">
+                <h4>Екатерина Романова</h4>
+                <p>Получила отказ 45 сек назад</p>
+                <div class="client-geolocation-wrp">
+                  <svg
+                    class="client-svg-location"
+                    width="12"
+                    height="16"
+                    viewBox="0 0 12 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6 0C2.69169 0 0 2.73375 0 6.09375C0 7.42344 0.413538 8.68688 1.19692 9.74688L5.63015 15.811C5.64123 15.8257 5.65815 15.8313 5.67046 15.8444C5.892 16.0853 6.21169 16.0247 6.36954 15.811C7.64615 14.081 9.98615 10.85 10.8858 9.63125L10.8865 9.62969L10.892 9.62219C11.6169 8.58781 12 7.36781 12 6.09375C12 2.73375 9.30831 0 6 0ZM6 9.38125C4.21877 9.38125 2.76308 7.90281 2.76308 6.09375C2.76308 4.28469 4.21877 2.80625 6 2.80625C7.78123 2.80625 9.23692 4.28469 9.23692 6.09375C9.23692 7.90281 7.78123 9.38125 6 9.38125Z"
+                      fill="#FFA048"
+                    />
+                  </svg>
+                  <p class="item-txt">г. Москва</p>
+                </div>
+              </div>
+            </li>
+            <li class="clients__item">
+              <div class="clients__svg-wrp">
+                <svg
+                  width="30"
+                  height="29"
+                  viewBox="0 0 30 29"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16.2095 15.8605L27.7738 15.8602C28.5262 15.8604 29.1344 15.2523 29.1342 14.4999C29.1342 13.7477 28.5261 13.1395 27.7739 13.1395L16.2094 13.1397L16.2097 1.57538C16.2095 0.822982 15.6016 0.215047 14.8494 0.215054C14.097 0.214886 13.4888 0.823011 13.489 1.57541L13.4887 13.1397L1.92443 13.14C1.17204 13.1398 0.563911 13.7479 0.564079 14.5003C0.563899 14.8754 0.7161 15.2161 0.962375 15.4624C1.20865 15.7086 1.54917 15.8607 1.9244 15.8607L13.4887 15.8604L13.4886 27.4248C13.4886 27.8001 13.6406 28.1406 13.8869 28.3869C14.1331 28.6331 14.4737 28.7852 14.8489 28.7852C15.6013 28.7853 16.2094 28.1772 16.2093 27.4248L16.2095 15.8605Z"
+                    fill="#FFAD45"
+                  />
+                </svg>
+              </div>
+              <div class="clients__info-wrp">
+                <h4>Игорь Николаев</h4>
+                <p>Взял 5 000 ₽ 2 мин назад</p>
+                <div class="client-geolocation-wrp">
+                  <svg
+                    class="client-svg-location"
+                    width="12"
+                    height="16"
+                    viewBox="0 0 12 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6 0C2.69169 0 0 2.73375 0 6.09375C0 7.42344 0.413538 8.68688 1.19692 9.74688L5.63015 15.811C5.64123 15.8257 5.65815 15.8313 5.67046 15.8444C5.892 16.0853 6.21169 16.0247 6.36954 15.811C7.64615 14.081 9.98615 10.85 10.8858 9.63125L10.8865 9.62969L10.892 9.62219C11.6169 8.58781 12 7.36781 12 6.09375C12 2.73375 9.30831 0 6 0ZM6 9.38125C4.21877 9.38125 2.76308 7.90281 2.76308 6.09375C2.76308 4.28469 4.21877 2.80625 6 2.80625C7.78123 2.80625 9.23692 4.28469 9.23692 6.09375C9.23692 7.90281 7.78123 9.38125 6 9.38125Z"
+                      fill="#FFA048"
+                    />
+                  </svg>
+                  <p class="item-txt">г. Москва</p>
+                </div>
+              </div>
+            </li>
+            <li class="clients__item">
+              <div class="clients__svg-wrp">
+                <svg
+                  width="29"
+                  height="29"
+                  viewBox="0 0 29 29"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M23.2105 15.7744L14.5 24.4849L5.78951 15.7744L7.3916 14.1723L13.3672 20.1479V0H15.6328V20.1479L21.6084 14.1723L23.2105 15.7744ZM29 26.7344H0V29H29V26.7344Z"
+                    fill="#FFAD45"
+                  />
+                </svg>
+              </div>
+              <div class="clients__info-wrp">
+                <h4>Светлана Борисовна</h4>
+                <p>Внес на счет 12 000 ₽ 45 сек назад</p>
+                <div class="client-geolocation-wrp">
+                  <svg
+                    class="client-svg-location"
+                    width="12"
+                    height="16"
+                    viewBox="0 0 12 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6 0C2.69169 0 0 2.73375 0 6.09375C0 7.42344 0.413538 8.68688 1.19692 9.74688L5.63015 15.811C5.64123 15.8257 5.65815 15.8313 5.67046 15.8444C5.892 16.0853 6.21169 16.0247 6.36954 15.811C7.64615 14.081 9.98615 10.85 10.8858 9.63125L10.8865 9.62969L10.892 9.62219C11.6169 8.58781 12 7.36781 12 6.09375C12 2.73375 9.30831 0 6 0ZM6 9.38125C4.21877 9.38125 2.76308 7.90281 2.76308 6.09375C2.76308 4.28469 4.21877 2.80625 6 2.80625C7.78123 2.80625 9.23692 4.28469 9.23692 6.09375C9.23692 7.90281 7.78123 9.38125 6 9.38125Z"
+                      fill="#FFA048"
+                    />
+                  </svg>
+                  <p class="item-txt">г. Москва</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
 
-		<section class="clients">
-			<div class="center">
-				<h2 class="clients__title">Наши клиенты</h2>
-				<ul class="clients__list">
-					<li class="clients__item">
-						<div class="clients__svg-wrp">
-							<svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path
-									d="M12.4239 10.5002L20.6009 2.32276C21.133 1.79085 21.133 0.930835 20.6009 0.398929C20.069 -0.132976 19.209 -0.132976 18.6771 0.398929L10.4999 8.57633L2.3229 0.398929C1.79075 -0.132976 0.931003 -0.132976 0.399108 0.398929C-0.133036 0.930835 -0.133036 1.79085 0.399108 2.32276L8.57609 10.5002L0.399108 18.6776C-0.133036 19.2095 -0.133036 20.0695 0.399108 20.6014C0.664183 20.8667 1.01272 21 1.361 21C1.70929 21 2.05757 20.8667 2.3229 20.6014L10.4999 12.424L18.6771 20.6014C18.9424 20.8667 19.2907 21 19.639 21C19.9873 21 20.3356 20.8667 20.6009 20.6014C21.133 20.0695 21.133 19.2095 20.6009 18.6776L12.4239 10.5002Z"
-									fill="#92A0AB" />
-							</svg>
-						</div>
-						<div class="clients__info-wrp">
-							<h4>Екатерина Романова</h4>
-							<p>Получила отказ 45 сек назад</p>
-							<div class="client-geolocation-wrp">
-								<svg class="client-svg-location" width="12" height="16" viewBox="0 0 12 16" fill="none"
-									xmlns="http://www.w3.org/2000/svg">
-									<path
-										d="M6 0C2.69169 0 0 2.73375 0 6.09375C0 7.42344 0.413538 8.68688 1.19692 9.74688L5.63015 15.811C5.64123 15.8257 5.65815 15.8313 5.67046 15.8444C5.892 16.0853 6.21169 16.0247 6.36954 15.811C7.64615 14.081 9.98615 10.85 10.8858 9.63125L10.8865 9.62969L10.892 9.62219C11.6169 8.58781 12 7.36781 12 6.09375C12 2.73375 9.30831 0 6 0ZM6 9.38125C4.21877 9.38125 2.76308 7.90281 2.76308 6.09375C2.76308 4.28469 4.21877 2.80625 6 2.80625C7.78123 2.80625 9.23692 4.28469 9.23692 6.09375C9.23692 7.90281 7.78123 9.38125 6 9.38125Z"
-										fill="#FFA048" />
-								</svg>
-								<p class="item-txt">г. Москва</p>
-							</div>
-						</div>
-					</li>
-					<li class="clients__item">
-						<div class="clients__svg-wrp">
-							<svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path
-									d="M16.2095 15.8605L27.7738 15.8602C28.5262 15.8604 29.1344 15.2523 29.1342 14.4999C29.1342 13.7477 28.5261 13.1395 27.7739 13.1395L16.2094 13.1397L16.2097 1.57538C16.2095 0.822982 15.6016 0.215047 14.8494 0.215054C14.097 0.214886 13.4888 0.823011 13.489 1.57541L13.4887 13.1397L1.92443 13.14C1.17204 13.1398 0.563911 13.7479 0.564079 14.5003C0.563899 14.8754 0.7161 15.2161 0.962375 15.4624C1.20865 15.7086 1.54917 15.8607 1.9244 15.8607L13.4887 15.8604L13.4886 27.4248C13.4886 27.8001 13.6406 28.1406 13.8869 28.3869C14.1331 28.6331 14.4737 28.7852 14.8489 28.7852C15.6013 28.7853 16.2094 28.1772 16.2093 27.4248L16.2095 15.8605Z"
-									fill="#FFAD45" />
-							</svg>
-						</div>
-						<div class="clients__info-wrp">
-							<h4>Игорь Николаев</h4>
-							<p>Взял 5 000 ₽ 2 мин назад</p>
-							<div class="client-geolocation-wrp">
-								<svg class="client-svg-location" width="12" height="16" viewBox="0 0 12 16" fill="none"
-									xmlns="http://www.w3.org/2000/svg">
-									<path
-										d="M6 0C2.69169 0 0 2.73375 0 6.09375C0 7.42344 0.413538 8.68688 1.19692 9.74688L5.63015 15.811C5.64123 15.8257 5.65815 15.8313 5.67046 15.8444C5.892 16.0853 6.21169 16.0247 6.36954 15.811C7.64615 14.081 9.98615 10.85 10.8858 9.63125L10.8865 9.62969L10.892 9.62219C11.6169 8.58781 12 7.36781 12 6.09375C12 2.73375 9.30831 0 6 0ZM6 9.38125C4.21877 9.38125 2.76308 7.90281 2.76308 6.09375C2.76308 4.28469 4.21877 2.80625 6 2.80625C7.78123 2.80625 9.23692 4.28469 9.23692 6.09375C9.23692 7.90281 7.78123 9.38125 6 9.38125Z"
-										fill="#FFA048" />
-								</svg>
-								<p class="item-txt">г. Москва</p>
-							</div>
-						</div>
-					</li>
-					<li class="clients__item">
-						<div class="clients__svg-wrp">
-							<svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path
-									d="M23.2105 15.7744L14.5 24.4849L5.78951 15.7744L7.3916 14.1723L13.3672 20.1479V0H15.6328V20.1479L21.6084 14.1723L23.2105 15.7744ZM29 26.7344H0V29H29V26.7344Z"
-									fill="#FFAD45" />
-							</svg>
-						</div>
-						<div class="clients__info-wrp">
-							<h4>Светлана Борисовна</h4>
-							<p>Внес на счет 12 000 ₽ 45 сек назад</p>
-							<div class="client-geolocation-wrp">
-								<svg class="client-svg-location" width="12" height="16" viewBox="0 0 12 16" fill="none"
-									xmlns="http://www.w3.org/2000/svg">
-									<path
-										d="M6 0C2.69169 0 0 2.73375 0 6.09375C0 7.42344 0.413538 8.68688 1.19692 9.74688L5.63015 15.811C5.64123 15.8257 5.65815 15.8313 5.67046 15.8444C5.892 16.0853 6.21169 16.0247 6.36954 15.811C7.64615 14.081 9.98615 10.85 10.8858 9.63125L10.8865 9.62969L10.892 9.62219C11.6169 8.58781 12 7.36781 12 6.09375C12 2.73375 9.30831 0 6 0ZM6 9.38125C4.21877 9.38125 2.76308 7.90281 2.76308 6.09375C2.76308 4.28469 4.21877 2.80625 6 2.80625C7.78123 2.80625 9.23692 4.28469 9.23692 6.09375C9.23692 7.90281 7.78123 9.38125 6 9.38125Z"
-										fill="#FFA048" />
-								</svg>
-								<p class="item-txt">г. Москва</p>
-							</div>
-						</div>
-					</li>
-				</ul>
-			</div>
-		</section>
+      <section class="about-service" id="002">
+        <div class="center">
+          <h2 class="about-service__title">О&nbsp;сервисе</h2>
+          <div class="about-service-wrp">
+            <div class="about-service__item">
+              <h4 class="about-service__subtitle">
+                Все возможные риски и&nbsp;убытки, и&nbsp;условия выдачи
+                кредитов.
+              </h4>
+              <p class="about-service__txt">
+                о&nbsp;вашим анкетным данным сервис автоматически выбирает
+                наиболее выгодные предложения и&nbsp;работает непосредственно
+                с&nbsp;кредитными организациями, предоставляющими
+                микрозаймы&nbsp;<br />В случае приобретения платной услуги,
+                вы&nbsp;получаете полный доступ к&nbsp;функциональности сервиса
+                сроком на&nbsp;1&nbsp;год с&nbsp;момента активации услуги!
+              </p>
+              <p class="about-service__txt">
+                Ваша заявка будет отправляться в&nbsp;МФО с&nbsp;наибольшей
+                вероятностью одобрения в&nbsp;данный момент времени
+                с&nbsp;соблюдением необходимых пауз между отправками. При
+                предварительном одобрении кредитные организации сами связываются
+                с&nbsp;вами, и&nbsp;вам необходимо лишь подтвердить свое
+                согласие на&nbsp;займ и&nbsp;забрать деньги. Список МФО, в
+                которые была отправлена ваша заявка, и&nbsp;другую необходимую
+                информацию о&nbsp;работе в&nbsp;рамках платной услуги
+                вы&nbsp;можете наблюдать в личном кабинете, в&nbsp;разделе
+                Отчеты Стоимость услуги всего 1499 рублей. Для вашего удобства
+                оплата услуги происходит в&nbsp;рассрочку: четыре платежа
+                по&nbsp;374.8 рублей каждые пять дней. Оплачивая услугу,
+                вы&nbsp;получаете доступ к&nbsp;функциональности сервиса сроком
+                на&nbsp;1&nbsp;год (365&nbsp;дней) с&nbsp;момента активации
+                услуги.
+              </p>
 
-		<section class="about-service" id="002">
-			<div class="center">
-				<h2 class="about-service__title">О&nbsp;сервисе</h2>
-				<div class="about-service-wrp">
-					<div class="about-service__item">
-						<h4 class="about-service__subtitle">
-							Все возможные риски и&nbsp;убытки, и&nbsp;условия выдачи
-							кредитов.
-						</h4>
-						<p class="about-service__txt">
-							о&nbsp;вашим анкетным данным сервис автоматически выбирает
-							наиболее выгодные предложения и&nbsp;работает непосредственно
-							с&nbsp;кредитными организациями, предоставляющими
-							микрозаймы&nbsp;<br />В случае приобретения платной услуги,
-							вы&nbsp;получаете полный доступ к&nbsp;функциональности сервиса
-							сроком на&nbsp;1&nbsp;год с&nbsp;момента активации услуги!
-						</p>
-						<p class="about-service__txt">
-							Ваша заявка будет отправляться в&nbsp;МФО с&nbsp;наибольшей
-							вероятностью одобрения в&nbsp;данный момент времени
-							с&nbsp;соблюдением необходимых пауз между отправками. При
-							предварительном одобрении кредитные организации сами связываются
-							с&nbsp;вами, и&nbsp;вам необходимо лишь подтвердить свое
-							согласие на&nbsp;займ и&nbsp;забрать деньги. Список МФО, в
-							которые была отправлена ваша заявка, и&nbsp;другую необходимую
-							информацию о&nbsp;работе в&nbsp;рамках платной услуги
-							вы&nbsp;можете наблюдать в личном кабинете, в&nbsp;разделе
-							Отчеты Стоимость услуги всего 1499 рублей. Для вашего удобства
-							оплата услуги происходит в&nbsp;рассрочку: четыре платежа
-							по&nbsp;374.8 рублей каждые пять дней. Оплачивая услугу,
-							вы&nbsp;получаете доступ к&nbsp;функциональности сервиса сроком
-							на&nbsp;1&nbsp;год (365&nbsp;дней) с&nbsp;момента активации
-							услуги.
-						</p>
+              <p class="about-service__txt">
+                Если вы&nbsp;получили займ и&nbsp;более не&nbsp;нуждаетесь
+                в&nbsp;услугах сервиса&nbsp;&mdash; вы можете остановить
+                обработку вашей заявки самостоятельно и&nbsp;в&nbsp;любое время
+                в&nbsp;разделе Отписаться от&nbsp;услуг.
+              </p>
+            </div>
+            <div class="about-service__item">
+              <h4 class="about-service__subtitle">Что будет при просрочке</h4>
+              <p class="about-service__txt">
+                о&nbsp;вашим анкетным данным сервис автоматически выбирает
+                наиболее выгодные предложения и&nbsp;работает непосредственно
+                с&nbsp;кредитными организациями, предоставляющими
+                микрозаймы&nbsp;<br />В случае приобретения платной услуги,
+                вы&nbsp;получаете полный доступ к&nbsp;функциональности сервиса
+                сроком на&nbsp;1&nbsp;год с&nbsp;момента активации услуги!
+              </p>
+              <p class="about-service__txt">
+                Ваша заявка будет отправляться в&nbsp;МФО с&nbsp;наибольшей
+                вероятностью одобрения в&nbsp;данный момент времени
+                с&nbsp;соблюдением необходимых пауз между отправками. При
+                предварительном одобрении кредитные организации сами связываются
+                с&nbsp;вами, и&nbsp;вам необходимо лишь подтвердить свое
+                согласие на&nbsp;займ и&nbsp;забрать деньги. Список МФО, в
+                которые была отправлена ваша заявка, и&nbsp;другую необходимую
+                информацию о&nbsp;работе в&nbsp;рамках платной услуги
+                вы&nbsp;можете наблюдать в личном кабинете, в&nbsp;разделе
+                Отчеты Стоимость услуги всего 1499 рублей. Для вашего удобства
+                оплата услуги происходит в&nbsp;рассрочку: четыре платежа
+                по&nbsp;374.8 рублей каждые пять дней. Оплачивая услугу,
+                вы&nbsp;получаете доступ к&nbsp;функциональности сервиса сроком
+                на&nbsp;1&nbsp;год (365&nbsp;дней) с&nbsp;момента активации
+                услуги.
+              </p>
 
-						<p class="about-service__txt">
-							Если вы&nbsp;получили займ и&nbsp;более не&nbsp;нуждаетесь
-							в&nbsp;услугах сервиса&nbsp;&mdash; вы можете остановить
-							обработку вашей заявки самостоятельно и&nbsp;в&nbsp;любое время
-							в&nbsp;разделе Отписаться от&nbsp;услуг.
-						</p>
-					</div>
-					<div class="about-service__item">
-						<h4 class="about-service__subtitle">Что будет при просрочке</h4>
-						<p class="about-service__txt">
-							о&nbsp;вашим анкетным данным сервис автоматически выбирает
-							наиболее выгодные предложения и&nbsp;работает непосредственно
-							с&nbsp;кредитными организациями, предоставляющими
-							микрозаймы&nbsp;<br />В случае приобретения платной услуги,
-							вы&nbsp;получаете полный доступ к&nbsp;функциональности сервиса
-							сроком на&nbsp;1&nbsp;год с&nbsp;момента активации услуги!
-						</p>
-						<p class="about-service__txt">
-							Ваша заявка будет отправляться в&nbsp;МФО с&nbsp;наибольшей
-							вероятностью одобрения в&nbsp;данный момент времени
-							с&nbsp;соблюдением необходимых пауз между отправками. При
-							предварительном одобрении кредитные организации сами связываются
-							с&nbsp;вами, и&nbsp;вам необходимо лишь подтвердить свое
-							согласие на&nbsp;займ и&nbsp;забрать деньги. Список МФО, в
-							которые была отправлена ваша заявка, и&nbsp;другую необходимую
-							информацию о&nbsp;работе в&nbsp;рамках платной услуги
-							вы&nbsp;можете наблюдать в личном кабинете, в&nbsp;разделе
-							Отчеты Стоимость услуги всего 1499 рублей. Для вашего удобства
-							оплата услуги происходит в&nbsp;рассрочку: четыре платежа
-							по&nbsp;374.8 рублей каждые пять дней. Оплачивая услугу,
-							вы&nbsp;получаете доступ к&nbsp;функциональности сервиса сроком
-							на&nbsp;1&nbsp;год (365&nbsp;дней) с&nbsp;момента активации
-							услуги.
-						</p>
+              <p class="about-service__txt">
+                Если вы&nbsp;получили займ и&nbsp;более не&nbsp;нуждаетесь
+                в&nbsp;услугах сервиса&nbsp;&mdash; вы можете остановить
+                обработку вашей заявки самостоятельно и&nbsp;в&nbsp;любое время
+                в&nbsp;разделе Отписаться от&nbsp;услуг.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-						<p class="about-service__txt">
-							Если вы&nbsp;получили займ и&nbsp;более не&nbsp;нуждаетесь
-							в&nbsp;услугах сервиса&nbsp;&mdash; вы можете остановить
-							обработку вашей заявки самостоятельно и&nbsp;в&nbsp;любое время
-							в&nbsp;разделе Отписаться от&nbsp;услуг.
-						</p>
-					</div>
-				</div>
-			</div>
-		</section>
+      <section class="faq" id="003">
+        <div class="center">
+          <h2 class="faq__title">Вопросы-ответы</h2>
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  Как долго обрабатывается заявка?
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse show"
+                data-bs-parent="#accordionExample"
+              >
+                <p class="accordion-body">
+                  Вашим анкетным данным сервис автоматически выбирает наиболее
+                  выгодные предложения и&nbsp;работает непосредственно
+                  с&nbsp;кредитными организациями, предоставляющими микрозаймы
+                  в&nbsp;случае приобретения платной услуги, вы&nbsp;получаете
+                  полный доступ к&nbsp;функциональности сервиса сроком
+                  на&nbsp;1&nbsp;год с&nbsp;момента активации услуги!
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  Как погасить полученный займ?
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <p class="accordion-body">
+                  Вашим анкетным данным сервис автоматически выбирает наиболее
+                  выгодные предложения и&nbsp;работает непосредственно
+                  с&nbsp;кредитными организациями, предоставляющими микрозаймы
+                  в&nbsp;случае приобретения платной услуги, вы&nbsp;получаете
+                  полный доступ к&nbsp;функциональности сервиса сроком
+                  на&nbsp;1&nbsp;год с&nbsp;момента активации услуги!
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  Как получить деньги?
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <p class="accordion-body">
+                  Вашим анкетным данным сервис автоматически выбирает наиболее
+                  выгодные предложения и&nbsp;работает непосредственно
+                  с&nbsp;кредитными организациями, предоставляющими микрозаймы
+                  в&nbsp;случае приобретения платной услуги, вы&nbsp;получаете
+                  полный доступ к&nbsp;функциональности сервиса сроком
+                  на&nbsp;1&nbsp;год с&nbsp;момента активации услуги!
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour"
+                  aria-expanded="false"
+                  aria-controls="collapseFour"
+                >
+                  География сервиса?
+                </button>
+              </h2>
+              <div
+                id="collapseFour"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <p class="accordion-body">
+                  Вашим анкетным данным сервис автоматически выбирает наиболее
+                  выгодные предложения и&nbsp;работает непосредственно
+                  с&nbsp;кредитными организациями, предоставляющими микрозаймы
+                  в&nbsp;случае приобретения платной услуги, вы&nbsp;получаете
+                  полный доступ к&nbsp;функциональности сервиса сроком
+                  на&nbsp;1&nbsp;год с&nbsp;момента активации услуги!
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFive"
+                  aria-expanded="false"
+                  aria-controls="collapseFive"
+                >
+                  Как остановить обработку заявки?
+                </button>
+              </h2>
+              <div
+                id="collapseFive"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <p class="accordion-body">
+                  Вашим анкетным данным сервис автоматически выбирает наиболее
+                  выгодные предложения и&nbsp;работает непосредственно
+                  с&nbsp;кредитными организациями, предоставляющими микрозаймы
+                  в&nbsp;случае приобретения платной услуги, вы&nbsp;получаете
+                  полный доступ к&nbsp;функциональности сервиса сроком
+                  на&nbsp;1&nbsp;год с&nbsp;момента активации услуги!
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseSix"
+                  aria-expanded="false"
+                  aria-controls="collapseSix"
+                >
+                  Какова стоимость услуги?
+                </button>
+              </h2>
+              <div
+                id="collapseSix"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <p class="accordion-body">
+                  Вашим анкетным данным сервис автоматически выбирает наиболее
+                  выгодные предложения и&nbsp;работает непосредственно
+                  с&nbsp;кредитными организациями, предоставляющими микрозаймы
+                  в&nbsp;случае приобретения платной услуги, вы&nbsp;получаете
+                  полный доступ к&nbsp;функциональности сервиса сроком
+                  на&nbsp;1&nbsp;год с&nbsp;момента активации услуги!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-		<section class="faq" id="003">
-			<div class="center">
-				<h2 class="faq__title">Вопросы-ответы</h2>
-				<div class="accordion" id="accordionExample">
-					<div class="accordion-item">
-						<h2 class="accordion-header">
-							<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-								aria-expanded="true" aria-controls="collapseOne">
-								Как долго обрабатывается заявка?
-							</button>
-						</h2>
-						<div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-							<p class="accordion-body">
-								Вашим анкетным данным сервис автоматически выбирает наиболее
-								выгодные предложения и&nbsp;работает непосредственно
-								с&nbsp;кредитными организациями, предоставляющими микрозаймы
-								в&nbsp;случае приобретения платной услуги, вы&nbsp;получаете
-								полный доступ к&nbsp;функциональности сервиса сроком
-								на&nbsp;1&nbsp;год с&nbsp;момента активации услуги!
-							</p>
-						</div>
-					</div>
-					<div class="accordion-item">
-						<h2 class="accordion-header">
-							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-								data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-								Как погасить полученный займ?
-							</button>
-						</h2>
-						<div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-							<p class="accordion-body">
-								Вашим анкетным данным сервис автоматически выбирает наиболее
-								выгодные предложения и&nbsp;работает непосредственно
-								с&nbsp;кредитными организациями, предоставляющими микрозаймы
-								в&nbsp;случае приобретения платной услуги, вы&nbsp;получаете
-								полный доступ к&nbsp;функциональности сервиса сроком
-								на&nbsp;1&nbsp;год с&nbsp;момента активации услуги!
-							</p>
-						</div>
-					</div>
-					<div class="accordion-item">
-						<h2 class="accordion-header">
-							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-								data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-								Как получить деньги?
-							</button>
-						</h2>
-						<div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-							<p class="accordion-body">
-								Вашим анкетным данным сервис автоматически выбирает наиболее
-								выгодные предложения и&nbsp;работает непосредственно
-								с&nbsp;кредитными организациями, предоставляющими микрозаймы
-								в&nbsp;случае приобретения платной услуги, вы&nbsp;получаете
-								полный доступ к&nbsp;функциональности сервиса сроком
-								на&nbsp;1&nbsp;год с&nbsp;момента активации услуги!
-							</p>
-						</div>
-					</div>
-					<div class="accordion-item">
-						<h2 class="accordion-header">
-							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-								data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-								География сервиса?
-							</button>
-						</h2>
-						<div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-							<p class="accordion-body">
-								Вашим анкетным данным сервис автоматически выбирает наиболее
-								выгодные предложения и&nbsp;работает непосредственно
-								с&nbsp;кредитными организациями, предоставляющими микрозаймы
-								в&nbsp;случае приобретения платной услуги, вы&nbsp;получаете
-								полный доступ к&nbsp;функциональности сервиса сроком
-								на&nbsp;1&nbsp;год с&nbsp;момента активации услуги!
-							</p>
-						</div>
-					</div>
-					<div class="accordion-item">
-						<h2 class="accordion-header">
-							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-								data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-								Как остановить обработку заявки?
-							</button>
-						</h2>
-						<div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-							<p class="accordion-body">
-								Вашим анкетным данным сервис автоматически выбирает наиболее
-								выгодные предложения и&nbsp;работает непосредственно
-								с&nbsp;кредитными организациями, предоставляющими микрозаймы
-								в&nbsp;случае приобретения платной услуги, вы&nbsp;получаете
-								полный доступ к&nbsp;функциональности сервиса сроком
-								на&nbsp;1&nbsp;год с&nbsp;момента активации услуги!
-							</p>
-						</div>
-					</div>
-					<div class="accordion-item">
-						<h2 class="accordion-header">
-							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-								data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-								Какова стоимость услуги?
-							</button>
-						</h2>
-						<div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-							<p class="accordion-body">
-								Вашим анкетным данным сервис автоматически выбирает наиболее
-								выгодные предложения и&nbsp;работает непосредственно
-								с&nbsp;кредитными организациями, предоставляющими микрозаймы
-								в&nbsp;случае приобретения платной услуги, вы&nbsp;получаете
-								полный доступ к&nbsp;функциональности сервиса сроком
-								на&nbsp;1&nbsp;год с&nbsp;момента активации услуги!
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section class="recieve-money">
-			<div class="center">
-				<h2 class="recieve-money__title">
-					Получи деньги здесь и&nbsp;сейчас
-				</h2>
-				<p class="recieve-money__txt">Без проверки кредитной истории.</p>
-				<p class="recieve-money__txt recieve-money__txt2">
-					От&nbsp;1&nbsp;000&nbsp;₽ за&nbsp;15&nbsp;минут.
-				</p>
-				<button class="btn">Оформить заявку</button>
-				<img class="recieve-money__image" src="img/recieve-money/girl.png" alt="девушка" />
-			</div>
-		</section>
-	</main>
-	<footer class="footer">
-		<div class="center">
-			<div class="footer-top">
-				<div class="footer-logo">
-					<a class="footer__logo-link" href="#">Fire<span>Money</span></a>
-				</div>
-				<ul class="footer__list">
-					<li class="footer__item">
-						<a class="footer__item-link" href="#001">Почему мы?</a>
-					</li>
-					<li class="footer__item">
-						<a class="footer__item-link" href="#002">О&nbsp;сервисе</a>
-					</li>
-					<li class="footer__item">
-						<a class="footer__item-link" href="#003">Вопросы-ответы</a>
-					</li>
-				</ul>
-				<div class="footer__wrp-contacts">
-					<a class="footer__mail-link" href="mailto:Kustohelp@gmail.com"><span></span>Kustohelp@gmail.com</a>
-					<a class="footer__tel-link" href="tel:+78008080080"><span></span>8 800 808-00-80</a>
-				</div>
-			</div>
-			<section class="creditors">
-				<h3 class="creditors__title">Список кредиторов</h3>
-				<ul class="creditors__list">
-					<li class="creditors__item">
-						ООО &laquo;МКК СКОРФИН&raquo;, 344101, г. Ростов-на-Дону, ул.
-						Портовая, д.&nbsp;193, оф.&nbsp;302, Лицензия
-						&#8470;&nbsp;1703020008232, ИНН 3664223480, ОГРН 1163668109428,
-						процентная ставка 0,99% в&nbsp;день
-					</li>
-					<li class="creditors__item">
-						ООО МФК &laquo;Быстроденьги&raquo;, 123290&nbsp;г. Москва, 1-й
-						Магистральный туп., д.11 стр.10, Лицензия
-						&#8470;&nbsp;2110573000002, ИНН 7325081622, ОГРН 1087325005899,
-						процентная ставка&nbsp;0% в&nbsp;день
-					</li>
-					<li class="creditors__item">
-						ООО &laquo;МКК КАНГАРИЯ&raquo;, 344101, г. Ростов-на-Дону, ул.
-						Ленинградская, д.&nbsp;7, пом. &#8470; П-13, Лицензия
-						&#8470;&nbsp;1904067009295, ИНН 9201526872, ОГРН 1189204008564,
-						процентная ставка&nbsp;0% в&nbsp;день
-					</li>
-					<li class="creditors__item">
-						ООО МКК &laquo;Киберлэндинг&raquo;, 420043, г. Казань, ул.
-						Достоевского, д.&nbsp;52, оф.&nbsp;3, Лицензия
-						&#8470;&nbsp;1803392008777, ИНН 1659182700, ОГРН 1171690064920,
-						процентная ставка&nbsp;0% в&nbsp;день
-					</li>
-					<li class="creditors__item">
-						ООО МКК &laquo;Кредиттер&raquo;, 115280, г. Москва, ул. Ленинская
-						Слобода, д.&nbsp;19, стр.&nbsp;6, ком.&nbsp;6, 7, Лицензия
-						&#8470;&nbsp;1903045009373, ИНН 7702463482, ОГРН 1197746100530,
-						процентная ставка 0,99% в&nbsp;день
-					</li>
-					<li class="creditors__item">
-						ООО МФК &laquo;Лайм-Займ&raquo;, 630102, г. Новосибирск, ул.
-						Кирова, д.&nbsp;48, оф.&nbsp;1401, Лицензия
-						&#8470;&nbsp;651303045004102, ИНН 7724889891, ОГРН 1137746831606,
-						процентная ставка&nbsp;0% в&nbsp;день
-					</li>
-					<li class="creditors__item">
-						ООО МКК &laquo;Академическая&raquo;, 630091, г. Новосибирск, ул.
-						Державина, 28, оф.&nbsp;301, Лицензия &#8470;&nbsp;1903550009325,
-						ИНН 5407973316, ОГРН 1195476007605, процентная ставка&nbsp;0%
-						в&nbsp;день
-					</li>
-					<li class="creditors__item">
-						ООО МКК &laquo;КАППАДОКИЯ&raquo;, 443045, г. Самара, ул. Авроры,
-						д.&nbsp;150, пом. &#8470;н4, офис 306.3, Лицензия
-						&#8470;&nbsp;1903475009492, ИНН 7459007268, ОГРН 1197456052199,
-						процентная ставка&nbsp;0% в&nbsp;день
-					</li>
-					<li class="creditors__item">
-						ООО МКК &laquo;ДЗП-Центр&raquo;, 190031, г. Санкт-Петербург, пер.
-						Спасский, д. 14/35, лит. А, пом.&nbsp;38&nbsp;Н, Лицензия
-						&#8470;&nbsp;651403140005467, ИНН 7838500558, ОГРН 1147847029990,
-						процентная ставка&nbsp;0% в&nbsp;день
-					</li>
-					<li class="creditors__item">
-						ООО МКК &laquo;Кватро&raquo;, 443030, г. Самара, ул.
-						Чернореченская, д.&nbsp;21, оф.&nbsp;425, Лицензия
-						&#8470;&nbsp;1903550009364, ИНН 5402053330, ОГРН 1195476044609,
-						процентная ставка&nbsp;0% в&nbsp;день
-					</li>
-					<li class="creditors__item">
-						ООО МКК &laquo;Турбозайм&raquo;, 123290, г. Москва, туп.
-						Магистральный 1-й, д.&nbsp;11, стр.10, Лицензия
-						&#8470;&nbsp;651303045003951, ИНН 7702820127, ОГРН 1137746702367,
-						процентная ставка 0,99% в&nbsp;день
-					</li>
-				</ul>
-			</section>
-			<div class="footer-middle">
-				<div class="footer-card">
-					<p class="footer__card-txt">Какие карты принимаем</p>
-					<ul class="footer__card-list">
-						<li class="footer__card-item">
-							<a class="footer__card-link" href="#" title="Яндекс кошелек"><img src="img/footer/wallet.png"
-									alt="яндекс кошелек" height="40" /></a>
-						</li>
-						<li class="footer__card-item">
-							<a class="footer__card-link" href="#" title="Мастеркарт"><img src="img/footer/Mastercard.png"
-									alt="Оплата картой Мастер-карт" height="41" /></a>
-						</li>
-						<li class="footer__card-item">
-							<a class="footer__card-link" href="#" title="МИР"><img src="img/footer/peace.png" alt="мир"
-									height="48" /></a>
-						</li>
-					</ul>
-				</div>
-				<div class="footer__personal-wrp">
-					<p class="footer__personal">
-						Мы&nbsp;являемся обработчиками
-						<a class="footer__personal-link" href="#"> персональных данных</a>
-					</p>
-				</div>
-			</div>
-			<section class="agreements">
-				<h3 class="agreements__title">Соглашения и&nbsp;условия</h3>
-				<p class="agreements__txt">
-					Займы и&nbsp;кредиты предоставляются партнерами Imoneys Сredit
-					на&nbsp;сумму от&nbsp;3&nbsp;000 до&nbsp;1&nbsp;000&nbsp;000 рублей
-					включительно на&nbsp;срок от&nbsp;13&nbsp;до&nbsp;260&nbsp;недель.
-					Проценты за&nbsp;пользование денежных средств составляют
-					от&nbsp;40&nbsp;до&nbsp;360 процентов годовых. Расчетная сумма
-					(основной долг и&nbsp;проценты) к&nbsp;возврату от&nbsp;500
-					до&nbsp;250&nbsp;000&nbsp;рублей. Условия актуальны
-					на&nbsp;01.06.2021 и&nbsp;не&nbsp;являются публичной офертой. Пример
-					расчета общей стоимости займа: заём
-					на&nbsp;15&nbsp;000&nbsp;руб.&nbsp;и&nbsp;сроком 25&nbsp;недель;
-					проценты за&nbsp;весь период составят 5&nbsp;000&nbsp;руб. Итого ПСК
-					264,392&nbsp;%. За&nbsp;услуги сервиса может быть взята плата
-					в&nbsp;размере от&nbsp;48&nbsp;до&nbsp;446&nbsp;руб.&nbsp;за
-					активацию сервиса
-				</p>
-				<p class="agreements__txt">
-					В&nbsp;случае невозвращения в&nbsp;условленный срок суммы кредита
-					или суммы процентов за&nbsp;пользование заёмными средствами кредитор
-					вынуждено начислит штраф за&nbsp;просрочку платежа. Большинство
-					кредиторов идут на&nbsp;уступки и&nbsp;дают 3&nbsp;дополнительных
-					рабочих дня для оплаты. Они предусмотрены на&nbsp;случай,
-					к&nbsp;примеру, если банковский перевод занял больше времени, чем
-					обычно. Однако, в&nbsp;случае неполучения от&nbsp;Вас какой-либо
-					реакции в&nbsp;течение продолжительного времени, будет начислен
-					штраф за&nbsp;просрочку срока погашения размером в&nbsp;среднем
-					0,10% от&nbsp;первоначальной суммы для займов, 0,03% от&nbsp;суммы
-					задолженности в&nbsp;среднем для потребительских кредитов
-					и&nbsp;кредитных карт. При несоблюдении Вами условий
-					по&nbsp;погашению кредитов и&nbsp;займов, данные о&nbsp;Вас могут
-					быть переданы в&nbsp;реестр должников или БКИ, что негативно может
-					сказаться на&nbsp;Вашей кредитной истории и&nbsp;рейтинге
-					кредитоспособности. Рекомендуем Вам вносить платеж в&nbsp;день
-					получения данных напоминаний. Погашая задолженность в&nbsp;срок,
-					Вы&nbsp;формируете хорошую кредитную историю, что повышает Ваш
-					рейтинг кредитоспособности и&nbsp;шансы в&nbsp;дальнейшем получить
-					кредит на&nbsp;более выгодных условиях.
-				</p>
-			</section>
-			<div class="footer-bottom">
-				<div class="copyright">
-					<div class="copyright__img"></div>
-					<p class="footer__copyright-txt">
-						Imoneys Сredit &copy;2015&mdash;2022 Все права на&nbsp;сайт
-						защищены.
-					</p>
-				</div>
-				<div class="footer__social-icons-wrp">
-					<button class="btn-unsubscribe">отписаться</button>
-					<ul class="footer__list-social-icons">
-						<li class="footer__item-social-icon">
-							<a class="link-social-icon" href="https://youtube.com" target="_blank">
-								<svg width="22" height="16" viewBox="0 0 22 16" xmlns="http://www.w3.org/2000/svg">
-									<path
-										d="M10.9992 15.9919C10.9974 15.9919 10.9954 15.9919 10.9933 15.9919C10.3295 15.9873 4.46091 15.9338 2.79822 15.4841C1.63621 15.1718 0.71893 14.2555 0.405728 13.0933C-0.0293314 11.46 -0.00163662 8.3154 0.00138462 8.0643C-0.00146877 7.81437 -0.0294992 4.64375 0.404385 2.997C0.404889 2.99549 0.405224 2.99381 0.405728 2.9923C0.715406 1.84339 1.65333 0.898744 2.79537 0.585542C2.79822 0.584702 2.80124 0.584031 2.80409 0.583192C4.44799 0.151154 10.3282 0.0982819 10.9933 0.09375H11.0053C11.6708 0.0982819 17.555 0.151825 19.2024 0.602158C20.3614 0.913682 21.278 1.82878 21.592 2.98945C22.0434 4.63737 22.0016 7.81488 21.9971 8.0831C22.0002 8.34729 22.0266 11.4637 21.5941 13.1052C21.5937 13.1069 21.5932 13.1084 21.5929 13.1099C21.2795 14.2721 20.3624 15.1884 19.199 15.5011C19.1975 15.5016 19.1959 15.5019 19.1943 15.5024C17.5506 15.9343 11.6703 15.9872 11.0053 15.9919C11.0033 15.9919 11.0012 15.9919 10.9992 15.9919ZM2.06573 3.43776C1.68371 4.89132 1.7198 8.0215 1.72014 8.05305V8.07571C1.70872 8.94382 1.74884 11.4578 2.0659 12.6485C2.21965 13.2187 2.672 13.6704 3.2457 13.8246C4.47249 14.1565 9.25227 14.2609 10.9992 14.2731C12.7507 14.2609 17.5375 14.1593 18.7553 13.8408C19.3271 13.686 19.778 13.2358 19.9327 12.665C20.2501 11.4568 20.2899 8.95506 20.2783 8.0925C20.2783 8.08343 20.2783 8.07437 20.2785 8.06531C20.2943 7.18679 20.2632 4.64341 19.9342 3.44314C19.9339 3.44196 19.9335 3.44079 19.9334 3.43961C19.779 2.86692 19.3264 2.41524 18.7527 2.26099C17.5379 1.92882 12.7504 1.82476 10.9992 1.8125C9.24891 1.82476 4.46679 1.92614 3.24536 2.24437C2.68257 2.40047 2.21999 2.86826 2.06573 3.43776ZM8.80865 11.5231V4.56234L14.8243 8.04281L8.80865 11.5231Z" />
-								</svg>
-							</a>
-						</li>
-						<li class="footer__item-social-icon">
-							<a class="link-social-icon" href="https://instagram.com" target="_blank">
-								<svg width="19" height="19" viewBox="0 0 19 19" xmlns="http://www.w3.org/2000/svg">
-									<path
-										d="M9.68737 19C9.62445 19 9.56154 19 9.49819 18.9997C8.00883 19.0033 6.63268 18.9655 5.29438 18.884C4.0674 18.8094 2.94741 18.3854 2.0553 17.658C1.1945 16.9561 0.606674 16.007 0.308194 14.8375C0.048418 13.8193 0.0346464 12.8198 0.0214547 11.8531C0.011887 11.1595 0.0020295 10.3375 0 9.50171C0.0020295 8.6624 0.011887 7.84048 0.0214547 7.14686C0.0346464 6.18027 0.048418 5.18078 0.308194 4.16244C0.606674 2.99291 1.1945 2.04387 2.0553 1.34198C2.94741 0.614572 4.0674 0.190568 5.29452 0.115914C6.63283 0.0345919 8.00926 -0.00338736 9.50181 0.000236614C10.9916 -0.00295248 12.3673 0.0345919 13.7056 0.115914C14.9326 0.190568 16.0526 0.614572 16.9447 1.34198C17.8056 2.04387 18.3933 2.99291 18.6918 4.16244C18.9516 5.18063 18.9654 6.18027 18.9785 7.14686C18.9881 7.84048 18.9981 8.6624 19 9.49823V9.50171C18.9981 10.3375 18.9881 11.1595 18.9785 11.8531C18.9654 12.8197 18.9517 13.8192 18.6918 14.8375C18.3933 16.007 17.8056 16.9561 16.9447 17.658C16.0526 18.3854 14.9326 18.8094 13.7056 18.884C12.424 18.962 11.1074 19 9.68737 19ZM9.49819 17.5153C10.9633 17.5188 12.3086 17.4818 13.6155 17.4024C14.5432 17.346 15.3476 17.0449 16.0066 16.5076C16.6158 16.0108 17.0353 15.3254 17.2535 14.4705C17.4698 13.6229 17.4822 12.7128 17.4943 11.8328C17.5037 11.1438 17.5135 10.3277 17.5156 9.49997C17.5135 8.67211 17.5037 7.85614 17.4943 7.16715C17.4822 6.2871 17.4698 5.37705 17.2535 4.52933C17.0353 3.67437 16.6158 2.989 16.0066 2.49223C15.3476 1.95501 14.5432 1.65393 13.6155 1.59754C12.3086 1.51796 10.9633 1.48128 9.50167 1.48447C8.03681 1.48099 6.69139 1.51796 5.38454 1.59754C4.45677 1.65393 3.65237 1.95501 2.99336 2.49223C2.38422 2.989 1.9647 3.67437 1.74653 4.52933C1.53024 5.37705 1.51777 6.28696 1.50574 7.16715C1.49632 7.85672 1.48646 8.67327 1.48443 9.50171C1.48646 10.3265 1.49632 11.1432 1.50574 11.8328C1.51777 12.7128 1.53024 13.6229 1.74653 14.4705C1.9647 15.3254 2.38422 16.0108 2.99336 16.5076C3.65237 17.0448 4.45677 17.3459 5.38454 17.4023C6.69139 17.4818 8.0371 17.519 9.49819 17.5153ZM9.46282 14.1387C6.90507 14.1387 4.82397 12.0578 4.82397 9.49997C4.82397 6.94217 6.90507 4.86129 9.46282 4.86129C12.0207 4.86129 14.1017 6.94217 14.1017 9.49997C14.1017 12.0578 12.0207 14.1387 9.46282 14.1387ZM9.46282 6.34567C7.72354 6.34567 6.3084 7.76076 6.3084 9.49997C6.3084 11.2392 7.72354 12.6543 9.46282 12.6543C11.2022 12.6543 12.6172 11.2392 12.6172 9.49997C12.6172 7.76076 11.2022 6.34567 9.46282 6.34567ZM14.6212 3.37691C14.0064 3.37691 13.5079 3.87528 13.5079 4.49019C13.5079 5.10511 14.0064 5.60348 14.6212 5.60348C15.2362 5.60348 15.7345 5.10511 15.7345 4.49019C15.7345 3.87528 15.2362 3.37691 14.6212 3.37691Z" />
-								</svg>
-							</a>
-						</li>
-						<li class="footer__item-social-icon">
-							<a class="link-social-icon" href="https://facebook.com" target="_blank">
-								<svg width="11" height="21" viewBox="0 0 11 21" xmlns="http://www.w3.org/2000/svg">
-									<path
-										d="M0.647008 12.1949H2.81923V20.3429C2.81923 20.7051 3.10823 20.9991 3.46624 20.9991L6.92299 21C7.281 21 7.56999 20.7051 7.56999 20.3438V12.1957H9.62921C9.9553 12.1957 10.2305 11.949 10.271 11.6209L10.7007 8.12088C10.749 7.73063 10.4479 7.38325 10.0588 7.38325H7.56999C7.66748 5.22112 7.19473 4.5815 8.58105 4.5815C9.51965 4.46775 11 4.94988 11 3.92525V0.795375C11 0.46725 10.761 0.189875 10.441 0.14525C10.1701 0.107625 9.09952 0 7.77186 0C1.72449 0 2.96934 6.8005 2.82009 7.38238H0.647008C0.28986 7.38238 0 7.67638 0 8.03863V11.5386C0 11.9009 0.28986 12.1949 0.647008 12.1949ZM1.29402 8.69575H3.46624C3.82339 8.69575 4.11325 8.40175 4.11325 8.0395V5.28238C4.11325 2.75975 5.44608 1.31338 7.771 1.31338C8.52843 1.31338 9.22547 1.351 9.70512 1.3895V3.26988C9.35832 3.44925 6.27512 2.49637 6.27512 5.62975V8.04038C6.27512 8.40263 6.56498 8.69663 6.92212 8.69663H9.32554L9.05639 10.8841H6.92212C6.56498 10.8841 6.27512 11.1781 6.27512 11.5404V19.6875H4.11411V11.5395C4.11411 11.1772 3.82425 10.8832 3.4671 10.8832H1.29402V8.69575Z" />
-								</svg>
-							</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</footer>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-		crossorigin="anonymous"></script>
-	<script src="script/script.js"></script>
-</body>
-
+      <section class="recieve-money">
+        <div class="center">
+          <h2 class="recieve-money__title">
+            Получи деньги здесь и&nbsp;сейчас
+          </h2>
+          <p class="recieve-money__txt">Без проверки кредитной истории.</p>
+          <p class="recieve-money__txt recieve-money__txt2">
+            От&nbsp;1&nbsp;000&nbsp;₽ за&nbsp;15&nbsp;минут.
+          </p>
+          <button class="btn">Оформить заявку</button>
+          <img
+            class="recieve-money__image"
+            src="img/recieve-money/girl.png"
+            alt="девушка"
+          />
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="center">
+        <div class="footer-top">
+          <div class="footer-logo">
+            <a class="footer__logo-link" href="#">Fire<span>Money</span></a>
+          </div>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__item-link" href="#001">Почему мы?</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__item-link" href="#002">О&nbsp;сервисе</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__item-link" href="#003">Вопросы-ответы</a>
+            </li>
+          </ul>
+          <div class="footer__wrp-contacts">
+            <a class="footer__mail-link" href="mailto:Kustohelp@gmail.com"
+              ><span></span>Kustohelp@gmail.com</a
+            >
+            <a class="footer__tel-link" href="tel:+78008080080"
+              ><span></span>8 800 808-00-80</a
+            >
+          </div>
+        </div>
+        <section class="creditors">
+          <h3 class="creditors__title">Список кредиторов</h3>
+          <ul class="creditors__list">
+            <li class="creditors__item">
+              ООО &laquo;МКК СКОРФИН&raquo;, 344101, г. Ростов-на-Дону, ул.
+              Портовая, д.&nbsp;193, оф.&nbsp;302, Лицензия
+              &#8470;&nbsp;1703020008232, ИНН 3664223480, ОГРН 1163668109428,
+              процентная ставка 0,99% в&nbsp;день
+            </li>
+            <li class="creditors__item">
+              ООО МФК &laquo;Быстроденьги&raquo;, 123290&nbsp;г. Москва, 1-й
+              Магистральный туп., д.11 стр.10, Лицензия
+              &#8470;&nbsp;2110573000002, ИНН 7325081622, ОГРН 1087325005899,
+              процентная ставка&nbsp;0% в&nbsp;день
+            </li>
+            <li class="creditors__item">
+              ООО &laquo;МКК КАНГАРИЯ&raquo;, 344101, г. Ростов-на-Дону, ул.
+              Ленинградская, д.&nbsp;7, пом. &#8470; П-13, Лицензия
+              &#8470;&nbsp;1904067009295, ИНН 9201526872, ОГРН 1189204008564,
+              процентная ставка&nbsp;0% в&nbsp;день
+            </li>
+            <li class="creditors__item">
+              ООО МКК &laquo;Киберлэндинг&raquo;, 420043, г. Казань, ул.
+              Достоевского, д.&nbsp;52, оф.&nbsp;3, Лицензия
+              &#8470;&nbsp;1803392008777, ИНН 1659182700, ОГРН 1171690064920,
+              процентная ставка&nbsp;0% в&nbsp;день
+            </li>
+            <li class="creditors__item">
+              ООО МКК &laquo;Кредиттер&raquo;, 115280, г. Москва, ул. Ленинская
+              Слобода, д.&nbsp;19, стр.&nbsp;6, ком.&nbsp;6, 7, Лицензия
+              &#8470;&nbsp;1903045009373, ИНН 7702463482, ОГРН 1197746100530,
+              процентная ставка 0,99% в&nbsp;день
+            </li>
+            <li class="creditors__item">
+              ООО МФК &laquo;Лайм-Займ&raquo;, 630102, г. Новосибирск, ул.
+              Кирова, д.&nbsp;48, оф.&nbsp;1401, Лицензия
+              &#8470;&nbsp;651303045004102, ИНН 7724889891, ОГРН 1137746831606,
+              процентная ставка&nbsp;0% в&nbsp;день
+            </li>
+            <li class="creditors__item">
+              ООО МКК &laquo;Академическая&raquo;, 630091, г. Новосибирск, ул.
+              Державина, 28, оф.&nbsp;301, Лицензия &#8470;&nbsp;1903550009325,
+              ИНН 5407973316, ОГРН 1195476007605, процентная ставка&nbsp;0%
+              в&nbsp;день
+            </li>
+            <li class="creditors__item">
+              ООО МКК &laquo;КАППАДОКИЯ&raquo;, 443045, г. Самара, ул. Авроры,
+              д.&nbsp;150, пом. &#8470;н4, офис 306.3, Лицензия
+              &#8470;&nbsp;1903475009492, ИНН 7459007268, ОГРН 1197456052199,
+              процентная ставка&nbsp;0% в&nbsp;день
+            </li>
+            <li class="creditors__item">
+              ООО МКК &laquo;ДЗП-Центр&raquo;, 190031, г. Санкт-Петербург, пер.
+              Спасский, д. 14/35, лит. А, пом.&nbsp;38&nbsp;Н, Лицензия
+              &#8470;&nbsp;651403140005467, ИНН 7838500558, ОГРН 1147847029990,
+              процентная ставка&nbsp;0% в&nbsp;день
+            </li>
+            <li class="creditors__item">
+              ООО МКК &laquo;Кватро&raquo;, 443030, г. Самара, ул.
+              Чернореченская, д.&nbsp;21, оф.&nbsp;425, Лицензия
+              &#8470;&nbsp;1903550009364, ИНН 5402053330, ОГРН 1195476044609,
+              процентная ставка&nbsp;0% в&nbsp;день
+            </li>
+            <li class="creditors__item">
+              ООО МКК &laquo;Турбозайм&raquo;, 123290, г. Москва, туп.
+              Магистральный 1-й, д.&nbsp;11, стр.10, Лицензия
+              &#8470;&nbsp;651303045003951, ИНН 7702820127, ОГРН 1137746702367,
+              процентная ставка 0,99% в&nbsp;день
+            </li>
+          </ul>
+        </section>
+        <div class="footer-middle">
+          <div class="footer-card">
+            <p class="footer__card-txt">Какие карты принимаем</p>
+            <ul class="footer__card-list">
+              <li class="footer__card-item">
+                <a class="footer__card-link" href="#" title="Яндекс кошелек"
+                  ><img
+                    src="img/footer/wallet.png"
+                    alt="яндекс кошелек"
+                    height="40"
+                /></a>
+              </li>
+              <li class="footer__card-item">
+                <a class="footer__card-link" href="#" title="Мастеркарт"
+                  ><img
+                    src="img/footer/Mastercard.png"
+                    alt="Оплата картой Мастер-карт"
+                    height="41"
+                /></a>
+              </li>
+              <li class="footer__card-item">
+                <a class="footer__card-link" href="#" title="МИР"
+                  ><img src="img/footer/peace.png" alt="мир" height="48"
+                /></a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__personal-wrp">
+            <p class="footer__personal">
+              Мы&nbsp;являемся обработчиками
+              <a class="footer__personal-link" href="#"> персональных данных</a>
+            </p>
+          </div>
+        </div>
+        <section class="agreements">
+          <h3 class="agreements__title">Соглашения и&nbsp;условия</h3>
+          <p class="agreements__txt">
+            Займы и&nbsp;кредиты предоставляются партнерами Imoneys Сredit
+            на&nbsp;сумму от&nbsp;3&nbsp;000 до&nbsp;1&nbsp;000&nbsp;000 рублей
+            включительно на&nbsp;срок от&nbsp;13&nbsp;до&nbsp;260&nbsp;недель.
+            Проценты за&nbsp;пользование денежных средств составляют
+            от&nbsp;40&nbsp;до&nbsp;360 процентов годовых. Расчетная сумма
+            (основной долг и&nbsp;проценты) к&nbsp;возврату от&nbsp;500
+            до&nbsp;250&nbsp;000&nbsp;рублей. Условия актуальны
+            на&nbsp;01.06.2021 и&nbsp;не&nbsp;являются публичной офертой. Пример
+            расчета общей стоимости займа: заём
+            на&nbsp;15&nbsp;000&nbsp;руб.&nbsp;и&nbsp;сроком 25&nbsp;недель;
+            проценты за&nbsp;весь период составят 5&nbsp;000&nbsp;руб. Итого ПСК
+            264,392&nbsp;%. За&nbsp;услуги сервиса может быть взята плата
+            в&nbsp;размере от&nbsp;48&nbsp;до&nbsp;446&nbsp;руб.&nbsp;за
+            активацию сервиса
+          </p>
+          <p class="agreements__txt">
+            В&nbsp;случае невозвращения в&nbsp;условленный срок суммы кредита
+            или суммы процентов за&nbsp;пользование заёмными средствами кредитор
+            вынуждено начислит штраф за&nbsp;просрочку платежа. Большинство
+            кредиторов идут на&nbsp;уступки и&nbsp;дают 3&nbsp;дополнительных
+            рабочих дня для оплаты. Они предусмотрены на&nbsp;случай,
+            к&nbsp;примеру, если банковский перевод занял больше времени, чем
+            обычно. Однако, в&nbsp;случае неполучения от&nbsp;Вас какой-либо
+            реакции в&nbsp;течение продолжительного времени, будет начислен
+            штраф за&nbsp;просрочку срока погашения размером в&nbsp;среднем
+            0,10% от&nbsp;первоначальной суммы для займов, 0,03% от&nbsp;суммы
+            задолженности в&nbsp;среднем для потребительских кредитов
+            и&nbsp;кредитных карт. При несоблюдении Вами условий
+            по&nbsp;погашению кредитов и&nbsp;займов, данные о&nbsp;Вас могут
+            быть переданы в&nbsp;реестр должников или БКИ, что негативно может
+            сказаться на&nbsp;Вашей кредитной истории и&nbsp;рейтинге
+            кредитоспособности. Рекомендуем Вам вносить платеж в&nbsp;день
+            получения данных напоминаний. Погашая задолженность в&nbsp;срок,
+            Вы&nbsp;формируете хорошую кредитную историю, что повышает Ваш
+            рейтинг кредитоспособности и&nbsp;шансы в&nbsp;дальнейшем получить
+            кредит на&nbsp;более выгодных условиях.
+          </p>
+        </section>
+        <div class="footer-bottom">
+          <div class="copyright">
+            <div class="copyright__img"></div>
+            <p class="footer__copyright-txt">
+              Imoneys Сredit &copy;2015&mdash;2022 Все права на&nbsp;сайт
+              защищены.
+            </p>
+          </div>
+          <div class="footer__social-icons-wrp">
+            <button class="btn-unsubscribe">отписаться</button>
+            <ul class="footer__list-social-icons">
+              <li class="footer__item-social-icon">
+                <a
+                  class="link-social-icon"
+                  href="https://youtube.com"
+                  target="_blank"
+                >
+                  <svg
+                    width="22"
+                    height="16"
+                    viewBox="0 0 22 16"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10.9992 15.9919C10.9974 15.9919 10.9954 15.9919 10.9933 15.9919C10.3295 15.9873 4.46091 15.9338 2.79822 15.4841C1.63621 15.1718 0.71893 14.2555 0.405728 13.0933C-0.0293314 11.46 -0.00163662 8.3154 0.00138462 8.0643C-0.00146877 7.81437 -0.0294992 4.64375 0.404385 2.997C0.404889 2.99549 0.405224 2.99381 0.405728 2.9923C0.715406 1.84339 1.65333 0.898744 2.79537 0.585542C2.79822 0.584702 2.80124 0.584031 2.80409 0.583192C4.44799 0.151154 10.3282 0.0982819 10.9933 0.09375H11.0053C11.6708 0.0982819 17.555 0.151825 19.2024 0.602158C20.3614 0.913682 21.278 1.82878 21.592 2.98945C22.0434 4.63737 22.0016 7.81488 21.9971 8.0831C22.0002 8.34729 22.0266 11.4637 21.5941 13.1052C21.5937 13.1069 21.5932 13.1084 21.5929 13.1099C21.2795 14.2721 20.3624 15.1884 19.199 15.5011C19.1975 15.5016 19.1959 15.5019 19.1943 15.5024C17.5506 15.9343 11.6703 15.9872 11.0053 15.9919C11.0033 15.9919 11.0012 15.9919 10.9992 15.9919ZM2.06573 3.43776C1.68371 4.89132 1.7198 8.0215 1.72014 8.05305V8.07571C1.70872 8.94382 1.74884 11.4578 2.0659 12.6485C2.21965 13.2187 2.672 13.6704 3.2457 13.8246C4.47249 14.1565 9.25227 14.2609 10.9992 14.2731C12.7507 14.2609 17.5375 14.1593 18.7553 13.8408C19.3271 13.686 19.778 13.2358 19.9327 12.665C20.2501 11.4568 20.2899 8.95506 20.2783 8.0925C20.2783 8.08343 20.2783 8.07437 20.2785 8.06531C20.2943 7.18679 20.2632 4.64341 19.9342 3.44314C19.9339 3.44196 19.9335 3.44079 19.9334 3.43961C19.779 2.86692 19.3264 2.41524 18.7527 2.26099C17.5379 1.92882 12.7504 1.82476 10.9992 1.8125C9.24891 1.82476 4.46679 1.92614 3.24536 2.24437C2.68257 2.40047 2.21999 2.86826 2.06573 3.43776ZM8.80865 11.5231V4.56234L14.8243 8.04281L8.80865 11.5231Z"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__item-social-icon">
+                <a
+                  class="link-social-icon"
+                  href="https://instagram.com"
+                  target="_blank"
+                >
+                  <svg
+                    width="19"
+                    height="19"
+                    viewBox="0 0 19 19"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.68737 19C9.62445 19 9.56154 19 9.49819 18.9997C8.00883 19.0033 6.63268 18.9655 5.29438 18.884C4.0674 18.8094 2.94741 18.3854 2.0553 17.658C1.1945 16.9561 0.606674 16.007 0.308194 14.8375C0.048418 13.8193 0.0346464 12.8198 0.0214547 11.8531C0.011887 11.1595 0.0020295 10.3375 0 9.50171C0.0020295 8.6624 0.011887 7.84048 0.0214547 7.14686C0.0346464 6.18027 0.048418 5.18078 0.308194 4.16244C0.606674 2.99291 1.1945 2.04387 2.0553 1.34198C2.94741 0.614572 4.0674 0.190568 5.29452 0.115914C6.63283 0.0345919 8.00926 -0.00338736 9.50181 0.000236614C10.9916 -0.00295248 12.3673 0.0345919 13.7056 0.115914C14.9326 0.190568 16.0526 0.614572 16.9447 1.34198C17.8056 2.04387 18.3933 2.99291 18.6918 4.16244C18.9516 5.18063 18.9654 6.18027 18.9785 7.14686C18.9881 7.84048 18.9981 8.6624 19 9.49823V9.50171C18.9981 10.3375 18.9881 11.1595 18.9785 11.8531C18.9654 12.8197 18.9517 13.8192 18.6918 14.8375C18.3933 16.007 17.8056 16.9561 16.9447 17.658C16.0526 18.3854 14.9326 18.8094 13.7056 18.884C12.424 18.962 11.1074 19 9.68737 19ZM9.49819 17.5153C10.9633 17.5188 12.3086 17.4818 13.6155 17.4024C14.5432 17.346 15.3476 17.0449 16.0066 16.5076C16.6158 16.0108 17.0353 15.3254 17.2535 14.4705C17.4698 13.6229 17.4822 12.7128 17.4943 11.8328C17.5037 11.1438 17.5135 10.3277 17.5156 9.49997C17.5135 8.67211 17.5037 7.85614 17.4943 7.16715C17.4822 6.2871 17.4698 5.37705 17.2535 4.52933C17.0353 3.67437 16.6158 2.989 16.0066 2.49223C15.3476 1.95501 14.5432 1.65393 13.6155 1.59754C12.3086 1.51796 10.9633 1.48128 9.50167 1.48447C8.03681 1.48099 6.69139 1.51796 5.38454 1.59754C4.45677 1.65393 3.65237 1.95501 2.99336 2.49223C2.38422 2.989 1.9647 3.67437 1.74653 4.52933C1.53024 5.37705 1.51777 6.28696 1.50574 7.16715C1.49632 7.85672 1.48646 8.67327 1.48443 9.50171C1.48646 10.3265 1.49632 11.1432 1.50574 11.8328C1.51777 12.7128 1.53024 13.6229 1.74653 14.4705C1.9647 15.3254 2.38422 16.0108 2.99336 16.5076C3.65237 17.0448 4.45677 17.3459 5.38454 17.4023C6.69139 17.4818 8.0371 17.519 9.49819 17.5153ZM9.46282 14.1387C6.90507 14.1387 4.82397 12.0578 4.82397 9.49997C4.82397 6.94217 6.90507 4.86129 9.46282 4.86129C12.0207 4.86129 14.1017 6.94217 14.1017 9.49997C14.1017 12.0578 12.0207 14.1387 9.46282 14.1387ZM9.46282 6.34567C7.72354 6.34567 6.3084 7.76076 6.3084 9.49997C6.3084 11.2392 7.72354 12.6543 9.46282 12.6543C11.2022 12.6543 12.6172 11.2392 12.6172 9.49997C12.6172 7.76076 11.2022 6.34567 9.46282 6.34567ZM14.6212 3.37691C14.0064 3.37691 13.5079 3.87528 13.5079 4.49019C13.5079 5.10511 14.0064 5.60348 14.6212 5.60348C15.2362 5.60348 15.7345 5.10511 15.7345 4.49019C15.7345 3.87528 15.2362 3.37691 14.6212 3.37691Z"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__item-social-icon">
+                <a
+                  class="link-social-icon"
+                  href="https://facebook.com"
+                  target="_blank"
+                >
+                  <svg
+                    width="11"
+                    height="21"
+                    viewBox="0 0 11 21"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0.647008 12.1949H2.81923V20.3429C2.81923 20.7051 3.10823 20.9991 3.46624 20.9991L6.92299 21C7.281 21 7.56999 20.7051 7.56999 20.3438V12.1957H9.62921C9.9553 12.1957 10.2305 11.949 10.271 11.6209L10.7007 8.12088C10.749 7.73063 10.4479 7.38325 10.0588 7.38325H7.56999C7.66748 5.22112 7.19473 4.5815 8.58105 4.5815C9.51965 4.46775 11 4.94988 11 3.92525V0.795375C11 0.46725 10.761 0.189875 10.441 0.14525C10.1701 0.107625 9.09952 0 7.77186 0C1.72449 0 2.96934 6.8005 2.82009 7.38238H0.647008C0.28986 7.38238 0 7.67638 0 8.03863V11.5386C0 11.9009 0.28986 12.1949 0.647008 12.1949ZM1.29402 8.69575H3.46624C3.82339 8.69575 4.11325 8.40175 4.11325 8.0395V5.28238C4.11325 2.75975 5.44608 1.31338 7.771 1.31338C8.52843 1.31338 9.22547 1.351 9.70512 1.3895V3.26988C9.35832 3.44925 6.27512 2.49637 6.27512 5.62975V8.04038C6.27512 8.40263 6.56498 8.69663 6.92212 8.69663H9.32554L9.05639 10.8841H6.92212C6.56498 10.8841 6.27512 11.1781 6.27512 11.5404V19.6875H4.11411V11.5395C4.11411 11.1772 3.82425 10.8832 3.4671 10.8832H1.29402V8.69575Z"
+                    />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script/script.js"></script>
+  </body>
 </html>
