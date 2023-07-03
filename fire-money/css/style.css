@@ -1604,7 +1604,12 @@ body {
 		max-width: 457px;
 		justify-content: space-between;
 	}
-
+	.creditors__list {
+		margin: 0 0 41px 0;
+	}
+	.creditors__item {
+		font-size: 12.8px;
+	}
 	/* ====ENDfooter==== */
 }
 
