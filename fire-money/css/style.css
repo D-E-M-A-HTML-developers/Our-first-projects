@@ -581,6 +581,7 @@ body {
   display: flex;
   margin: 0 0 34px 0;
   max-width: 68px;
+  width: 100%;
   height: 77px;
   align-items: flex-end;
 }
@@ -1707,7 +1708,105 @@ body {
     gap: 25px;
     align-items: center;
   }
+
+  .sum-credit__wrapper {
+    max-width: 360px;
+    width: 100%;
+  }
+
+  .promo-form {
+    min-width: 360px;
+    margin: 0 0 34px 0;
+  }
+
+  .promo-info__link {
+    margin: 0 0 24px 0;
+  }
+
+  .promo-info__link-txt {
+    font-size: 20px;
+  }
+
+  .promo-info__title {
+    font-size: 36px;
+    line-height: 111.5%;
+    margin: 0 0 28px 0;
+  }
+
+  .promo-info__txt {
+    font-size: 20px;
+    line-height: 133.5%;
+    margin: 0 0 18px 0;
+  }
+
+  .promo-image {
+    display: none;
+  }
+
+  .offers {
+    padding: 39px 0 0 0;
+  }
+
+  .offers-border {
+    padding: 0 0 51px 0;
+  }
+
+  .offers__title {
+    margin: 0 0 32px 0;
+  }
+
+  .offers__list {
+    margin: 0 0 25px 0;
+  }
+
+  .money-request__title {
+    margin: 0 0 97px 0;
+  }
+
+  .money-request__list {
+    flex-direction: column;
+    gap: 79px;
+  }
+
+  .money-request__item {
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+
+  .money-request__wrp-images {
+    margin: 0;
+  }
+
+  .money-request__list::before {
+    transform: rotate(90deg);
+    width: 74px;
+    max-width: 100%;
+    top: -7px;
+    left: 82px;
+  }
+
+  .money-request__list::after {
+    width: 468px;
+    max-width: 468px;
+    transform: rotate(90deg);
+    top: 275px;
+    left: -115px;
+  }
+
+  .money-request__txt-description {
+    max-width: 151px;
+    width: 100%;
+    display: flex;
+    min-height: 77px;
+    align-items: center;
+  }
+
+  .money-request__txt-description p {
+    text-align: left;
+  }
 }
+
 @keyframes a {
   0% {
     top: -25px;
