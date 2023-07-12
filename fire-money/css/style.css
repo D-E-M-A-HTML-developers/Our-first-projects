@@ -78,14 +78,16 @@ a:hover,
 
 .btn:hover,
 .btn2:hover,
-.header-button:hover {
+.header-button:hover,
+.menu-icon:hover {
 	box-shadow: 1px 1px 10px #45511f;
 }
 
 a:active,
 .btn:active,
 .btn2:active,
-.btn-unsubscribe:active {
+.btn-unsubscribe:active,
+.menu-icon:active {
 	opacity: 0.5;
 }
 
@@ -1739,6 +1741,11 @@ body {
 		background: #fff;
 	}
 
+	.menu-icon:hover {
+		cursor: pointer;
+		transition: .5s ease;
+	}
+
 	.menu-icon span,
 	.menu-icon span::after,
 	.menu-icon span::before {
@@ -1779,12 +1786,17 @@ body {
 		background: transparent;
 	}
 
+	#menu-switch:checked~.menu-icon {
+		z-index: 3;
+		background: transparent;
+		box-shadow: none;
+	}
+
 	#menu-switch:checked~.menu-icon>span::after {
 		transform: rotate(45deg);
 		top: 0px;
 		background-color: #3c4260;
 		opacity: .7;
-		z-index: 3;
 	}
 
 	#menu-switch:checked~.menu-icon>span::before {
@@ -2023,5 +2035,42 @@ body {
 
 	.reviews__buttons-wrp {
 		gap: 13px;
+	}
+
+	.clients {
+		padding: 32px 0 34px;
+	}
+
+	.clients__title {
+		margin: 0 0 29px 0;
+	}
+
+	.clients__item {
+		max-width: 360px;
+	}
+
+	.clients__item:nth-child(2) {
+		display: none;
+	}
+
+	.about-service {
+		padding: 41px 0 26px;
+	}
+
+	.about-service__title {
+		margin: 0 0 30px 0;
+	}
+
+	.about-service__item {
+		max-width: 360px;
+		padding: 33px 27px 42px;
+	}
+
+	.about-service__subtitle {
+		margin: 0 0 23px 0;
+	}
+
+	.about-service__txt:not(:last-child) {
+		margin: 0 0 20px 0;
 	}
 }
