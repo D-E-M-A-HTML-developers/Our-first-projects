@@ -1078,6 +1078,7 @@ body {
   background-image: url("../img/footer/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: bottom;
 }
 
 /* ====footer-top==== */
@@ -2112,4 +2113,91 @@ body {
   .recieve-money__txt2 {
     margin: 0 0 28px 0;
   }
+
+  .footer {
+	background:linear-gradient(315deg, #FFC83E 0%, #FF9F47 100%);
+	background-image: url(../img/footer/background-fire.png);
+	background-repeat: no-repeat;
+	background-size: cover;
 }
+  .footer-top {
+	padding: 32px 0 34px;
+	align-items: center;
+	flex-direction: column;
+  }
+  .footer-logo {
+    margin: 0 0 24px 0;
+}
+.footer__wrp-contacts {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+	gap: 24px;
+	margin: 0 0 32px 0;
+}
+.footer__tel-link {
+	padding-left: 29px;
+}
+.footer__tel-link span::before{
+	left:-4px;
+} 
+.footer__mail-link span::before {
+	left: -6px;
+}
+.footer__mail-link {
+	margin: 0;
+	padding-left: 26px;
+}
+.footer__list {
+	padding: 24px 0 0;
+}
+.footer__item-link {
+    font-size: 16px;
+}
+.creditors__title {
+	margin: 32px 0 23px 0;
+}
+.creditors__list {
+    margin: 0 0 36px 0;
+}
+.creditors__item {
+    font-size: 12px;
+	line-height: normal;
+}
+.footer-card {
+	flex-direction: column;
+	gap: 19px;
+}
+.footer__card-txt {
+    width: 220px;
+    height: 21px;
+}
+.footer__personal-wrp {
+	padding: 22px 0;
+}
+.footer__personal {
+	line-height: normal;
+}
+.agreements {
+    padding: 31px 0 34px;
+}
+.agreements__txt {
+	font-size: 12px;
+	line-height: normal;
+}
+.agreements__txt:not(:last-child) {
+    margin: 0px 0 14px 0;
+}
+.footer-bottom {
+    padding: 34px 0 39px;
+}
+.copyright {
+	flex-direction: column;
+	gap:21px;
+}
+.footer__copyright-txt {
+	width: 260px;
+    line-height: normal;
+}
+}
+
