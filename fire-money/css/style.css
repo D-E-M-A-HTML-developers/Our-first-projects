@@ -1913,13 +1913,15 @@ body {
   }
 
   .money-request__title {
-    margin: 0 0 97px 0;
+    margin: 0 0 70px 0;
   }
 
   .money-request__list {
     flex-direction: column;
-    gap: 79px;
-    margin: 0 0 60px 0;
+    gap: 55px;
+    margin: 0 auto 66px;
+    max-width: 308px;
+    width: 100%;
   }
 
   .money-request__item {
@@ -1927,25 +1929,33 @@ body {
     align-items: flex-end;
     justify-content: space-between;
   }
-
+  .money-request__item:nth-child(2) {
+    margin: 0 0 4px;
+  }
+  .money-request__item:nth-child(3) {
+    margin: 0 0 20px;
+  }
   .money-request__wrp-images {
     margin: 0;
+  }
+  .money-request__wrp-step-number {
+    margin: 0 9px 10px 0;
   }
 
   .money-request__list::before {
     transform: rotate(90deg);
     width: 74px;
     max-width: 100%;
-    top: -7px;
-    left: 82px;
+    top: 14px;
+    left: 72px;
   }
 
   .money-request__list::after {
     width: 468px;
     max-width: 468px;
     transform: rotate(90deg);
-    top: 275px;
-    left: -115px;
+    top: 283px;
+    left: -124px;
   }
 
   .money-request__txt-description {
@@ -1953,7 +1963,7 @@ body {
     width: 100%;
     display: flex;
     min-height: 77px;
-    align-items: center;
+    align-items: flex-end;
   }
 
   .money-request__txt-description p {
@@ -1976,7 +1986,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     gap: 26px;
-    margin: 0 0 39px;
+    margin: 0 0 35px;
   }
 
   .card-request__item,
