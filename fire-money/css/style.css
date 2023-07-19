@@ -1918,8 +1918,8 @@ body {
 
   .money-request__list {
     flex-direction: column;
-    gap: 55px;
-    margin: 0 auto 66px;
+    gap: 52px;
+    margin: 0 auto 69px;
     max-width: 308px;
     width: 100%;
   }
@@ -1930,24 +1930,24 @@ body {
     justify-content: space-between;
   }
   .money-request__item:nth-child(2) {
-    margin: 0 0 4px;
+    margin: 0 0 7px;
   }
   .money-request__item:nth-child(3) {
-    margin: 0 0 20px;
+    margin: 0 0 25px;
   }
   .money-request__wrp-images {
     margin: 0;
   }
   .money-request__wrp-step-number {
-    margin: 0 9px 10px 0;
+    margin: 0 13px 11px 0;
   }
 
   .money-request__list::before {
     transform: rotate(90deg);
     width: 74px;
     max-width: 100%;
-    top: 14px;
-    left: 72px;
+    top: 12px;
+    left: 68px;
   }
 
   .money-request__list::after {
@@ -1955,7 +1955,7 @@ body {
     max-width: 468px;
     transform: rotate(90deg);
     top: 283px;
-    left: -124px;
+    left: -128px;
   }
 
   .money-request__txt-description {
@@ -1986,7 +1986,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     gap: 26px;
-    margin: 0 0 35px;
+    margin: 0 0 32px;
   }
 
   .card-request__item,
@@ -2057,11 +2057,11 @@ body {
   }
 
   .clients {
-    padding: 32px 0 34px;
+    padding: 43px 0 34px;
   }
 
   .clients__title {
-    margin: 0 0 29px 0;
+    margin: 0 0 30px 0;
   }
 
   .clients__item {
@@ -2073,11 +2073,11 @@ body {
   }
 
   .about-service {
-    padding: 41px 0 26px;
+    padding: 48px 0 26px;
   }
 
   .about-service__title {
-    margin: 0 0 30px 0;
+    margin: 0 0 36px 0;
   }
 
   .about-service__item {
@@ -2098,7 +2098,7 @@ body {
   }
 
   .faq__title {
-    margin: 0 0 29px;
+    margin: 0 0 35px;
   }
   .accordion-button {
     padding: 25px 18px 26px;
@@ -2111,7 +2111,7 @@ body {
   .accordion-body {
     font-size: 14px;
     line-height: 16px;
-    padding: 0 54px 25px 18px;
+    padding: 0 54px 28px 18px;
   }
   .accordion-body span:first-child {
     display: none;
