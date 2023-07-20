@@ -2081,11 +2081,12 @@ body {
 
   .about-service__item {
     max-width: 360px;
-    padding: 33px 27px 42px;
+    padding: 33px 26px 42px;
   }
 
   .about-service__subtitle {
-    margin: 0 0 23px 0;
+    margin: 0 0 22px 0;
+    min-height: 28px;
   }
 
   .about-service__txt:not(:last-child) {
