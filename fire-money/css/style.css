@@ -1315,7 +1315,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 349px;
+  max-width: 349px;
+  width: 100%;
   height: 45px;
 }
 
@@ -2240,5 +2241,37 @@ body {
   .footer__copyright-txt {
     width: 260px;
     line-height: normal;
+  }
+}
+
+@media (max-width: 379px) {
+  .offers__title,
+  .money-request__title,
+  .card-request__title,
+  .reviews__title,
+  .clients__title,
+  .about-service__title,
+  .faq__title,
+  .recieve-money__title {
+    font-size: 33px;
+  }
+  .header-button {
+    font-size: 11px;
+    padding: 12px 19px 13px 21px;
+  }
+  .promo-info__link {
+    padding: 15px 16px 15px 70px;
+  }
+  .promo-info__link-txt {
+    font-size: 18px;
+  }
+  .promo-info__title {
+    font-size: 32px;
+  }
+  .money-request__item:first-child .money-request__wrp-step-number {
+    margin: 0 16px 11px 0;
+  }
+  .footer__item-link {
+    font-size: 15px;
   }
 }
