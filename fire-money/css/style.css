@@ -55,6 +55,7 @@ a {
 }
 
 .btn {
+  padding: 0;
   max-width: 273px;
   width: 100%;
   min-height: 64px;
@@ -216,11 +217,9 @@ body {
   background-color: rgba(255, 255, 255, 0.95);
   margin: 0 0 20px 0;
 }
-
 .promo-info__link:hover {
   text-shadow: 0 4px 12px orange;
 }
-
 .promo-info__link-txt {
   font-weight: 500;
   font-size: 22px;
@@ -229,7 +228,6 @@ body {
   color: #3c4260;
   position: relative;
 }
-
 .promo-info__link-txt::before {
   content: "";
   background-image: url("../img/top/fire-1.svg");
@@ -243,7 +241,6 @@ body {
   animation-timing-function: ease;
   animation-iteration-count: infinite;
 }
-
 .promo-info__title {
   margin: 0 0 15px;
   max-width: 477px;
@@ -253,7 +250,6 @@ body {
   line-height: 54px;
   text-transform: uppercase;
 }
-
 .promo-info__txt {
   max-width: 454px;
   width: 100%;
@@ -262,14 +258,12 @@ body {
   line-height: 36px;
   margin: 0 0 110px 0;
 }
-
 .promo-info__text {
   max-width: 300px;
   width: 100%;
   font-size: 14px;
   line-height: 20px;
 }
-
 .promo-image {
   max-width: 458px;
   width: 100%;
@@ -284,7 +278,6 @@ body {
   z-index: 1;
   pointer-events: none;
 }
-
 .promo-form {
   max-width: 428px;
   width: 100%;
@@ -296,7 +289,6 @@ body {
   padding: 29px 19px 36px 28px;
   margin: 0 0 68px 0;
 }
-
 .promo-form-calc {
   max-width: 382px;
   width: 100%;
@@ -306,133 +298,73 @@ body {
   margin: 0 0 63px 0;
   align-items: center;
 }
-
 .promo-form__txt {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
   color: #45515f;
   align-self: flex-start;
-  margin: 0 0 11px 0;
+  margin: 0 0 39px 0;
 }
-
+.promo-form__sum-credit {
+  max-width: 379px;
+  width: 100%;
+  min-height: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 43px;
+}
+.promo-form__min-sum,
+.sum-credit__max-sum,
+.promo-form__min-term,
+.promo-form__max-term {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  color: #c0c2c5;
+}
 .promo-form__txt2 {
-  margin: 0 0 27px 0;
+  margin: 0 0 50px 0;
 }
-
+.promo-form__term-credit {
+  max-width: 381px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 25px;
+}
+.promo-form__button {
+  margin: 0 0 0 10px;
+}
 .promo-form__info__list {
   display: grid;
-  column-gap: 18px;
+  column-gap: 48px;
   row-gap: 21px;
-  grid-template-columns: repeat(2, minmax(144px, 160px));
-  justify-content: flex-end;
+  grid-template-columns: repeat(2, 144px);
+  padding: 0 0 0 39px;
 }
-
 .promo-form__info__item p {
   font-size: 14px;
   line-height: 17px;
   color: #45515f;
   margin: 0 0 2px 0;
 }
-
 .promo-form__info__item span {
   font-weight: 500;
   font-size: 18px;
   line-height: 21px;
   color: #f28925;
 }
-
 /* ====promoSliders==== */
-
-/* .sum-credit,
-.term-credit {
-  width: 100%;
-  margin: 0 0 10px 0;
-  appearance: none;
-  -webkit-appearance: none;
-  height: 7px;
-  background-color: #ccc;
-  outline: none;
-  cursor: pointer;
-
-  border-radius: 8px;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
-
-  transition: opacity 0.2s;
-  -webkit-transition: opacity 0.2s;
-  -moz-transition: opacity 0.2s;
-  -ms-transition: opacity 0.2s;
-  -o-transition: opacity 0.2s;
-}
-
-.sum-credit__wrapper {
-  width: 381px;
-  position: relative;
-  z-index: 2;
-}
-
-.sum-credit__label,
-.term-credit__label {
-  position: relative;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 24px;
-  color: #45515f;
-}
-
-.sum-credit::-webkit-slider-thumb,
-.term-credit::-webkit-slider-thumb {
-  appearance: none;
-  width: 21px;
-  height: 21px;
-  background-image: url("../img/top/slider.svg");
-  border-radius: 100%;
-}
-
-.sum-credit__progress,
-.term-credit__progress {
-  position: absolute;
-  height: 7px;
-  background: linear-gradient(81.55deg, #ffc83e 33.93%, #ff9f47 73.78%);
-  top: 8px;
-  z-index: 1;
-  border-radius: 8px 1px 1px 8px;
-}
-
-.sum-credit__limit,
-.term-credit__limit {
-  display: flex;
-  max-width: 381px;
-  width: 100%;
-  justify-content: space-between;
-}
-
-.sum-credit__limit {
-  margin: 0 0 43px 0;
-}
-
-.term-credit__limit {
-  margin: 0 0 25px 0;
-}
-
-.sum-credit__limit-txt,
-.term-credit__limit-txt {
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 15px;
-  color: #c0c2c5;
-}
-*/
-
 .promo-form__inputs-wrp {
   max-width: 381px;
   width: 100%;
+  min-height: 21px;
   position: relative;
   text-align: center;
+  margin: 0 0 4px;
 }
 
 .promo-form__output,
