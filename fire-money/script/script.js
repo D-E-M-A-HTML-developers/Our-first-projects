@@ -161,26 +161,26 @@
 function updateToValue(value) {
   let outputSumCredit = document.querySelector("#output-sum-credit");
   const inputSumCredit = document.querySelector(".promo-form__input");
-  const inputSumCreditdWidth = Number(inputSumCredit.clientWidth);
+  const inputSumCreditWidth = Number(inputSumCredit.clientWidth);
   const circleSumCredit = document.querySelector(".promo-form__circle");
   outputSumCredit.value = value + " 000 ₽ ";
   outputSumCredit.style.left =
-    (inputSumCreditdWidth - 21) * (value / 130) + "px";
+    (inputSumCreditWidth - 21) * (value / 130) + "px";
   circleSumCredit.style.left =
-    (inputSumCreditdWidth - 21) * (value / 100) + "px";
+    (inputSumCreditWidth - 21) * (value / 100) + "px";
 }
 function updateToValue2(value) {
   let outputTermCredit = document.querySelector("#output-term-credit");
   const inputTermCredit = document.querySelector(
     ".promo-form__input-term-credit"
   );
-  const inputTermCreditdWidth = Number(inputTermCredit.clientWidth);
+  const inputTermCreditWidth = Number(inputTermCredit.clientWidth);
   const circleTermCredit = document.querySelector(
     ".promo-form__circle-term-credit"
   );
   outputTermCredit.value = value + " дней";
   outputTermCredit.style.left =
-    (inputTermCreditdWidth - 21) * (value / 40) + "px";
+    (inputTermCreditWidth - 21) * (value / 40) + "px";
   circleTermCredit.style.left =
-    (inputTermCreditdWidth - 21) * ((value - 3) / 27) + "px";
+    (inputTermCreditWidth - 21) * ((value - 3) / 27) + "px";
 }
