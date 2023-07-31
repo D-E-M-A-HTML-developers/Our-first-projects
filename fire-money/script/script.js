@@ -157,30 +157,71 @@
 // 	const dateString = today.getDate() + " " + month + " " + today.getFullYear();
 // 	return dateString;
 // }
+let outputSumCredit = document.querySelector("#output-sum-credit");
+const inputSumCredit = document.querySelector(".promo-form__input");
+const inputSumCreditWidth = Number(inputSumCredit.clientWidth);
+const circleSumCredit = document.querySelector(".promo-form__circle");
+const creditTake = document.querySelector(".sum-credit-take");
+const sumReturn = document.querySelector(".promo-form__sum-return");
 
 function updateToValue(value) {
-  let outputSumCredit = document.querySelector("#output-sum-credit");
-  const inputSumCredit = document.querySelector(".promo-form__input");
-  const inputSumCreditWidth = Number(inputSumCredit.clientWidth);
-  const circleSumCredit = document.querySelector(".promo-form__circle");
-  outputSumCredit.value = value + " 000 ₽ ";
+  outputSumCredit.value = value + " 000 ₽";
+  creditTake.textContent = value + " 000 ₽";
   outputSumCredit.style.left =
     (inputSumCreditWidth - 21) * (value / 130) + "px";
   circleSumCredit.style.left =
     (inputSumCreditWidth - 21) * (value / 100) + "px";
+  let sum = Number(value);
+  sum = sum * 0.1 + sum;
+  if (Number.isInteger(sum)) {
+    sumReturn.textContent = sum + " 000 ₽";
+  } else {
+    sum = sum * 10;
+    sumReturn.textContent = sum + " 00 ₽";
+  }
 }
+
+let outputTermCredit = document.querySelector("#output-term-credit");
+const inputTermCredit = document.querySelector(
+  ".promo-form__input-term-credit"
+);
+const inputTermCreditWidth = Number(inputTermCredit.clientWidth);
+const circleTermCredit = document.querySelector(
+  ".promo-form__circle-term-credit"
+);
+const dateReturn = document.querySelector(".date-return");
+dateReturn.textContent = getReturnDate(8);
+
 function updateToValue2(value) {
-  let outputTermCredit = document.querySelector("#output-term-credit");
-  const inputTermCredit = document.querySelector(
-    ".promo-form__input-term-credit"
-  );
-  const inputTermCreditWidth = Number(inputTermCredit.clientWidth);
-  const circleTermCredit = document.querySelector(
-    ".promo-form__circle-term-credit"
-  );
-  outputTermCredit.value = value + " дней";
+  let textTerm = value;
   outputTermCredit.style.left =
     (inputTermCreditWidth - 21) * (value / 40) + "px";
   circleTermCredit.style.left =
     (inputTermCreditWidth - 21) * ((value - 3) / 27) + "px";
+  if (textTerm == 1 || textTerm == 21) {
+    outputTermCredit.textContent = textTerm += " день";
+  } else if ((value >= 2 && value <= 4) || (value >= 22 && value <= 24)) {
+    outputTermCredit.textContent = textTerm += " дня";
+  } else {
+    outputTermCredit.textContent = textTerm += " дней";
+  }
+  dateReturn.textContent = getReturnDate(textTerm);
+}
+
+function getReturnDate(numDay) {
+  const today = new Date();
+  const day = today.getDate() + Number.parseInt(numDay);
+  today.setDate(day);
+  let month = today.toLocaleDateString("default", { month: "long" });
+  if (
+    today.getMonth() === 2 || // март
+    today.getMonth() === 7
+  ) {
+    month += "а";
+  } else {
+    month = month.slice(0, -1);
+    month += "я";
+  }
+  const dateString = today.getDate() + " " + month + " " + today.getFullYear();
+  return dateString;
 }
