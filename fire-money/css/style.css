@@ -340,9 +340,9 @@ body {
 }
 .promo-form__info__list {
   display: grid;
-  column-gap: 48px;
+  column-gap: 46px;
   row-gap: 21px;
-  grid-template-columns: repeat(2, 144px);
+  grid-template-columns: repeat(2, 146px);
   padding: 0 0 0 39px;
 }
 .promo-form__info__item p {
@@ -378,7 +378,12 @@ body {
   line-height: 24px;
   color: #45515f;
 }
-
+.promo-form__output {
+  left: 180px;
+}
+.promo-form__output-term-credit {
+  left: 72px;
+}
 .promo-form__input,
 .promo-form__input-term-credit {
   -webkit-appearance: none;
@@ -402,6 +407,12 @@ body {
   top: 0;
   left: 0;
   z-index: -1;
+}
+.promo-form__circle {
+  left: 234px;
+}
+.promo-form__circle-term-credit {
+  left: 66.6667px;
 }
 .promo-form__input::-webkit-slider-thumb,
 .promo-form__input-term-credit::-webkit-slider-thumb {
