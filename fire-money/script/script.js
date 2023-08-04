@@ -163,6 +163,7 @@ const inputSumCreditWidth = Number(inputSumCredit.clientWidth);
 const circleSumCredit = document.querySelector(".promo-form__circle");
 const creditTake = document.querySelector(".sum-credit-take");
 const sumReturn = document.querySelector(".promo-form__sum-return");
+const sumMonth = document.querySelector(".promo-form__sum-month");
 
 function updateToValue(value) {
   outputSumCredit.value = value + " 000 ₽";
@@ -171,14 +172,25 @@ function updateToValue(value) {
     (inputSumCreditWidth - 21) * (value / 130) + "px";
   circleSumCredit.style.left =
     (inputSumCreditWidth - 21) * (value / 100) + "px";
-  let sum = Number(value);
+  sum = Number(value);
   sum = sum * 0.1 + sum;
-  if (Number.isInteger(sum)) {
-    sumReturn.textContent = sum + " 000 ₽";
-  } else {
-    sum = sum * 10;
-    sumReturn.textContent = sum + " 00 ₽";
+  sumReturn.textContent = formatNumber(sum);
+  sumMonth.textContent = calculateMonthlyPayment(Number(value), 10, 8);
+}
+
+function formatNumber(number) {
+  if (isNaN(number)) {
+    return "Невірний формат числа";
   }
+  const numberString = number.toString();
+  const parts = numberString.split(".");
+  if (parts.length === 1) {
+    parts.push("000");
+  } else if (parts[1].length === 1) {
+    parts[1] += "00";
+  }
+  const formattedNumber = parts[0] + " " + parts[1];
+  return formattedNumber;
 }
 
 let outputTermCredit = document.querySelector("#output-term-credit");
@@ -225,3 +237,26 @@ function getReturnDate(numDay) {
   const dateString = today.getDate() + " " + month + " " + today.getFullYear();
   return dateString;
 }
+
+function calculateMonthlyPayment(P, i, n) {
+  let r = i / (12 * 100);
+  let M = (P * (r * Math.pow(1 + r, n))) / (Math.pow(1 + r, n) - 1);
+  return M;
+}
+
+// var principal = 10000; // сумма кредита
+// var interestRate = 5; // годовая процентная ставка
+// var loanTerm = 12; // количество месяцев
+
+// console.log(monthlyPayment);
+
+// P - сумма кредита (принципал)
+// i - годовая процентная ставка или процентная ставка за период (например, месяц)
+// n - количество периодов (например, количество месяцев)
+// r - ежемесячная процентная ставка (r = i / (12 * 100))
+
+// Формула расчета ежемесячного платежа на кредит:
+
+// M = P * (r * (1 + r)^n) / ((1 + r)^n - 1)
+
+// где M - ежемесячный платеж.

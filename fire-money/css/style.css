@@ -340,9 +340,9 @@ body {
 }
 .promo-form__info__list {
   display: grid;
-  column-gap: 46px;
+  column-gap: 44px;
   row-gap: 21px;
-  grid-template-columns: repeat(2, 146px);
+  grid-template-columns: repeat(2, 150px);
   padding: 0 0 0 39px;
 }
 .promo-form__info__item p {
