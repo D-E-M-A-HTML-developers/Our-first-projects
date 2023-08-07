@@ -97,7 +97,8 @@
                   for="range1"
                   class="promo-form__output"
                   id="output-sum-credit"
-                  >65 000 &#8381;</output
+                  ><span class="promo-form__output-sum">65</span
+                  ><span> 000 &#8381;</span></output
                 >
                 <input
                   type="range"
@@ -108,7 +109,7 @@
                   min="0"
                   max="100"
                   step="1"
-                  oninput="updateToValue(value)"
+                  oninput="updateToValue(value, id)"
                 />
                 <span class="promo-form__circle"></span>
               </div>
@@ -125,18 +126,19 @@
                   for="range"
                   class="promo-form__output-term-credit"
                   id="output-term-credit"
-                  >8 дней</output
+                  ><span class="promo-form__return-period">8</span
+                  ><span class="promo-form__term-day"> дней</span></output
                 >
                 <input
                   type="range"
                   name="range"
-                  id="range"
+                  id="range2"
                   class="promo-form__input-term-credit"
                   value="8"
                   min="3"
                   max="30"
                   step="1"
-                  oninput="updateToValue2(value)"
+                  oninput="updateToValue(value, id)"
                 />
                 <span class="promo-form__circle-term-credit"></span>
               </div>
