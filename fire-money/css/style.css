@@ -370,9 +370,9 @@ body {
 .promo-form__output,
 .promo-form__output-term-credit {
   position: absolute;
+  display: block;
   left: 0px;
   top: -27px;
-  display: block;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
