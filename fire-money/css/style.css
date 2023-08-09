@@ -71,19 +71,6 @@ a {
   transition: 0.5s ease;
 }
 
-a:hover,
-.btn:hover,
-.btn-unsubscribe:hover {
-  text-shadow: 3px 3px 2px #45511f;
-}
-
-.btn:hover,
-.btn2:hover,
-.header-button:hover,
-.menu-icon:hover {
-  box-shadow: 1px 1px 10px #45511f;
-}
-
 a:active,
 .btn:active,
 .btn2:active,
@@ -120,9 +107,6 @@ body {
   text-align: center;
   margin: 0 0 36px 0;
 }
-
-/* -----------top-wrp------------------- */
-
 .top-wrp {
   background-color: #ffb548;
   background-image: url(../img/top/background-top.png);
@@ -137,9 +121,6 @@ body {
   width: 100%;
   margin: 0 auto;
 }
-
-/* ====top==== */
-/* ====header==== */
 .header {
   padding-top: 36px;
   display: flex;
@@ -193,9 +174,6 @@ body {
 .burger-menu {
   display: none;
 }
-
-/* ====ENDheader==== */
-/* ====promo==== */
 .promo {
   display: flex;
   justify-content: space-between;
@@ -216,9 +194,6 @@ body {
   padding: 15px 23px 15px 75px;
   background-color: rgba(255, 255, 255, 0.95);
   margin: 0 0 20px 0;
-}
-.promo-info__link:hover {
-  text-shadow: 0 4px 12px orange;
 }
 .promo-info__link-txt {
   font-weight: 500;
@@ -307,6 +282,7 @@ body {
   margin: 0 0 39px 0;
 }
 .promo-form__sum-credit {
+  position: relative;
   max-width: 379px;
   width: 100%;
   min-height: 15px;
@@ -314,6 +290,18 @@ body {
   justify-content: space-between;
   align-items: center;
   margin: 0 0 43px;
+}
+.promo-form__sum-credit::after {
+  content: "";
+  position: absolute;
+  top: 35px;
+  left: 0;
+  border-radius: 8px;
+  max-width: 381px;
+  width: 100%;
+  height: 1px;
+  background: #ececec;
+  opacity: 0.2;
 }
 .promo-form__min-sum,
 .sum-credit__max-sum,
@@ -357,7 +345,6 @@ body {
   line-height: 21px;
   color: #f28925;
 }
-/* ====promoSliders==== */
 .promo-form__inputs-wrp {
   max-width: 381px;
   width: 100%;
@@ -445,16 +432,6 @@ body {
   background-position: center;
   border: none;
 }
-
-/* ====ENDpromoSliders==== */
-
-/* ====ENDpromo==== */
-
-/* ====ENDtop==== */
-
-/* ====main==== */
-/* =======section-offers======= */
-
 .offers {
   background-color: #f6f9fc;
   padding-top: 49px;
@@ -585,9 +562,6 @@ body {
 .dark-orange {
   background-color: #fa5914;
 }
-
-/* ++++++++money-request++++++++++ */
-
 .money-request {
   background-color: #f6f9fc;
   padding: 44px 0 45px;
@@ -700,10 +674,6 @@ body {
   display: flex;
   justify-content: center;
 }
-
-/* =======ENDsection-offers======= */
-
-/* =====card-request==== */
 .card-request {
   padding: 55px 0 46px;
   background: rgba(255, 255, 255, 0.95);
@@ -722,10 +692,6 @@ body {
   width: 140px;
   height: 133px;
   transition: 0.5s;
-}
-
-.card-request__item:hover {
-  box-shadow: 0px 4px 44px rgba(84, 104, 123, 0.5);
 }
 
 .card-request__item-img-wrap {
@@ -753,9 +719,6 @@ body {
   text-align: center;
   margin: 0 auto 44px;
 }
-
-/* =====ENDcard-request==== */
-/* ====reviews==== */
 .reviews {
   background-color: #f6f9fc;
   padding: 65px 0 38px;
@@ -836,16 +799,9 @@ body {
   transition: 0.5s ease;
 }
 
-.btn2:hover {
-  text-shadow: 0 4px 12px orange;
-}
-
 .reviews__item-rating {
   height: 12px;
 }
-
-/* ====ENDreviews==== */
-/* ====clients==== */
 .clients {
   background-color: #ffb548;
   background: url(../img/clients/background.png);
@@ -914,9 +870,6 @@ body {
 .clients__info-wrp .client-geolocation-wrp {
   margin: 0;
 }
-
-/* ====ENDclients==== */
-/* ===About-service===== */
 .about-service {
   padding: 56px 0 72px;
 }
@@ -970,10 +923,6 @@ body {
 .about-service__txt:not(:last-child) {
   margin: 0 0 15px 0;
 }
-
-/* ===ENDAbout-service===== */
-
-/* ====faq==== */
 .faq {
   padding: 59px 0 69px;
   background: #f6f9fc;
@@ -1046,9 +995,6 @@ body {
   padding: 0 127px 28px 33px;
   color: #fff;
 }
-
-/* ====ENDfaq==== */
-
 .recieve-money {
   background-color: #fefefe;
   padding: 61px 0 62px;
@@ -1089,9 +1035,6 @@ body {
 .recieve-money__txt2 {
   margin: 0 0 26px 0;
 }
-
-/* ======Creditors======ENDmain==== */
-/* ====Footer==== */
 .footer {
   background-color: #ffb548;
   background-image: url("../img/footer/background.jpg");
@@ -1099,8 +1042,6 @@ body {
   background-size: cover;
   background-position: bottom;
 }
-
-/* ====footer-top==== */
 .footer-top {
   padding: 50px 0 38px;
   display: flex;
@@ -1143,11 +1084,6 @@ body {
   fill: currentColor;
 }
 
-.footer__mail-link:hover,
-.footer__tel-link:hover {
-  color: #f6d7f9f2;
-}
-
 .footer__tel-link {
   max-width: 228px;
   width: 100%;
@@ -1178,9 +1114,6 @@ body {
   font-weight: 500;
 }
 
-/* ====ENDfooter-top==== */
-/* ====Creditors==== */
-
 .creditors__title {
   font-size: 18px;
   font-weight: 500;
@@ -1196,9 +1129,6 @@ body {
   font-size: 13px;
   line-height: 15.41px;
 }
-
-/* ====EndCreditors==== */
-/* ====footerMiddle==== */
 .footer-middle {
   display: flex;
   justify-content: space-between;
@@ -1228,10 +1158,6 @@ body {
   align-items: center;
 }
 
-.footer__card-link:hover {
-  opacity: 0.7;
-}
-
 .footer__card-link:active {
   opacity: 0.3;
 }
@@ -1256,11 +1182,6 @@ body {
   text-decoration: underline;
   line-height: 21.33px;
 }
-
-.footer__personal-link:hover {
-  text-decoration: none;
-}
-
 .footer__card-item {
   width: 89px;
 }
@@ -1274,9 +1195,6 @@ body {
   margin-right: 22px;
   width: 76px;
 }
-
-/* ====EndfooterMiddle====  */
-/* ====agreements==== */
 .agreements {
   padding: 27px 0 39px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
@@ -1298,10 +1216,6 @@ body {
 .agreements__txt:not(:last-child) {
   margin: 0 0 11px 0;
 }
-
-/* ====ENDagreements==== */
-
-/* ====footer-bottom==== */
 .footer-bottom {
   display: flex;
   justify-content: space-between;
@@ -1351,10 +1265,6 @@ body {
   transition: 0.5s;
 }
 
-.btn-unsubscribe:hover {
-  border: 1px solid #3c4260;
-}
-
 .footer__list-social-icons {
   display: flex;
   justify-content: space-between;
@@ -1383,15 +1293,6 @@ body {
   fill: #ffffff;
   transition: 0.5s ease;
 }
-
-.link-social-icon:hover svg {
-  scale: 1.2;
-  fill: #3c4260;
-}
-
-/* ====ENDfooter-bottom==== */
-/* ====ENDFooter==== */
-
 @media (max-width: 1200px) {
   .footer-top {
     justify-content: space-between;
@@ -1416,8 +1317,6 @@ body {
     justify-content: space-between;
   }
 }
-
-/* ====tablet-page-version==== */
 @media (max-width: 1024px) {
   .center {
     max-width: 800px;
@@ -1425,7 +1324,6 @@ body {
     box-sizing: border-box;
   }
 
-  /* ===top=== */
   .header {
     padding: 29px 0 0 0;
     margin: 0 0 39px 0;
@@ -1443,8 +1341,6 @@ body {
   .header-button span {
     display: none;
   }
-
-  /* ===promo=== */
   .promo {
     flex-direction: column;
     align-items: flex-end;
@@ -1484,11 +1380,6 @@ body {
     min-height: 730px;
     left: -355px;
   }
-
-  /* ===ENDpromo=== */
-  /* ===Endtop=== */
-  /* ====main==== */
-  /* ===offers=== */
   .offers {
     padding: 50px 0 0 0;
   }
@@ -1507,9 +1398,6 @@ body {
     gap: 15px;
     margin: 0 0 35px 0;
   }
-
-  /* ===Endoffers=== */
-  /* ===money-request=== */
   .money-request {
     padding: 0 0 70px;
   }
@@ -1525,9 +1413,6 @@ body {
   .money-request__list {
     margin: 0 0 42px 0;
   }
-
-  /* ===End money-request=== */
-  /* ===card-request=== */
   .card-request__txt {
     margin: 0 auto 43px;
   }
@@ -1573,9 +1458,6 @@ body {
     width: 17px;
     height: 8px;
   }
-
-  /* ===End card-request=== */
-  /* ====reviws==== */
   .reviews {
     padding: 66px 0 54px;
   }
@@ -1597,9 +1479,6 @@ body {
   .reviews__item:last-child {
     display: none;
   }
-
-  /* ====ENDreviews==== */
-  /* ====clients==== */
   .clients__list {
     flex-wrap: nowrap;
     gap: 15px;
@@ -1612,9 +1491,6 @@ body {
   .clients__item:last-child {
     display: none;
   }
-
-  /* ====ENDclients==== */
-  /* ====about-service==== */
   .about-service {
     padding: 57px 0 48px;
   }
@@ -1631,9 +1507,6 @@ body {
     max-width: 768px;
     min-height: 558px;
   }
-
-  /* ====ENDabout-service==== */
-  /* ===faq=== */
   .faq {
     padding: 57px 0 67px;
   }
@@ -1645,9 +1518,6 @@ body {
   .accordion-body span:last-child {
     display: none;
   }
-
-  /* ===ENDfaq=== */
-  /* ===recieve-money=== */
   .recieve-money {
     padding: 60px 0 454px;
     background-image: url(../img/recieve-money/girl.png);
@@ -1667,11 +1537,6 @@ body {
   .recieve-money__image {
     display: none;
   }
-
-  /* ===END recieve-money=== */
-  /* ====ENDmain==== */
-  /* ====footer==== */
-
   .creditors__list {
     margin: 0 0 41px 0;
   }
@@ -1702,13 +1567,7 @@ body {
     flex-direction: column;
     gap: 33px;
   }
-
-  /* ====ENDfooter==== */
 }
-
-/* ====ENDtablet-page-version==== */
-
-/* ====mobile-page-version==== */
 @media (max-width: 767px) {
   .center {
     max-width: 380px;
@@ -1726,8 +1585,6 @@ body {
   .recieve-money__title {
     line-height: 33px;
   }
-
-  /* ===top=== */
   .header {
     padding: 14px 0 0 0;
     margin: 0 0 28px 0;
@@ -1749,8 +1606,6 @@ body {
   .header-nav {
     display: none;
   }
-
-  /* ====mobile-burger-menu==== */
   .burger-menu {
     display: block;
   }
@@ -1869,19 +1724,25 @@ body {
     color: #3c4260;
     opacity: 0.7;
   }
-
-  /* ====ENDmobile-burger-menu==== */
-
   .sum-credit__wrapper {
     max-width: 360px;
     width: 100%;
   }
-
+  .promo-form__circle {
+    left: 180.05px;
+  }
+  .promo-form__circle-term-credit {
+    left: 51.2963px;
+  }
   .promo-form {
     max-width: 360px;
     margin: 0 0 34px 0;
+    padding: 29px 34px 36px 28px;
   }
-
+  .promo-form__info__list {
+    padding: 0;
+    column-gap: 10px;
+  }
   .promo-info__link {
     margin: 0 0 24px 0;
   }
@@ -1901,7 +1762,9 @@ body {
     line-height: 133.5%;
     margin: 0 0 18px 0;
   }
-
+  .promo-form__button {
+    margin: 0 0 0 21px;
+  }
   .promo-image {
     display: none;
   }
@@ -2233,35 +2096,28 @@ body {
   .footer__personal {
     line-height: normal;
   }
-
   .agreements {
     padding: 31px 0 34px;
   }
-
   .agreements__txt {
     font-size: 12px;
     line-height: normal;
   }
-
   .agreements__txt:not(:last-child) {
     margin: 0px 0 14px 0;
   }
-
   .footer-bottom {
     padding: 34px 0 39px;
   }
-
   .copyright {
     flex-direction: column;
     gap: 21px;
   }
-
   .footer__copyright-txt {
     width: 260px;
     line-height: normal;
   }
 }
-
 @media (max-width: 379px) {
   .offers__title,
   .money-request__title,
@@ -2291,5 +2147,44 @@ body {
   }
   .footer__item-link {
     font-size: 15px;
+  }
+}
+@media (hover: hover) {
+  a:hover,
+  .btn:hover,
+  .btn-unsubscribe:hover {
+    text-shadow: 3px 3px 2px #45511f;
+  }
+  .btn:hover,
+  .btn2:hover,
+  .header-button:hover,
+  .menu-icon:hover {
+    box-shadow: 1px 1px 10px #45511f;
+  }
+  .promo-info__link:hover {
+    text-shadow: 0 4px 12px orange;
+  }
+  .card-request__item:hover {
+    box-shadow: 0px 4px 44px rgba(84, 104, 123, 0.5);
+  }
+  .btn2:hover {
+    text-shadow: 0 4px 12px orange;
+  }
+  .footer__mail-link:hover,
+  .footer__tel-link:hover {
+    color: #f6d7f9f2;
+  }
+  .footer__card-link:hover {
+    opacity: 0.7;
+  }
+  .footer__personal-link:hover {
+    text-decoration: none;
+  }
+  .btn-unsubscribe:hover {
+    border: 1px solid #3c4260;
+  }
+  .link-social-icon:hover svg {
+    transform: scale(1.2);
+    fill: #3c4260;
   }
 }

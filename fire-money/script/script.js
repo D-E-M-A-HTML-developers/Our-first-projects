@@ -27,7 +27,7 @@ function updateToValue(value, id) {
     outSum.innerText = value;
     creditTake.textContent = value + " 000 ₽";
     outputSumCredut.style.left =
-      (inputSumCreditWidth - 21) * (value / 130) + "px";
+      (inputSumCreditWidth - 21) * (value / 145) + "px";
     circleSumCredit.style.left =
       (inputSumCreditWidth - 21) * (value / 100) + "px";
     sum = Number(value);
