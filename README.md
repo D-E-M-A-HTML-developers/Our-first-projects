@@ -1,11 +1,7 @@
-﻿## Это общий репозиторий для всех проектов
+﻿# Общий репозиторий для всех проектов
 
----
+Готовый проект! [Сайт FireMoney](https://artiom30.github.io/team-projects/fire-money/)
 
-_Если есть предложения как лучше оформить README общего репозитория , предлогайте, у меня плохо с фонтазией =)_
+Текущий проект! [Реплики картин](https://artiom30.github.io/team-projects/replications-paintings/)
 
----
-
-Текущий проект [FireMoney](https://github.com/Artiom30/team-projects/tree/main/fire-money)
-
-![Сайт FireMoney](/fire-money/img/website/FireMoney.jpg)
+![Реплики картин](/replications-paintings/img/website/replications-paintings-1440site.jpg)
