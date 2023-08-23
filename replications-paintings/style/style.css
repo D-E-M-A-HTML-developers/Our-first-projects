@@ -614,6 +614,7 @@ li {
     max-width: 510px;
     width: 100%;
     min-height: 504px;
+    margin-bottom: 8px;
   }
   .art-team__info-wrp {
     padding: 0 0 44px 0;
@@ -628,5 +629,8 @@ li {
   }
   .footer-wrapper {
     max-width: 652px;
+  }
+  .art-team {
+    margin-bottom: 27px;
   }
 }
