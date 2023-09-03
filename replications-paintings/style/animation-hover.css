@@ -2,4 +2,60 @@
     a,button {
         cursor: pointer;
     }
+    *:focus {
+        outline: none;
+    }
+    .header__nav-link:hover, .footer__menu-link:hover, .header__cart-link:hover, .footer__phone-link:hover{
+        color:#598D66;
+    }
+    .header__nav-link:focus, .footer__menu-link:focus, .header__cart-link:focus, .footer__phone-link:focus{
+        background-color: #D4E8D9;
+    }
+    .header__nav-link:active, .footer__menu-link:active, .header__cart-link:active, .footer__phone-link:active {
+        color: #376B44;
+    }
+    .header__promo-btn:hover{
+        background: #598D66;
+        color: #F4F6F5;
+    }
+    .header__promo-btn:focus {
+        background: #D4E8D9;
+    }
+    .header__promo-btn:active {
+        background: #376B44;
+        color:#FFFFFF;
+    }
+    .products__header-btn:hover, .products__item-btn:hover {
+        background: #598D66;
+        color: #F4F6F5;
+    }
+    .products__header-btn:focus, .products__item-btn:focus {
+       outline: 2px solid #598D66;
+    }
+    .products__header-btn:active, .products__item-btn:active {
+        background: #376B44;
+        color:#F4F6F5;
+    }
+    .promo__btn:hover{
+        background: #FAEB97;
+    }
+    .promo__btn:focus {
+        border: 1px solid #A38314;
+        background: #FAEB97;
+    }
+    .promo__btn:active {
+        background: #D9B949;
+    }
+    .social-icon-item__link:hover svg {
+        fill: #598D66;
+    }
+    .social-icon-item__link:focus svg {
+        box-sizing: content-box;
+        fill: #598D66;
+        outline: 3px solid #D4E8D9;
+    }
+    .social-icon-item__link:active svg {
+        fill: #376B44;
+    }
 }
+
