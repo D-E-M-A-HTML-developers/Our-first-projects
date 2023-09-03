@@ -8,3 +8,21 @@ if (mediaMobile400.matches) {
   productsList.classList.add("center");
   products.classList.remove("center");
 }
+
+const productsHeaderBtn = document.querySelectorAll('.products__header-btn');
+
+productsHeaderBtn.forEach(function(item){
+  item.addEventListener('click', open);
+});
+
+function open(evt) {
+  const tabTarget = evt.currentTarget;
+
+
+  
+  productsHeaderBtn.forEach(function(item){
+    item.classList.remove('header-btn_active');
+  })
+  tabTarget.classList.add('header-btn_active');
+
+}
