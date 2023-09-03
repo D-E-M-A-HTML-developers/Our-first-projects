@@ -114,10 +114,12 @@ li {
   display: block;
   width: 24px;
   height: 24px;
+  color: #2c2d35;
 }
 
+
 .cart__path-color {
-  stroke: #2c2d35;
+ stroke: currentColor;
 }
 
 .header__promo {
@@ -503,7 +505,7 @@ li {
 }
 
 .footer__menu-link {
-	display: block;
+	display: inline-block;
 	font-size: 18px;
 	line-height: 27px;
 	color: #86928b;
@@ -535,6 +537,7 @@ li {
 	min-height: 24px;
 }
 .social-icon-item__link svg {
+  fill:#2C2D35;
 	display: block;
 }
 
