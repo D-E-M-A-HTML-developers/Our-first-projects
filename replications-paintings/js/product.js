@@ -7,7 +7,6 @@ const productEngland = JSON.parse(productsEngland);
 
 const productList = document.querySelector('.products__list');
 const productsHeaderBtn = document.querySelectorAll('.products__header-btn');
-createTemplateProducts(productFrance);
 
 function createTemplateProducts(product) {
 	product.forEach(({ image, author, name, description, price }) => {
@@ -48,11 +47,6 @@ function createTemplateProducts(product) {
 		productList.insertAdjacentHTML('beforeend', productEl);
 	});
 }
-
-productsHeaderBtn.forEach(function (item) {
-	item.addEventListener('click', open);
-});
-
 function open(evt) {
 	const tabTarget = evt.currentTarget;
 	productsHeaderBtn.forEach(function (item) {
@@ -72,3 +66,7 @@ function open(evt) {
 		createTemplateProducts(productFrance);
 	}
 }
+productsHeaderBtn.forEach(function (item) {
+	item.addEventListener('click', open);
+});
+createTemplateProducts(productFrance);
