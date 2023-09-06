@@ -9,11 +9,12 @@ const productList = document.querySelector('.products__list');
 const productsHeaderBtn = document.querySelectorAll('.products__header-btn');
 
 function createTemplateProducts(product) {
+	productList.innerHTML = '';
 	product.forEach(({ image, author, name, description, price }) => {
 		const productEl = `
 			<li class="products__item">
 			<article>
-				<a class="products__item-link" href="#">
+				<a class="products__item-link" href="#!">
 					<img
 						src="${image}"
 						alt="${name}"
@@ -54,15 +55,12 @@ function open(evt) {
 	})
 	tabTarget.classList.add('header-btn_active');
 	if (tabTarget.hasAttribute("data-btn-germany")) {
-		productList.innerHTML = '';
 		createTemplateProducts(productGermany);
 	}
 	if (tabTarget.hasAttribute("data-btn-england")) {
-		productList.innerHTML = '';
 		createTemplateProducts(productEngland);
 	}
 	if (tabTarget.hasAttribute("data-btn-france")) {
-		productList.innerHTML = '';
 		createTemplateProducts(productFrance);
 	}
 }
