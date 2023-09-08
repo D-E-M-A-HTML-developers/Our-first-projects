@@ -2,6 +2,8 @@
 
 Готовый проект! [Сайт FireMoney](https://artiom30.github.io/team-projects/fire-money/)
 
-Текущий проект! [Реплики картин](https://artiom30.github.io/team-projects/replications-paintings/)
+Готовый проект! [Реплики картин](https://artiom30.github.io/team-projects/replications-paintings/)
 
-![Реплики картин](/replications-paintings/img/website/replications-paintings-1440site.jpg)
+Текущий проект! [Cyberpunk](https://artiom30.github.io/team-projects/cyberpunk/)
+
+![Cyberpunk](/cyberpunk/image/website/page-cyberpunk_1920.jpg)

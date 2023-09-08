@@ -1,0 +1,10 @@
+:focus, :active,
+a:focus, a:active {
+    outline: none;
+}
+
+a, button {
+    cursor: pointer;
+}
+
+@media (hover: hover) {}
