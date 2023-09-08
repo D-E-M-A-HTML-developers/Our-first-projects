@@ -8,4 +8,3 @@ if (mediaMobile400.matches) {
 	productsList.classList.add("center");
 	products.classList.remove("center");
 }
-

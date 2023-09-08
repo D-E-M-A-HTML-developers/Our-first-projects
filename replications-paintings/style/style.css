@@ -941,6 +941,7 @@ body {
   }
 
   .products__item-btn {
+    min-height: 50px;
     font-size: 18px;
     line-height: 21px;
   }
@@ -1275,6 +1276,7 @@ body {
     -ms-scroll-snap-type: x mandatory;
     scroll-snap-type: x mandatory;
     gap: 20px;
+    scrollbar-width: none;
   }
 
   .products__header-wrp-btn::-webkit-scrollbar {
