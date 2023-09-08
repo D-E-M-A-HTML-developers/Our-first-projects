@@ -11,6 +11,7 @@ const productsHeaderBtn = document.querySelectorAll('.products__header-btn');
 function createTemplateProducts(product) {
 	productList.innerHTML = '';
 	product.forEach(({ image, author, name, description, price }) => {
+		price = formatNumber(price);
 		const productEl = `
 			<li class="products__item">
 			<article>
@@ -68,3 +69,16 @@ productsHeaderBtn.forEach(function (item) {
 	item.addEventListener('click', open);
 });
 createTemplateProducts(productFrance);
+
+function formatNumber(number) {
+  const str = number.toString();
+  const parts = [];
+  for (let i = str.length - 1, j = 0; i >= 0; i--, j++) {
+     if (j % 3 === 0 && j !== 0) {
+        parts.unshift(" ");
+     }
+     parts.unshift(str[i]);
+  }
+  return parts.join("");
+}
+
