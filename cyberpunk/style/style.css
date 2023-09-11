@@ -5,24 +5,42 @@
 @import url(promo.css);
 
 @font-face {
-	font-family: 'Archangelsk';
-	src: local('Archangelsk'),
-		url('../font/Archangelsk/Archangelsk.eot') format('embedded-opentype'),
-		url('../font/Archangelsk/Archangelsk.woff') format('woff'),
-		url('../font/Archangelsk/Archangelsk.ttf') format('truetype');
-	font-weight: 400;
-	font-style: normal;
+  font-family: 'Archangelsk';
+  src: local('Archangelsk'),
+    url('../font/Archangelsk/Archangelsk.eot') format('embedded-opentype'),
+    url('../font/Archangelsk/Archangelsk.woff') format('woff'),
+    url('../font/Archangelsk/Archangelsk.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
 }
 
 body {
-	font-family: 'Roboto', sans-serif;
-	color: #000;
-	font-size: 18px;
-	font-style: normal;
+  font-family: 'Roboto', sans-serif;
+  color: #000;
+  font-size: 18px;
+  font-style: normal;
 }
 
 .center {
-	max-width: 1280px;
-	width: 100%;
-	margin: 0 auto;
+  padding: 0 20px;
+  max-width: 1320px;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.text-color-blue {
+  font-weight: 700;
+  color: #52BEDC;
+}
+
+.logo {
+  width: 296px;
+  height: 74px;
+}
+
+.logo__link, .logo__link>img {
+  display: block;
+  height: 100%;
+  width: 100%;
 }
