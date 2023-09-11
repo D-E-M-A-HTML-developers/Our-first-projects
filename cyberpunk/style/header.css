@@ -1,8 +1,5 @@
 .header {
-	background: url(../image/header/top-img1.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
+	background: url(../image/header/top-img1.jpg) no-repeat center / cover;
 	animation: headerBackground 30s infinite;
 }
 
@@ -15,7 +12,7 @@
 	padding: 20px 0 0;
 	display: flex;
 	justify-content: space-between;
-	margin: 0 0 533px 0;
+	margin: 0 0 537px 0;
 }
 
 .header__social-list {
@@ -24,6 +21,10 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+}
+
+.header__social-link, .header__social-link>img {
+	display: block;
 }
 
 .banner {
