@@ -3,19 +3,20 @@
 @import url(footer.css);
 @import url(animation-hover-active.css);
 @import url(promo.css);
+@import url(promotion.css);
 
 @font-face {
-  font-family: 'Archangelsk';
-  src: local('Archangelsk'),
-    url('../font/Archangelsk/Archangelsk.eot') format('embedded-opentype'),
-    url('../font/Archangelsk/Archangelsk.woff') format('woff'),
-    url('../font/Archangelsk/Archangelsk.ttf') format('truetype');
+  font-family: "Archangelsk";
+  src: local("Archangelsk"),
+    url("../font/Archangelsk/Archangelsk.eot") format("embedded-opentype"),
+    url("../font/Archangelsk/Archangelsk.woff") format("woff"),
+    url("../font/Archangelsk/Archangelsk.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #000;
   font-size: 18px;
   font-style: normal;
@@ -31,7 +32,7 @@ body {
 
 .text-color-blue {
   font-weight: 700;
-  color: #52BEDC;
+  color: #52bedc;
 }
 
 .logo {
@@ -39,7 +40,8 @@ body {
   height: 74px;
 }
 
-.logo__link, .logo__link>img {
+.logo__link,
+.logo__link > img {
   display: block;
   height: 100%;
   width: 100%;
