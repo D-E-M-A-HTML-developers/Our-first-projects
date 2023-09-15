@@ -1,143 +1,164 @@
 .promotion {
-  background-color: #000;
-  position: relative;
-  padding: 70px 0;
+	background-color: #000;
+	position: relative;
+	padding: 70px 0 123px;
 }
-.promotion::before {
-  content: "";
-  background-image: url(../image/main/promotion-gradient-top.png);
-  width: 100%;
-  height: 70px;
-  position: absolute;
-  top: 0;
-}
-.promotion::after {
-  content: "";
-  background-image: url(../image/main/promotion-gradient-bottom.png);
-  width: 100%;
-  height: 70px;
-  position: absolute;
-  bottom: 0;
-}
-.center {
-}
+
 .promotion__info {
+	margin: 0 0 15px 0;
 }
+
+.promotion::before {
+	content: "";
+	background-image: url(../image/main/promotion-gradient-top.png);
+	width: 100%;
+	height: 70px;
+	position: absolute;
+	top: 0;
+}
+
+.promotion::after {
+	content: "";
+	background-image: url(../image/main/promotion-gradient-bottom.png);
+	width: 100%;
+	height: 70px;
+	position: absolute;
+	bottom: 0;
+}
+
 .promotion__title {
-  padding: 58px 0 10px 164px;
-  margin: 0 0 25px 0;
-  font-family: Archangelsk;
-  color: #fff;
-  font-size: 62px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  background-image: url(../image/main/promotion-logo.svg);
-  background-repeat: no-repeat;
-  background-position: left center;
+	padding: 70px 0 28px 164px;
+	margin: 0 0 11px 0;
+	font-family: 'Archangelsk';
+	color: #fff;
+	font-size: 62px;
+	font-weight: 400;
+	line-height: 63px;
+	background-image: url(../image/main/promotion-logo.svg);
+	background-repeat: no-repeat;
+	background-position: left center;
 }
+
 .promotion__txt {
-  max-width: 952px;
-  width: 100%;
-  min-height: 91px;
-  color: #fff;
-  line-height: 34px;
-  font-weight: 400;
+	max-width: 952px;
+	width: 100%;
+	min-height: 91px;
+	color: #fff;
+	line-height: 34px;
+	font-weight: 400;
 }
+
 .promotion__form-image-wrp {
-  display: flex;
-  justify-content: space-between;
-  min-height: 456px;
+	display: flex;
+	justify-content: space-between;
+	min-height: 456px;
 }
 
 .registration-form {
-  max-width: 460px;
-  width: 100%;
-  min-height: 483px;
-  padding: 73px 0 0 0;
+	max-width: 460px;
+	width: 100%;
+	min-height: 483px;
+	padding: 84px 0 0 0;
 }
+
 .registration-form__user {
-  appearance: none;
-  background: transparent;
-  border-bottom: 1px solid #777;
-  color: #fff;
-  font-family: Roboto;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: normal;
-  padding: 0 0 13px 0;
-  display: block;
-  margin: 0 0 35px 0;
-  width: 100%;
+	display: block;
+	appearance: none;
+	background: transparent;
+	border-bottom: 1px solid #777;
+	color: #fff;
+	font-weight: 300;
+	line-height: 21px;
+	padding: 0 0 13px 0;
+	margin: 0 0 35px 0;
+	width: 100%;
+}
+
+.registration-form__user::placeholder {
+	color: #fff;
 }
 
 .registration-form__screen-label {
-  border: 1px dashed #777;
-  padding: 40px;
-  position: relative;
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  align-content: center;
-  flex-direction: column;
-  align-items: center;
-  margin: 0 0 35px 0;
+	border: 1px dashed #777;
+	padding: 37px;
+	position: relative;
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-content: center;
+	flex-direction: column;
+	align-items: center;
+	margin: 0 0 35px 0;
 }
+
 .registration-form__screen-input {
-  margin: 0;
-  position: absolute;
-  opacity: 0;
+	margin: 0;
+	position: absolute;
+	opacity: 0;
 }
+
 .registration-form__screen-prompt {
-  color: #fff;
-  font-family: Roboto;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: normal;
-  text-decoration-line: underline;
+	color: #fff;
+	font-weight: 300;
+	line-height: normal;
+	text-decoration-line: underline;
 }
+
 .registration-form__screen-prompt_small {
-  color: #fff;
-  font-family: Roboto;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: normal;
-  text-decoration: none;
-  margin: 7px 0 0 0;
-  display: block;
+	display: block;
+	font-size: 12px;
+	font-weight: 300;
+	line-height: normal;
+	text-decoration: none;
+	margin: 7px 0 0 0;
 }
+
 .registration-form__btn {
-  padding: 15px 50px;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  background: #f8f200;
-  margin: 0 0 15px 0;
+	padding: 19px 50px;
+	font-weight: 700;
+	line-height: 21px;
+	background: #f8f200;
+	margin: 0 0 11px 0;
 }
+
 .registration-form__agreement {
-  display: block;
+	display: block;
+	padding: 0 0 0 24px;
 }
+
 .registration-form__agreement-input {
-  margin: 0 10px 0 0;
+	margin: 0 10px 0 0;
+	opacity: 0;
+	position: absolute;
 }
+
 .form__agreement-txt {
-  color: #fff;
-  font-family: Roboto;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: 14px;
+	position: relative;
+	color: #fff;
+	font-size: 12px;
+	font-weight: 300;
+	line-height: 14px;
 }
+
+.form__agreement-txt::before {
+	content: '';
+	width: 14px;
+	height: 14px;
+	background-color: transparent;
+	border: 1px solid #777;
+	box-sizing: border-box;
+	position: absolute;
+	top: 0px;
+	left: -24px;
+}
+
+.registration-form__agreement-input:checked~.form__agreement-txt::before {
+	background: url(../image/main/tick-imput-image.svg) no-repeat center / contain;
+}
+
 .promotion__image {
-  background-image: url(../image/main/promotion-image-desctop.png);
-  max-width: 788px;
-  width: 100%;
-  height: auto;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+	background: url(../image/main/promotion-image-desctop.png) no-repeat center / contain;
+	max-width: 788px;
+	width: 100%;
+	height: auto;
 }
