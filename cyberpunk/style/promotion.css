@@ -5,7 +5,7 @@
 }
 
 .promotion__info {
-	margin: 0 0 15px 0;
+	margin: 0 0 14px 0;
 }
 
 .promotion::before {
@@ -27,7 +27,7 @@
 }
 
 .promotion__title {
-	padding: 70px 0 28px 164px;
+	padding: 72px 0 28px 164px;
 	margin: 0 0 11px 0;
 	font-family: 'Archangelsk';
 	color: #fff;
@@ -69,8 +69,8 @@
 	color: #fff;
 	font-weight: 300;
 	line-height: 21px;
-	padding: 0 0 13px 0;
-	margin: 0 0 35px 0;
+	padding: 0 0 12px 0;
+	margin: 0 0 36px 0;
 	width: 100%;
 }
 
@@ -80,7 +80,7 @@
 
 .registration-form__screen-label {
 	border: 1px dashed #777;
-	padding: 37px;
+	padding: 37.5px;
 	position: relative;
 	display: flex;
 	width: 100%;
@@ -118,7 +118,7 @@
 	font-weight: 700;
 	line-height: 21px;
 	background: #f8f200;
-	margin: 0 0 11px 0;
+	margin: 0 0 9px 0;
 }
 
 .registration-form__agreement {
