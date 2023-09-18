@@ -1,0 +1,123 @@
+.offer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: 1920px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.offer__image {
+	max-width: 944px;
+	width: 100%;
+	min-height: 717px;
+	background: url(../image/main/offer-image.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.offer__info {
+	padding: 70px 0 70px 32px;
+	max-width: 976px;
+	width: 100%;
+	min-height: 717px;
+	background: #000;
+}
+
+.offer__title {
+	font-family: "Archangelsk";
+	max-width: 624px;
+	width: 100%;
+	line-height: 63px;
+	font-size: 62px;
+	color: #fff;
+	margin: 0 0 25px 0;
+}
+
+.offer__info .text-color-blue {
+	display: block;
+	font-size: 24px;
+}
+
+.offer__info span:first-of-type {
+	margin: 0 0 15px 0;
+}
+
+.offer__info span:last-of-type {
+	margin: 0 0 25px 0;
+}
+
+.offer__list {
+	max-width: 466px;
+	width: 100%;
+	min-height: 126px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 15px;
+	margin: 0 0 70px 0;
+}
+
+.offer__item {
+	display: flex;
+	align-items: center;
+	position: relative;
+	color: #fff;
+	line-height: 21px;
+	margin: 0 0 0 42px;
+	width: 100%;
+	min-height: 32px;
+}
+
+.offer__item::before {
+	position: absolute;
+	content: '';
+	background-image: url(../image/main/offer-item-img-1.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 26px;
+	width: 32px;
+	height: 32px;
+	top: 0;
+	left: -41px;
+}
+
+.offer__item:nth-child(2)::before {
+	background-image: url(../image/main/offer-item-img-2.svg);
+}
+
+.offer__item:nth-child(3)::before {
+	background-image: url(../image/main/offer-item-img-3.svg);
+}
+
+.offer__logos-list {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 47px;
+	max-width: 316px;
+	width: 100%;
+	min-height: 132px;
+}
+
+.offer__logos-item {
+	height: 35px;
+}
+
+.offer__logos-item:nth-child(3) {
+	height: 50px;
+}
+
+.offer__logos-item:nth-child(4) {
+	max-width: 178px;
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+}
+
+.offer__logos-link,
+.offer__logos-img {
+	display: block;
+}
