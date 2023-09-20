@@ -1,7 +1,7 @@
 .offer {
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	align-items: stretch;
 	max-width: 1920px;
 	width: 100%;
 	margin: 0 auto;
@@ -11,7 +11,6 @@
 	max-width: 944px;
 	width: 100%;
 	min-height: 717px;
-	background: url(../image/main/offer-image.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -21,8 +20,9 @@
 	padding: 70px 0 70px 32px;
 	max-width: 976px;
 	width: 100%;
-	min-height: 717px;
+	min-height: 577px;
 	background: #000;
+	box-sizing: content-box;
 }
 
 .offer__title {
