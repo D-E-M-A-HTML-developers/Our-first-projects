@@ -23,7 +23,12 @@
 	align-items: center;
 }
 
-.header__social-link, .header__social-link>img {
+.header__social-link {
+	transition: .4s ease;
+}
+
+.header__social-link,
+.header__social-link>img {
 	display: block;
 }
 
