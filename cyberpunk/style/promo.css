@@ -70,3 +70,24 @@
     0 12%
   );
 }
+@media(max-width:1025px) {
+  .promo__title {
+    max-width: 620px;
+    width: 100%;
+  }
+  .promo__txt {
+    max-width: 788px;
+    margin: 0 0 59px 0;
+  }
+  .promo__images-wrp{
+    flex-wrap: wrap;
+    height: 652px;
+  }
+  .promo__images-wrp-small {
+    flex-direction: row;
+  }
+  .promo__images-wrp-big {
+    max-width: 952px;
+    height: 424px;
+  }
+}
