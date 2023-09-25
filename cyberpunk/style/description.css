@@ -130,3 +130,24 @@
     width: 194px;
     line-height: 21px;
 }
+@media(max-width:1025px) {
+    .description__title, .description__txt, .description__img {
+        max-width: 460px;
+    }
+    .description__img {
+        min-height:317px;
+    }
+    .description__images-wrp {
+        align-self: center;
+    }
+    .description__txt {
+        margin: 0 0 15px 0;
+    }
+    .description__title {
+        margin: 0 0 27px 0;
+    }
+    .description__logos {
+        flex-direction: column;
+        height: 239px;
+    }
+}
