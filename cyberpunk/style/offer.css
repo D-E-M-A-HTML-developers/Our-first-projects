@@ -121,3 +121,8 @@
 .offer__logos-img {
 	display: block;
 }
+@media(max-width:1025px) {
+	.offer__image {
+		max-width: 332px;
+	}
+}
