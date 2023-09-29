@@ -56,8 +56,18 @@
   line-height: 14px;
   color: #fff;
 }
+
 @media(max-width:1025px) {
-  .page-footer__logo-wrapper {
-    gap:32px;
+  .page-footer__logo-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
   }
+
+  .page-footer__logo-wrapper {
+    max-width: 992px;
+    gap: 32px;
+  }
+
+
 }

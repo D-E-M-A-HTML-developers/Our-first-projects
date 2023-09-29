@@ -35,14 +35,14 @@ button {
 
 @keyframes headerBackground {
 	0% {
-		background: url(../image/header/top-img1.jpg) no-repeat center / cover;
+		background-image: url(../image/header/top-img1.jpg);
 	}
 
 	25% {
-		background: url(../image/header/top-img2.jpg) no-repeat center / cover;
+		background-image: url(../image/header/top-img2.jpg);
 	}
 
 	50% {
-		background: url(../image/header/top-img3.jpg) no-repeat center / cover;
+		background-image: url(../image/header/top-img3.jpg);
 	}
 }

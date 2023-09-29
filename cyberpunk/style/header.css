@@ -1,5 +1,9 @@
 .header {
-	background: url(../image/header/top-img1.jpg) no-repeat center / cover;
+	background-color: #e9e9e9;
+	background-image: url(../image/header/top-img1.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 	animation: headerBackground 30s infinite;
 }
 
