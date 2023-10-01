@@ -85,9 +85,10 @@
   }
   .promo__images-wrp-small {
     flex-direction: row;
+    max-width: 952px;
   }
   .promo__images-wrp-big {
     max-width: 952px;
-    height: 424px;
+    min-height: 424px;
   }
 }
