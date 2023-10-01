@@ -189,6 +189,10 @@
 		margin: 0 0 37px 0;
 	}
 
+	.registration-form__screen-prompt_small {
+		display: none;
+	}
+
 	.registration-form__btn {
 		margin: 0 0 8px 0;
 	}
@@ -205,5 +209,62 @@
 		z-index: -3;
 		top: 165px;
 		right: 20px;
+	}
+}
+
+@media (max-width: 768px) {
+	.promotion__image {
+		display: none;
+	}
+
+	.promotion__title {
+		padding: 360px 20px 0 0;
+		background: url(../image/main/promotion-image-mobile.png) no-repeat center / contain, url(../image/main/promotion-logo.svg) no-repeat top left / 132px;
+	}
+
+}
+
+@media (max-width: 540px) {
+	.promotion {
+		padding: 85px 0;
+	}
+
+	.promotion__title {
+		padding: 190px 0 0 0;
+		margin: 0 0 7px;
+		font-size: 30px;
+		background-position: center 50px, top left;
+		background-size: contain, 62px;
+	}
+
+	.promotion__txt {
+		font-size: 16px;
+		line-height: 32px;
+	}
+
+	.registration-form {
+		padding: 45px 0 0;
+	}
+
+	.registration-form__user::placeholder {
+		font-size: 16px;
+
+	}
+
+	.registration-form__screen-prompt {
+		font-size: 16px;
+	}
+
+	.registration-form__user {
+		margin: 0 0 35px 0;
+	}
+
+	.registration-form__screen-label {
+		padding: 50px 0;
+	}
+
+	.registration-form__btn {
+		font-size: 16px;
+		margin: 0 0 10px 0;
 	}
 }
