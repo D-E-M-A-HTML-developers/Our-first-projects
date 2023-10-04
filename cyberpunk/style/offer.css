@@ -152,4 +152,59 @@
 	.offer__info {
 		box-sizing: border-box;
 	}
+
+}
+
+@media(max-width:540px) {
+	.offer__image {
+		max-width: 320px;
+		min-height: 198px;
+	}
+
+	.offer__info {
+		padding: 40px 12px 70px;
+	}
+
+	.offer__info .text-color-blue {
+		font-size: 20px;
+		line-height: 23px;
+	}
+
+	.offer__info span:first-of-type {
+		margin: 0 0 20px;
+	}
+
+	.offer__info span:last-of-type {
+		margin: 0 0 30px;
+	}
+
+	.offer__title {
+		font-size: 30px;
+		line-height: 30.63px;
+	}
+
+	.offer__list {
+		margin: 0 0 36px;
+	}
+
+	.offer__item {
+		min-height: 24px;
+		font-size: 16px;
+		line-height: 19px;
+	}
+
+	.offer__item::before {
+		width: 24px;
+		height: 24px;
+		background-size: 20px;
+	}
+
+	.offer__item:nth-child(2)::before {
+		background-size: 18px;
+	}
+
+	.offer__logos-list {
+		min-height: 126px;
+		gap: 41px;
+	}
 }
