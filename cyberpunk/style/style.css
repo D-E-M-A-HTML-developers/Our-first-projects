@@ -49,3 +49,10 @@ body {
 	height: 100%;
 	width: 100%;
 }
+
+@media(max-width:540px) {
+	.logo {
+		width: 200px;
+		height: 50px;
+	}
+}
