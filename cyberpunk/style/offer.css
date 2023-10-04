@@ -16,7 +16,7 @@
 }
 
 .offer__info {
-	padding: 70px 0 70px 32px;
+	padding: 70px 15px 70px 32px;
 	width: 100%;
 	min-height: 577px;
 	background: #000;
@@ -63,9 +63,9 @@
 	position: relative;
 	color: #fff;
 	line-height: 21px;
-	margin: 0 0 0 42px;
 	width: 100%;
 	min-height: 32px;
+	padding: 0 0 0 42px;
 }
 
 .offer__item::before {
@@ -78,7 +78,7 @@
 	width: 32px;
 	height: 32px;
 	top: 0;
-	left: -41px;
+	left: 0px;
 }
 
 .offer__item:nth-child(2)::before {
@@ -123,6 +123,10 @@
 @media(max-width:1920px) {
 	.offer__image {
 		max-width: 944px;
+	}
+
+	.offer__info {
+		max-width: 976px;
 	}
 }
 
