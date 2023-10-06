@@ -153,7 +153,7 @@
 }
 
 .registration-form__agreement-input:checked~.form__agreement-txt::before {
-	background: url(../image/main/tick-imput-image.svg) no-repeat center / contain;
+	background: url(../image/main/tick-input-image.svg) no-repeat center / contain;
 }
 
 .promotion__image {
