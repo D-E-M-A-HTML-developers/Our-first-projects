@@ -166,7 +166,7 @@
 @media(max-width:1025px) {
 	.promotion {
 		position: relative;
-		z-index: -5;
+		z-index: 5;
 		padding: 85px 0 123px;
 	}
 
