@@ -28,7 +28,7 @@ button {
 	}
 
 	.page-footer__link:hover {
-		opacity: none;
+		opacity: 1;
 		color: #52bedc;
 	}
 }
