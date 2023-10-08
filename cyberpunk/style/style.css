@@ -17,6 +17,10 @@
 	font-style: normal;
 }
 
+:root {
+	--before-border-color: #777;
+}
+
 body {
 	font-family: "Roboto", sans-serif;
 	color: #000;
@@ -48,6 +52,14 @@ body {
 	display: block;
 	height: 100%;
 	width: 100%;
+}
+
+.border-input-invalid {
+	border-color: red;
+}
+
+.border-input-valid {
+	border-color: green;
 }
 
 @media(max-width:540px) {
