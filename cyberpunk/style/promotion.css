@@ -29,11 +29,8 @@
 .promotion__title {
 	padding: 72px 0 28px 164px;
 	margin: 0 0 11px 0;
-	font-family: 'Archangelsk';
 	color: #fff;
-	font-size: 62px;
 	font-weight: 400;
-	line-height: 63px;
 	background-image: url(../image/main/promotion-logo.svg);
 	background-repeat: no-repeat;
 	background-position: left center;
@@ -99,6 +96,7 @@
 	margin: 0;
 	position: absolute;
 	opacity: 0;
+	width: 0;
 }
 
 .registration-form__screen-prompt {
@@ -236,7 +234,6 @@
 	.promotion__title {
 		padding: 190px 0 0 0;
 		margin: 0 0 7px;
-		font-size: 30px;
 		background-position: center 50px, top left;
 		background-size: contain, 62px;
 	}
