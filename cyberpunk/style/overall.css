@@ -4,13 +4,6 @@
 	line-height: 63px;
 }
 
-@media (max-width: 540px) {
-	.page-title {
-		font-size: 30px;
-		line-height: 30.63px;
-	}
-}
-
 :root {
 	--before-border-color: #777;
 }
@@ -48,13 +41,6 @@ body {
 	width: 100%;
 }
 
-.border-input-invalid {
-	border-color: red;
-}
-
-.border-input-valid {
-	border-color: green;
-}
 
 @media(max-width:540px) {
 	.center {
@@ -64,5 +50,10 @@ body {
 	.logo {
 		width: 200px;
 		height: 50px;
+	}
+
+	.page-title {
+		font-size: 30px;
+		line-height: 30.63px;
 	}
 }
