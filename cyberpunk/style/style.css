@@ -17,3 +17,11 @@
 	font-weight: 400;
 	font-style: normal;
 }
+
+.border-input-invalid {
+	border-color: red;
+}
+
+.border-input-valid {
+	border-color: green;
+}
