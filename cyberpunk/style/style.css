@@ -1,4 +1,5 @@
 @import url(nulling-styles.css);
+@import url(overall.css);
 @import url(header.css);
 @import url(animation-hover-active.css);
 @import url(promo.css);
@@ -15,60 +16,4 @@
 		url("../font/Archangelsk/Archangelsk.ttf") format("truetype");
 	font-weight: 400;
 	font-style: normal;
-}
-
-:root {
-	--before-border-color: #777;
-}
-
-body {
-	font-family: "Roboto", sans-serif;
-	color: #000;
-	font-size: 18px;
-	font-style: normal;
-	background-color: #FFF;
-}
-
-.center {
-	padding: 0 20px;
-	max-width: 1320px;
-	width: 100%;
-	margin: 0 auto;
-	box-sizing: border-box;
-}
-
-.text-color-blue {
-	font-weight: 700;
-	color: #52bedc;
-}
-
-.logo {
-	width: 296px;
-	height: 74px;
-}
-
-.logo__link,
-.logo__link>img {
-	display: block;
-	height: 100%;
-	width: 100%;
-}
-
-.border-input-invalid {
-	border-color: red;
-}
-
-.border-input-valid {
-	border-color: green;
-}
-
-@media(max-width:540px) {
-	.center {
-		padding: 0 12px;
-	}
-
-	.logo {
-		width: 200px;
-		height: 50px;
-	}
 }

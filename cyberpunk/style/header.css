@@ -63,9 +63,6 @@
 	display: block;
 	max-width: 484px;
 	width: 100%;
-	font-family: "Archangelsk";
-	font-size: 62px;
-	line-height: 63px;
 	margin: 0 0 25px 0;
 }
 
@@ -117,8 +114,6 @@
 
 	.banner__title {
 		max-width: 295px;
-		font-size: 30px;
-		line-height: 31px;
 		text-align: center;
 		margin: 0 auto 25px;
 	}

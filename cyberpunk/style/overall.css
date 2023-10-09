@@ -1,0 +1,68 @@
+.page-title {
+	font-family: "Archangelsk", sans-serif;
+	font-size: 62px;
+	line-height: 63px;
+}
+
+@media (max-width: 540px) {
+	.page-title {
+		font-size: 30px;
+		line-height: 30.63px;
+	}
+}
+
+:root {
+	--before-border-color: #777;
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+	color: #000;
+	font-size: 18px;
+	font-style: normal;
+	background-color: #FFF;
+}
+
+.center {
+	padding: 0 20px;
+	max-width: 1320px;
+	width: 100%;
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+
+.text-color-blue {
+	font-weight: 700;
+	color: #52bedc;
+}
+
+.logo {
+	width: 296px;
+	height: 74px;
+}
+
+.logo__link,
+.logo__link>img {
+	display: block;
+	height: 100%;
+	width: 100%;
+}
+
+.border-input-invalid {
+	border-color: red;
+}
+
+.border-input-valid {
+	border-color: green;
+}
+
+@media(max-width:540px) {
+	.center {
+		padding: 0 12px;
+	}
+
+	.logo {
+		width: 200px;
+		height: 50px;
+	}
+}

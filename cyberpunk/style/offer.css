@@ -24,11 +24,8 @@
 }
 
 .offer__title {
-	font-family: "Archangelsk";
 	max-width: 624px;
 	width: 100%;
-	line-height: 63px;
-	font-size: 62px;
 	color: #fff;
 	margin: 0 0 25px 0;
 }
@@ -175,11 +172,6 @@
 
 	.offer__info span:last-of-type {
 		margin: 0 0 30px;
-	}
-
-	.offer__title {
-		font-size: 30px;
-		line-height: 30.63px;
 	}
 
 	.offer__list {
