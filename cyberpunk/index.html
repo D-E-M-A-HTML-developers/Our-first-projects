@@ -1,240 +1,359 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cyberpunk</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style/normalize.css" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link
+      rel="shortcut icon"
+      href="./image/favicon/favicon.png"
+      type="image/x-icon"
+    />
+  </head>
 
-<head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Cyberpunk</title>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
-	<link rel="stylesheet" href="style/normalize.css" />
-	<link rel="stylesheet" href="style/style.css" />
-</head>
-
-<body>
-	<div class="header">
-		<div class="header__wrp center">
-			<header class="header__top">
-				<div class="logo">
-					<a href="#" class="logo__link">
-						<img src="image/header/logo.svg" alt="logo" />
-					</a>
-				</div>
-				<ul class="header__social-list">
-					<li class="header__social-item">
-						<a class="header__social-link" href="https://youtube.com" target="_blank">
-							<img src="image/header/youtube.svg" alt="youtube" />
-						</a>
-					</li>
-					<li class="header__social-item">
-						<a class="header__social-link" href="https://vk.com" target="_blank">
-							<img src="image/header/vk.svg" alt="vkontakte" />
-						</a>
-					</li>
-					<li class="header__social-item">
-						<a class="header__social-link" href="https://facebook.com" target="_blank">
-							<img src="image/header/facebook.svg" alt="facebook" />
-						</a>
-					</li>
-					<li class="header__social-item">
-						<a class="header__social-link" href="https://twitter.com" target="_blank">
-							<img src="image/header/twitter.svg" alt="twitter" />
-						</a>
-					</li>
-					<li class="header__social-item">
-						<a class="header__social-link" href="https://twitch.com" target="_blank">
-							<img src="image/header/twitch.svg" alt="twitch" />
-						</a>
-					</li>
-					<li class="header__social-item">
-						<a class="header__social-link" href="https://instagram.com" target="_blank">
-							<img src="image/header/instagram.svg" alt="instagram" />
-						</a>
-					</li>
-				</ul>
-			</header>
-			<div class="banner">
-				<span class="page-title banner__title"> Доступно на всех платформах </span>
-				<a class="banner__btn" href="#">Узнать больше</a>
-			</div>
-		</div>
-	</div>
-	<main class="main">
-		<section class="promo">
-			<div class="center">
-				<h1 class="page-title promo__title">Найт-Сити изменит тебя навсегда!</h1>
-				<p class="promo__txt">
-					<span class="text-color-blue">Cyberpunk 2077</span>&nbsp;&mdash;
-					приключенческая ролевая игра, действие которой происходит
-					в&nbsp;мегаполисе Найт-Сити, где власть, роскошь и&nbsp;модификации
-					тела ценятся выше всего. Ты&nbsp;играешь за&nbsp;V, наёмника
-					в&nbsp;поисках устройства, позволяющего обрести бессмертие.
-					Ты&nbsp;сможешь менять киберимпланты, навыки и&nbsp;стиль игры
-					своего персонажа, исследуя открытый мир, где твои поступки влияют
-					на&nbsp;ход сюжета и&nbsp;всё, что тебя окружает.
-				</p>
-			</div>
-			<div class="promo__images-wrp center">
-				<div class="promo__images-wrp-small">
-					<div class="promo-image-wrapper">
-						<img class="promo__image" src="./image/main/promo-image-1.jpg" alt="кадр из игры" />
-					</div>
-					<div class="promo-image-wrapper">
-						<img class="promo__image" src="./image/main/promo-image-2.jpg" alt="кадр из игры" />
-					</div>
-				</div>
-				<div class="promo__images-wrp-big">
-					<img class="promo__image promo__image_big" src="./image/main/promo-image-3.jpg" alt="кадр из игры" />
-				</div>
-			</div>
-		</section>
-		<section class="promotion">
-			<div class="center">
-				<div class="promotion__info">
-					<h2 class="page-title promotion__title">Играй и выигрывай!</h2>
-					<p class="promotion__txt">
-						Играй в&nbsp;<span class="text-color-blue">Cyberpunk 2077</span>
-						и&nbsp;получи возможность выиграть консоль
-						<span class="text-color-blue">Xbox Series X</span>&nbsp;или
-						<span class="text-color-blue">Sony PlayStation 5!</span> Заполни
-						форму ниже и&nbsp;приложи скриншот о&nbsp;покупке игры. Итоги
-						розыгрыша будут подведены 1&nbsp;февраля. Удачи! ;)
-					</p>
-				</div>
-				<div class="promotion__form-image-wrp">
-					<form class="registration-form">
-						<input class="registration-form__user" type="text" name="form-user-name" id="form-user-name"
-							placeholder="Как тебя зовут?" required />
-						<input class="registration-form__user" type="email" name="form-user-email" id="form-user-email"
-							placeholder="Твой е-mail" required />
-						<label class="registration-form__screen-label" for="form-user-screen">
-							<input class="registration-form__screen-input" type="file" name="form-user-screen" id="form-user-screen"
-								required />
-							<span class="registration-form__screen-prompt">Прикрепить скриншот</span>
-							<span class="registration-form__screen-prompt registration-form__screen-prompt_small">.png&nbsp;/
-								.jpg&nbsp;/ .pdf</span>
-						</label>
-						<button class="registration-form__btn">Отправить</button>
-						<label class="registration-form__agreement" for="form-user-agreement">
-							<input class="registration-form__agreement-input" type="checkbox" name="form-user-agreement"
-								id="form-user-agreement" required />
-							<span class="form__agreement-txt">Согласен на&nbsp;обработку персональных данных</span>
-						</label>
-					</form>
-					<div class="promotion__image"></div>
-				</div>
-			</div>
-		</section>
-		<section class="description">
-			<div class="description__wrapper center">
-				<div class="description__images-wrp">
-					<div class="description__img" style="
+  <body>
+    <div class="header">
+      <div class="header__wrp center">
+        <header class="header__top">
+          <div class="logo">
+            <a href="#" class="logo__link">
+              <img src="image/header/logo.svg" alt="logo" />
+            </a>
+          </div>
+          <ul class="header__social-list">
+            <li class="header__social-item">
+              <a
+                class="header__social-link"
+                href="https://youtube.com"
+                target="_blank"
+              >
+                <img src="image/header/youtube.svg" alt="youtube" />
+              </a>
+            </li>
+            <li class="header__social-item">
+              <a
+                class="header__social-link"
+                href="https://vk.com"
+                target="_blank"
+              >
+                <img src="image/header/vk.svg" alt="vkontakte" />
+              </a>
+            </li>
+            <li class="header__social-item">
+              <a
+                class="header__social-link"
+                href="https://facebook.com"
+                target="_blank"
+              >
+                <img src="image/header/facebook.svg" alt="facebook" />
+              </a>
+            </li>
+            <li class="header__social-item">
+              <a
+                class="header__social-link"
+                href="https://twitter.com"
+                target="_blank"
+              >
+                <img src="image/header/twitter.svg" alt="twitter" />
+              </a>
+            </li>
+            <li class="header__social-item">
+              <a
+                class="header__social-link"
+                href="https://twitch.com"
+                target="_blank"
+              >
+                <img src="image/header/twitch.svg" alt="twitch" />
+              </a>
+            </li>
+            <li class="header__social-item">
+              <a
+                class="header__social-link"
+                href="https://instagram.com"
+                target="_blank"
+              >
+                <img src="image/header/instagram.svg" alt="instagram" />
+              </a>
+            </li>
+          </ul>
+        </header>
+        <div class="banner">
+          <span class="page-title banner__title">
+            Доступно на всех платформах
+          </span>
+          <a class="banner__btn" href="#">Узнать больше</a>
+        </div>
+      </div>
+    </div>
+    <main class="main">
+      <section class="promo">
+        <div class="center">
+          <h1 class="page-title promo__title">
+            Найт-Сити изменит тебя навсегда!
+          </h1>
+          <p class="promo__txt">
+            <span class="text-color-blue">Cyberpunk 2077</span>&nbsp;&mdash;
+            приключенческая ролевая игра, действие которой происходит
+            в&nbsp;мегаполисе Найт-Сити, где власть, роскошь и&nbsp;модификации
+            тела ценятся выше всего. Ты&nbsp;играешь за&nbsp;V, наёмника
+            в&nbsp;поисках устройства, позволяющего обрести бессмертие.
+            Ты&nbsp;сможешь менять киберимпланты, навыки и&nbsp;стиль игры
+            своего персонажа, исследуя открытый мир, где твои поступки влияют
+            на&nbsp;ход сюжета и&nbsp;всё, что тебя окружает.
+          </p>
+        </div>
+        <div class="promo__images-wrp center">
+          <div class="promo__images-wrp-small">
+            <div class="promo-image-wrapper">
+              <img
+                class="promo__image"
+                src="./image/main/promo-image-1.jpg"
+                alt="кадр из игры"
+              />
+            </div>
+            <div class="promo-image-wrapper">
+              <img
+                class="promo__image"
+                src="./image/main/promo-image-2.jpg"
+                alt="кадр из игры"
+              />
+            </div>
+          </div>
+          <div class="promo__images-wrp-big">
+            <img
+              class="promo__image promo__image_big"
+              src="./image/main/promo-image-3.jpg"
+              alt="кадр из игры"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="promotion">
+        <div class="center">
+          <div class="promotion__info">
+            <h2 class="page-title promotion__title">Играй и выигрывай!</h2>
+            <p class="promotion__txt">
+              Играй в&nbsp;<span class="text-color-blue">Cyberpunk 2077</span>
+              и&nbsp;получи возможность выиграть консоль
+              <span class="text-color-blue">Xbox Series X</span>&nbsp;или
+              <span class="text-color-blue">Sony PlayStation 5!</span> Заполни
+              форму ниже и&nbsp;приложи скриншот о&nbsp;покупке игры. Итоги
+              розыгрыша будут подведены 1&nbsp;февраля. Удачи! ;)
+            </p>
+          </div>
+          <div class="promotion__form-image-wrp">
+            <form class="registration-form">
+              <input
+                class="registration-form__user"
+                type="text"
+                name="form-user-name"
+                id="form-user-name"
+                placeholder="Как тебя зовут?"
+                required
+              />
+              <input
+                class="registration-form__user"
+                type="email"
+                name="form-user-email"
+                id="form-user-email"
+                placeholder="Твой е-mail"
+                required
+              />
+              <label
+                class="registration-form__screen-label"
+                for="form-user-screen"
+              >
+                <input
+                  class="registration-form__screen-input"
+                  type="file"
+                  name="form-user-screen"
+                  id="form-user-screen"
+                  required
+                />
+                <span class="registration-form__screen-prompt"
+                  >Прикрепить скриншот</span
+                >
+                <span
+                  class="registration-form__screen-prompt registration-form__screen-prompt_small"
+                  >.png&nbsp;/ .jpg&nbsp;/ .pdf</span
+                >
+              </label>
+              <button class="registration-form__btn">Отправить</button>
+              <label
+                class="registration-form__agreement"
+                for="form-user-agreement"
+              >
+                <input
+                  class="registration-form__agreement-input"
+                  type="checkbox"
+                  name="form-user-agreement"
+                  id="form-user-agreement"
+                  required
+                />
+                <span class="form__agreement-txt"
+                  >Согласен на&nbsp;обработку персональных данных</span
+                >
+              </label>
+            </form>
+            <div class="promotion__image"></div>
+          </div>
+        </div>
+      </section>
+      <section class="description">
+        <div class="description__wrapper center">
+          <div class="description__images-wrp">
+            <div
+              class="description__img"
+              style="
                 background: url(./image/main/description-img.png) no-repeat
                   center / contain;
-              "></div>
-					<ul class="description__logos">
-						<li class="description__logos-item-hp"></li>
-						<li class="description__logos-item-element"></li>
-						<li class="description__logos-item"></li>
-					</ul>
-				</div>
-				<div class="description__info">
-					<h2 class="page-title description__title">
-						Полное погружение вместе с&nbsp;HP
-					</h2>
-					<p class="description__txt">
-						Погрузись в&nbsp;современные экшен-игры с&nbsp;реалистичным
-						изображением с&nbsp;помощью монитора с&nbsp;диагональю
-						23,8&nbsp;дюйма, созданном для отображения максимально насыщенных
-						цветов. Успевай реагировать на&nbsp;любые события с&nbsp;временем
-						отклика 1&nbsp;мс и&nbsp;частотой в&nbsp;144&nbsp;Гц!
-					</p>
-					<ul class="description__info-list">
-						<li class="description__info-item">Яркие насыщенные цвета</li>
-						<li class="description__info-item">
-							Кристальная четкость изображения
-						</li>
-						<li class="description__info-item">
-							Быстрые движения и плавный геймплей
-						</li>
-					</ul>
-					<a class="description__btn" href="#">Подробнее</a>
-				</div>
-			</div>
-		</section>
-		<section class="offer">
-			<div class="offer__image" style="background-image: url(./image/main/offer-image.jpg);"></div>
-			<div class="offer__info">
-				<h2 class="page-title offer__title">Купить игру Cyberpunk 2077</h2>
-				<span class="text-color-blue">В&nbsp;комплект входит:</span>
-				<ul class="offer__list">
-					<li class="offer__item">Футляр с игровыми дисками</li>
-					<li class="offer__item">
-						Футляр с&nbsp;кодом для загрузки игры и&nbsp;дисками (pc)
-					</li>
-					<li class="offer__item">
-						Справочник с информацией об игровом мире
-					</li>
-				</ul>
-				<span class="text-color-blue">Выберите платформу:</span>
-				<ul class="offer__logos-list">
-					<li class="offer__logos-item">
-						<a href="!#" class="offer__logos-link">
-							<img class="offer__logos-img" width="56" height="35" src="image/main/offer-logos-pc.svg" alt="PC" />
-						</a>
-					</li>
-					<li class="offer__logos-item">
-						<a href="!#" class="offer__logos-link">
-							<img class="offer__logos-img" width="178" height="35" src="image/main/offer-logos-xbox.svg"
-								alt="Xbox one" />
-						</a>
-					</li>
-					<li class="offer__logos-item">
-						<a href="!#" class="offer__logos-link">
-							<img class="offer__logos-img" width="58" height="50" src="image/main/offer-logos-stadia.svg"
-								alt="Stadia" />
-						</a>
-					</li>
-					<li class="offer__logos-item">
-						<a href="!#" class="offer__logos-link">
-							<img class="offer__logos-img" width="168" height="35" src="image/main/offer-logos-ps4.svg" alt="PS4" />
-						</a>
-					</li>
-				</ul>
-			</div>
-		</section>
-	</main>
-	<footer class="page-footer">
-		<div class="center">
-			<div class="page-footer__logo-links">
-				<div class="page-footer__logo-wrapper">
-					<div class="logo">
-						<a href="#" class="logo__link">
-							<img src="image/header/logo.svg" alt="logo" />
-						</a>
-					</div>
-					<div class="logo-cd-project">
-						<a class="logo__link" href="https://www.cdprojektred.com/en" target="blank">
-							<img src="image/footer/cd_projekt_logo.svg" alt="cd project red" />
-						</a>
-					</div>
-				</div>
-				<div class="page-footer__links-wrapper">
-					<a class="page-footer__link" href="!#">Лицензия</a>
-					<a class="page-footer__link" href="!#">Политика конфиденциальности</a>
-				</div>
-			</div>
-		</div>
-		<div class="page-footer__copyright-wrapper">
-			<div class="center">
-				<div class="page-footer__copyright">
-					<span class="copyright__text">CD&nbsp;PROJEKT&reg;, Cyberpunk&reg;, Cyberpunk 2077&reg;</span>
-				</div>
-			</div>
-		</div>
-	</footer>
+              "
+            ></div>
+            <ul class="description__logos">
+              <li class="description__logos-item-hp"></li>
+              <li class="description__logos-item-element"></li>
+              <li class="description__logos-item"></li>
+            </ul>
+          </div>
+          <div class="description__info">
+            <h2 class="page-title description__title">
+              Полное погружение вместе с&nbsp;HP
+            </h2>
+            <p class="description__txt">
+              Погрузись в&nbsp;современные экшен-игры с&nbsp;реалистичным
+              изображением с&nbsp;помощью монитора с&nbsp;диагональю
+              23,8&nbsp;дюйма, созданном для отображения максимально насыщенных
+              цветов. Успевай реагировать на&nbsp;любые события с&nbsp;временем
+              отклика 1&nbsp;мс и&nbsp;частотой в&nbsp;144&nbsp;Гц!
+            </p>
+            <ul class="description__info-list">
+              <li class="description__info-item">Яркие насыщенные цвета</li>
+              <li class="description__info-item">
+                Кристальная четкость изображения
+              </li>
+              <li class="description__info-item">
+                Быстрые движения и плавный геймплей
+              </li>
+            </ul>
+            <a class="description__btn" href="#">Подробнее</a>
+          </div>
+        </div>
+      </section>
+      <section class="offer">
+        <div
+          class="offer__image"
+          style="background-image: url(./image/main/offer-image.jpg);"
+        ></div>
+        <div class="offer__info">
+          <h2 class="page-title offer__title">Купить игру Cyberpunk 2077</h2>
+          <span class="text-color-blue">В&nbsp;комплект входит:</span>
+          <ul class="offer__list">
+            <li class="offer__item">Футляр с игровыми дисками</li>
+            <li class="offer__item">
+              Футляр с&nbsp;кодом для загрузки игры и&nbsp;дисками (pc)
+            </li>
+            <li class="offer__item">
+              Справочник с информацией об игровом мире
+            </li>
+          </ul>
+          <span class="text-color-blue">Выберите платформу:</span>
+          <ul class="offer__logos-list">
+            <li class="offer__logos-item">
+              <a href="!#" class="offer__logos-link">
+                <img
+                  class="offer__logos-img"
+                  width="56"
+                  height="35"
+                  src="image/main/offer-logos-pc.svg"
+                  alt="PC"
+                />
+              </a>
+            </li>
+            <li class="offer__logos-item">
+              <a href="!#" class="offer__logos-link">
+                <img
+                  class="offer__logos-img"
+                  width="178"
+                  height="35"
+                  src="image/main/offer-logos-xbox.svg"
+                  alt="Xbox one"
+                />
+              </a>
+            </li>
+            <li class="offer__logos-item">
+              <a href="!#" class="offer__logos-link">
+                <img
+                  class="offer__logos-img"
+                  width="58"
+                  height="50"
+                  src="image/main/offer-logos-stadia.svg"
+                  alt="Stadia"
+                />
+              </a>
+            </li>
+            <li class="offer__logos-item">
+              <a href="!#" class="offer__logos-link">
+                <img
+                  class="offer__logos-img"
+                  width="168"
+                  height="35"
+                  src="image/main/offer-logos-ps4.svg"
+                  alt="PS4"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="center">
+        <div class="page-footer__logo-links">
+          <div class="page-footer__logo-wrapper">
+            <div class="logo">
+              <a href="#" class="logo__link">
+                <img src="image/header/logo.svg" alt="logo" />
+              </a>
+            </div>
+            <div class="logo-cd-project">
+              <a
+                class="logo__link"
+                href="https://www.cdprojektred.com/en"
+                target="blank"
+              >
+                <img
+                  src="image/footer/cd_projekt_logo.svg"
+                  alt="cd project red"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="page-footer__links-wrapper">
+            <a class="page-footer__link" href="!#">Лицензия</a>
+            <a class="page-footer__link" href="!#"
+              >Политика конфиденциальности</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="page-footer__copyright-wrapper">
+        <div class="center">
+          <div class="page-footer__copyright">
+            <span class="copyright__text"
+              >CD&nbsp;PROJEKT&reg;, Cyberpunk&reg;, Cyberpunk 2077&reg;</span
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
 
-	<script src="js/main.js"></script>
-</body>
-
+    <script src="js/main.js"></script>
+  </body>
 </html>
