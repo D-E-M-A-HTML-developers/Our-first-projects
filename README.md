@@ -4,5 +4,5 @@
 
 Готовый проект! [Реплики картин](https://artiom30.github.io/team-projects/replications-paintings/)
 
-Готовый проект! [Cyberpunk](https://artiom30.github.io/team-projects/cyberpunk/)
+Готовый проект! [Cyberpunk](https://d-e-m-a-html-developers.github.io/team-projects/cyberpunk/)
 
