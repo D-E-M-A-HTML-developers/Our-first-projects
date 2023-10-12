@@ -1,6 +1,6 @@
 # Готовый проект!
 
-Вёрстка -> [Реплики картин](https://artiom30.github.io/team-projects/replications-paintings/)
+Вёрстка -> [Реплики картин](https://d-e-m-a-html-developers.github.io/team-projects/replications-paintings/)
 
 Макет -> [Figma-макет](https://www.figma.com/file/Dgc9JovnFFYrkIZhHXFx0b/House-(Copy)?type=design&node-id=3-838&mode=design&t=Rm16sFwSc7HHkf0G-0)
 
